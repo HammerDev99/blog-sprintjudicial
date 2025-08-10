@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building in Public on Sprint Judicial</title>
+    <link>http://localhost:1313/tags/building-in-public/</link>
+    <description>Recent content in Building in Public on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/building-in-public/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>El programador flanker: De la cancha de rugby a la arquitectura de software</title>
+      <link>http://localhost:1313/2025/02/28/design-pattern-in-public/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:1313/2025/02/28/design-pattern-in-public/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
