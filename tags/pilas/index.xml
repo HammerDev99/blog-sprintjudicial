@@ -1,2 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pilas on Sprint Judicial</title><link>https://blog.sprintjudicial.com/tags/pilas/</link><description>Recent content in Pilas on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/tags/pilas/index.xml" rel="self" type="application/rss+xml"/><item><title>Pila en un navegador web</title><link>https://blog.sprintjudicial.com/2024/04/10/stack_example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/04/10/stack_example/</guid><description>class NavegadorWeb: def __init__(self): # Inicializamos el historial como una lista vacía self.historial = [] def abrir_pagina(self, url): # Añadimos la URL al final del historial self.historial.append(url) def retroceder(self): # Verificamos si hay más de una página en el historial if len(self.historial) &amp;gt; 1: # Retrocedemos eliminando la página actual del historial self.historial.pop() # Devolvemos la URL de la página anterior return self.historial[-1] else: # Si no hay páginas anteriores, devolvemos un mensaje indicándolo return &amp;#34;No hay páginas anteriores en el historial&amp;#34; def adelantar(self): # Podríamos implementar la funcionalidad de avanzar utilizando otra pila para las páginas adelantadas pass if __name__ == &amp;#34;__main__&amp;#34;: # Ejemplo de uso del navegador navegador = NavegadorWeb() navegador.</description></item><item><title>Pilas y Colas: Estructuras de Datos Esenciales</title><link>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</guid><description>Las pilas y colas son dos estructuras de datos fundamentales en el mundo de la programación. Este blogpost desglosa sus definiciones, operaciones básicas y aplicaciones prácticas, proporcionando ejemplos claros en Python. ¡Sumérgete en el fascinante mundo de las pilas y colas y mejora tus habilidades de programación!
-Introducción Las estructuras de datos son el pilar fundamental de la informática y la programación. Entre ellas, las pilas y colas destacan por su capacidad para organizar y gestionar datos de manera eficiente.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pilas on Sprint Judicial</title>
+    <link>https://blog.sprintjudicial.com/tags/pilas/</link>
+    <description>Recent content in Pilas on Sprint Judicial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.sprintjudicial.com/tags/pilas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pila en un navegador web</title>
+      <link>https://blog.sprintjudicial.com/2024/04/10/stack_example/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_example/</guid>
+      <description>class NavegadorWeb: def __init__(self): # Inicializamos el historial como una lista vacía self.historial = [] def abrir_pagina(self, url): # Añadimos la URL al final del historial self.historial.append(url) def retroceder(self): # Verificamos si hay más de una página en el historial if len(self.historial) &amp;gt; 1: # Retrocedemos eliminando la página actual del historial self.historial.pop() # Devolvemos la URL de la página anterior return self.historial[-1] else: # Si no hay páginas anteriores, devolvemos un mensaje indicándolo return &amp;#34;No hay páginas anteriores en el historial&amp;#34; def adelantar(self): # Podríamos implementar la funcionalidad de avanzar utilizando otra pila para las páginas adelantadas pass if __name__ == &amp;#34;__main__&amp;#34;: # Ejemplo de uso del navegador navegador = NavegadorWeb() navegador.</description>
+    </item>
+    <item>
+      <title>Pilas y Colas: Estructuras de Datos Esenciales</title>
+      <link>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</guid>
+      <description>Las pilas y colas son dos estructuras de datos fundamentales en el mundo de la programación. Este blogpost desglosa sus definiciones, operaciones básicas y aplicaciones prácticas, proporcionando ejemplos claros en Python. ¡Sumérgete en el fascinante mundo de las pilas y colas y mejora tus habilidades de programación!&#xA;Introducción Las estructuras de datos son el pilar fundamental de la informática y la programación. Entre ellas, las pilas y colas destacan por su capacidad para organizar y gestionar datos de manera eficiente.</description>
+    </item>
+  </channel>
+</rss>

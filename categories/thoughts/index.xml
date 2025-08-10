@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thoughts on Sprint Judicial</title><link>https://blog.sprintjudicial.com/categories/thoughts/</link><description>Recent content in Thoughts on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/categories/thoughts/index.xml" rel="self" type="application/rss+xml"/><item><title>Daniel Arbelaez (HammerDev99)</title><link>https://blog.sprintjudicial.com/2022/05/10/hello-world/</link><pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2022/05/10/hello-world/</guid><description>Cuando leía acerca del software libre quede cautivado con una frase de Richard M. Stallman, &amp;ldquo;La cooperación con los demás constituye la base de la sociedad (extraído de &amp;ldquo;software libre para una comunidad libre&amp;rdquo;); así surgió la idea de crear este espacio para compartir conocimiento, también muestro como he podido solucionar problemáticas del día a día. ¿Quieres conocer cómo lo he hecho?, aquí te muestro cómo&amp;hellip;
-Libro &amp;ldquo;Software libre para una sociedad libre&amp;rdquo;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on Sprint Judicial</title>
+    <link>https://blog.sprintjudicial.com/categories/thoughts/</link>
+    <description>Recent content in Thoughts on Sprint Judicial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.sprintjudicial.com/categories/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daniel Arbelaez (HammerDev99)</title>
+      <link>https://blog.sprintjudicial.com/2022/05/10/hello-world/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>https://blog.sprintjudicial.com/2022/05/10/hello-world/</guid>
+      <description>Cuando leía acerca del software libre quede cautivado con una frase de Richard M. Stallman, &amp;ldquo;La cooperación con los demás constituye la base de la sociedad (extraído de &amp;ldquo;software libre para una comunidad libre&amp;rdquo;); así surgió la idea de crear este espacio para compartir conocimiento, también muestro como he podido solucionar problemáticas del día a día. ¿Quieres conocer cómo lo he hecho?, aquí te muestro cómo&amp;hellip;&#xA;Libro &amp;ldquo;Software libre para una sociedad libre&amp;rdquo;</description>
+    </item>
+  </channel>
+</rss>
