@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docassemble on Sprint Judicial</title>
-    <link>http://localhost:1313/tags/docassemble/</link>
-    <description>Recent content in Docassemble on Sprint Judicial</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
-    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
-    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docassemble/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Una revisión del sistema experto Docassemble</title>
-      <link>http://localhost:1313/2023/07/11/docassemble-review/</link>
-      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>http://localhost:1313/2023/07/11/docassemble-review/</guid>
-      <description>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?&#xA;Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docassemble on Sprint Judicial</title><link>https://blog.sprintjudicial.com/tags/docassemble/</link><description>Recent content in Docassemble on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/tags/docassemble/index.xml" rel="self" type="application/rss+xml"/><item><title>Una revisión del sistema experto Docassemble</title><link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid><description>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?
+Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</description></item></channel></rss>
