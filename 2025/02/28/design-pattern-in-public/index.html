@@ -1,54 +1,629 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Sprint Judicial"><meta property="og:type" content="article"><meta property="og:image" content="img/2025-02-28-design-pattern-in-public/rugby-clasic.png"><meta property="twitter:image" content="img/2025-02-28-design-pattern-in-public/rugby-clasic.png"><meta name=title content="El programador flanker: De la cancha de rugby a la arquitectura de software"><meta property="og:title" content="El programador flanker: De la cancha de rugby a la arquitectura de software"><meta property="twitter:title" content="El programador flanker: De la cancha de rugby a la arquitectura de software"><meta name=description content="Software | LegalTech"><meta property="og:description" content="Software | LegalTech"><meta property="twitter:description" content="Software | LegalTech"><meta property="twitter:card" content="summary"><meta name=keyword content="Blog, Web, Blog, Blogging, Personal Website, Internet"><link rel="shortcut icon" href=/img/favicon.ico><title>El programador flanker: De la cancha de rugby a la arquitectura de software | HammerDev99 | Daniel Arbelaez</title>
-<link rel=canonical href=/2025/02/28/design-pattern-in-public/><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/css/zanshang.css><link rel=stylesheet href=/css/font-awesome.all.min.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script><script src=/js/lazysizes.min.js></script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-MEASUREMENT_ID",{anonymize_ip:!1})}</script><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<a class=navbar-brand href=/>Sprint Judicial</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Posts</a></li><li><a href=/categories/dev/>dev</a></li><li><a href=/categories/tech/>tech</a></li><li><a href=/categories/thoughts/>thoughts</a></li><li><a href=/archive//>ARCHIVO</a></li><li><a href=/about//>ACERCA DE</a></li><li><a href=/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><style type=text/css>header.intro-header{background-image:url(/img/2025-02-28-design-pattern-in-public/rugby-clasic.png)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/design-patterns title="design patterns">design patterns
-</a><a class=tag href=/tags/building-in-public title="building in public">building in public</a></div><h1>El programador flanker: De la cancha de rugby a la arquitectura de software</h1><h2 class=subheading>Strategy, un patrón de diseño que convirtió el procesamiento de expedientes caóticos en código elegante</h2><span class=meta>Posted by
-Daniel Arbelaez
-on
-Friday, February 28, 2025</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2
-col-md-10 col-md-offset-1
-post-container"><p>En el mundo del desarrollo de software, nos encontramos frecuentemente con situaciones que requieren soluciones elegantes y mantenibles. Recientemente, me enfrenté a un caso interesante, que trataba sobre la implementación de un sistema de procesamiento de carpetas manteniendo un equilibrio entre flexibilidad y desacoplamiento.</p><h2 id=el-reto-automatización-flexible-en-expedientes-judiciales>El reto: Automatización flexible en expedientes judiciales</h2><p>El escenario planteaba un desafío particular. Se necesitaba desarrollar una funcionalidad que permitiera procesar carpetas de diferentes maneras, donde cada método de procesamiento compartía una estructura común pero requería su propia implementación específica. Lo fascinante de este requisito era la necesidad explícita de mantener un bajo acoplamiento, asegurando que <strong>las diferentes maneras de procesar</strong>, pudieran evolucionar de manera independiente.</p><h2 id=la-inspiración-lecciones-desde-la-cancha-de-rugby>La inspiración: Lecciones desde la cancha de rugby</h2><p>La ortogonalidad en software es uno de esos conceptos que, aunque fundamentales, pueden resultar abstractos hasta que encuentras la analogía perfecta. Para mí, esa analogía llegó mientras veía un partido de rugby del <em>&ldquo;Torneo de las Seis Naciones 2025&rdquo;</em> y recordé mi posición favorita de esta disciplina deportiva, el &ldquo;flanker&rdquo;.</p><p><img src=/img/2025-02-28-design-pattern-in-public/flankers.jpeg alt=alt></p><p>Un flanker (posición 6 o 7) es quizás el jugador más versátil del equipo. No está completamente especializado como un forward o un back, sino que participa en casi todas las fases del juego. Defiende, ataca, apoya, disputa balones y conecta las diferentes líneas de juego. Es ortogonal por naturaleza.</p><p>No sucede lo mismo con el resto de forwards, como los pilares (posiciones 1 y 3) o el hooker (posición 2), cuyos roles estan altamente especializados en las formaciones fijas, el contacto físico y la obtención de la pelota. Tampoco es como los backs, desde el medio scrum (9) hasta los wings (11 y 14), quienes se especializan en ataque, velocidad y manejo de balón.</p><p><img src=/img/2025-02-28-design-pattern-in-public/posiciones-rugby.jpg alt=alt></p><p>El flanker existe precisamente en ese límite entre ambos mundos, tiene la potencia física de un forward pero la movilidad de un back, permitiéndole adaptarse a cada situación y mantener la cohesión entre las diferentes líneas de juego sin perder su propia función en el equipo.</p><blockquote><p>En programación informática, ortogonalidad significa que las operaciones cambian sólo una cosa sin afectar a otras. <a href=https://en.m.wikipedia.org/wiki/Orthogonality_%28programming%29>tomado de Wikipedia</a></p></blockquote><p>Este concepto tiene un paralelo sorprendentemente directo con lo que en programación llamamos &ldquo;ortogonalidad&rdquo;. Un sistema es ortogonal cuando un cambio en un componente no afecta a otros componentes no relacionados. Al igual que el flanker opera en múltiples dimensiones del juego sin perder su esencia, un código ortogonal permite que cada módulo cumpla su función específica sin interferir con otros.</p><p>La ortogonalidad en software ofrece dos beneficios fundamentales que cualquier equipo de programación reconocerá inmedientamente y son la localización de problemas y adaptabilidad. Cuando un módulo falla, el error queda contenido. Cuando necesitas cambiar una estrategia, solo modificas ese componente específico. No es casualidad que los sistemas más robustos y mantenibles sean también los más ortogonales ya que pueden avanzar en su propia dirección desarrollando operaciones sin afectar las demás vias de crecimiento.</p><p>En términos matemáticos, al observar estos tres planos que se intersectan en ángulos rectos (X, Y, Z), se puede evidenciar que cada uno puede moverse a lo largo de su propio eje sin afectar a los demás.</p><p><img src=/img/2025-02-28-design-pattern-in-public/ortogonal.svg alt=alt></p><blockquote><p>Tres planos ortogonales - Tomado de <a href=https://es.wikipedia.org/wiki/Ortogonalidad_%28matem%C3%A1tica%29>Wikipedia</a></p></blockquote><p>Estos planos ortogonales no son solo una abstracción matemática, en software se manifiestan como interfaces bien definidas y responsabilidades claramente separadas, que fue exactamente lo que implementé, ahí estaba lo que necesitaba mi sistema de procesamiento de carpetas, era exactamente eso, componentes &ldquo;flanker&rdquo; con interfaces que permitan:</p><ul><li>Mantener su independencia (bajo acoplamiento)</li><li>Ser altamente cohesivos en su función específica</li><li>Interactuar con múltiples partes del sistema sin volverse dependientes</li></ul><p>Esta estructura requería preservar la ortogonalidad del sistema mientras permitiera distintas implementaciones para cada tipo de procesamiento de carpetas. Cada estrategia debía poder ejecutarse con la misma llamada externa, pero internamente actuar de forma completamente diferente según el contexto. Además, debía poder incorporar nuevas estrategias en el futuro sin modificar el código existente. Fue entonces cuando recordé uno de los patrones de diseño más versátiles del arsenal de la programación orientada a objetos.</p><h2 id=del-caos-al-orden-cómo-el-patrón-strategy-transformó-mi-código>Del caos al orden: Cómo el patrón Strategy transformó mi código</h2><p>Al analizar este escenario, el patrón Strategy emergió como la solución natural. Este patrón, uno de los pilares del diseño orientado a objetos, nos permite encapsular diferentes algoritmos en clases separadas, permitiendo que sean intercambiables. Es como tener diferentes herramientas en una caja de herramientas, donde cada una está diseñada para un propósito específico pero todas comparten la misma manera de ser utilizadas.</p><p>La belleza de esta aproximación radica en su simplicidad y elegancia. Al definir una interfaz común para todos los procesadores de carpetas, creamos un contrato claro que cada implementación debe seguir. Esto no solo facilita la adición de nuevos métodos de procesamiento sino que también simplifica el mantenimiento del código existente. Es como establecer un protocolo estándar que todos los nuevos desarrollos deben seguir, asegurando consistencia y predictibilidad en el sistema.</p><p>El desafío no era trivial. Estaba desarrollando un sistema para gestionar expedientes judiciales electrónicos que debía procesar carpetas de diferentes maneras según su estructura:</p><ul><li>Cuadernos simples</li><li>Expedientes completos (uno o más cuadernos simples)</li><li>Múltiples expedientes</li></ul><p>Cada tipo requería su propio tratamiento, pero compartían operaciones comunes. Y lo más importante que estuvieran completamente desacoplados de la lógica de procesamiento.</p><p>Mi primer intento fue un gran bloque de código con condicionales anidados. Funcionaba, sí, pero era imposible de mantener. Cualquier cambio en la interfaz requería revisar toda la lógica de procesamiento y viceversa. <strong>Era como un equipo de rugby donde todos los jugadores intentaban hacer todas las posiciones a la vez</strong>. La respuesta estaba en un patrón de diseño que, al igual que un buen flanker, debía ser extremadamente versátiles.</p><h3 id=el-patrón-strategy-especialistas-intercambiables>El patrón Strategy: Especialistas intercambiables</h3><p>Implementé una interfaz abstracta llamada <code>ProcessStrategy</code> que definía el contrato común para todas las estrategias de procesamiento:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>ProcessStrategy</span>(ABC):
-</span></span><span style=display:flex><span>    @abstractmethod
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>add_folder</span>(self, processor):
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>pass</span>
-</span></span><span style=display:flex><span>        
-</span></span><span style=display:flex><span>    @abstractmethod
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> <span style=color:#50fa7b>process</span>(self, processor):
-</span></span><span style=display:flex><span>        <span style=color:#ff79c6>pass</span>
-</span></span></code></pre></div><p>Luego creé las clases con las estrategias concretas para cada tipo de procesamiento:</p><ul><li><code>SingleCuadernoStrategy</code></li><li><code>SingleExpedienteStrategy</code></li><li><code>MultiExpedienteStrategy</code></li></ul><p>Así, cada estrategia sabía exactamente cómo manejar su caso específico, pero desde fuera, todas se usaban de la misma manera. <strong>Como un flanker que sabe cuándo jugar como forward (potencia física) y cuándo jugar como back (movilidad), cambiando de rol según la situación del partido</strong>.</p><p>Para más detalles en código, visita el repositorio original que contiene la clase <a href=https://github.com/HammerDev99/GestionExpedienteElectronico_Version1/blob/master/src/controller/process_strategy.py>ProcessStrategy</a></p><h3 id=el-contexto-un-director-técnico-cuando-se-ejecuta-el-código>El contexto: Un director técnico cuando se ejecuta el código</h3><p>Para completar la implementación del patrón Strategy, necesitaba un &ldquo;director técnico&rdquo; que decidiera qué estrategia utilizar en cada momento. Esta es la función del <code>ProcessingContext</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>ProcessingContext</span>:
-</span></span><span style=display:flex><span>    <span style=color:#f1fa8c>&#34;&#34;&#34;Gestiona el procesamiento de carpetas usando la estrategia apropiada.&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>def</span> __init__(self, gui_notifier: GUINotifier, logger<span style=color:#ff79c6>=</span><span style=color:#ff79c6>None</span>):
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>notifier <span style=color:#ff79c6>=</span> gui_notifier
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>logger <span style=color:#ff79c6>=</span> logger <span style=color:#ff79c6>or</span> logging<span style=color:#ff79c6>.</span>getLogger(<span style=color:#f1fa8c>&#34;ProcessingContext&#34;</span>)
-</span></span><span style=display:flex><span>        self<span style=color:#ff79c6>.</span>_strategies <span style=color:#ff79c6>=</span> {
-</span></span><span style=display:flex><span>            <span style=color:#f1fa8c>&#34;1&#34;</span>: SingleCuadernoStrategy(self<span style=color:#ff79c6>.</span>notifier, self<span style=color:#ff79c6>.</span>logger),
-</span></span><span style=display:flex><span>            <span style=color:#f1fa8c>&#34;2&#34;</span>: SingleExpedienteStrategy(self<span style=color:#ff79c6>.</span>notifier, self<span style=color:#ff79c6>.</span>logger),
-</span></span><span style=display:flex><span>            <span style=color:#f1fa8c>&#34;3&#34;</span>: MultiExpedienteStrategy(self<span style=color:#ff79c6>.</span>notifier, self<span style=color:#ff79c6>.</span>logger),
-</span></span><span style=display:flex><span>        }
-</span></span></code></pre></div><p>El contexto es sorprendentemente simple pero extremadamente poderoso. Actúa como un intermediario que permite lo siguiente:</p><ol><li><strong>Inicializa todas las estrategias posibles</strong>: Como un entrenador que tiene preparados a todos sus jugadores.</li><li><strong>Selecciona la estrategia adecuada</strong>: Basándose en el valor proporcionado por el usuario.</li><li><strong>Delega la ejecución</strong>: No realiza el trabajo directamente, sino que lo encomienda al especialista correcto.</li></ol><p>Por ejemplo, cuando el usuario selecciona &ldquo;Cuaderno&rdquo; en la interfaz (valor &ldquo;1&rdquo;), el contexto simplemente elige la estrategia adecuada y le pasa el control:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>process_folder</span>(self, selected_value: <span style=color:#8be9fd;font-style:italic>str</span>, processor: FileProcessor):
-</span></span><span style=display:flex><span>    <span style=color:#6272a4># Selecciona la estrategia según el valor</span>
-</span></span><span style=display:flex><span>    strategy <span style=color:#ff79c6>=</span> self<span style=color:#ff79c6>.</span>_strategies<span style=color:#ff79c6>.</span>get(selected_value)
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#6272a4># Registra la acción (importante para depuración)</span>
-</span></span><span style=display:flex><span>    self<span style=color:#ff79c6>.</span>logger<span style=color:#ff79c6>.</span>info(<span style=color:#f1fa8c>f</span><span style=color:#f1fa8c>&#34;Procesando carpeta con estrategia </span><span style=color:#f1fa8c>{</span>strategy<span style=color:#ff79c6>.</span>__class__<span style=color:#ff79c6>.</span>__name__<span style=color:#f1fa8c>}</span><span style=color:#f1fa8c>&#34;</span>)
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#6272a4># Ejecuta la estrategia seleccionada</span>
-</span></span><span style=display:flex><span>    strategy<span style=color:#ff79c6>.</span>process(processor)
-</span></span></code></pre></div><p>Para más detalles en código, visita el repositorio original que contiene la clase <a href=https://github.com/HammerDev99/GestionExpedienteElectronico_Version1/blob/master/src/controller/processing_context.py>ProcessingContext</a></p><h2 id=la-estructura-del-patrón-strategy-simplicidad-y-elegancia>La estructura del patrón Strategy: Simplicidad y elegancia</h2><p>El diagrama UML del patrón Strategy ilustra perfectamente su elegancia estructural. Como se observa en la imagen, el patrón se compone de tres elementos fundamentales:</p><p><img src=/img/2025-02-28-design-pattern-in-public/strategy.png alt=alt></p><ol><li>Una interfaz <strong>Strategy</strong> que define el contrato común para todos los algoritmos</li><li>Las implementaciones concretas (<strong>ConcreteStrategyA</strong> y <strong>ConcreteStrategyB</strong>) que encapsulan las diferentes lógicas</li><li>La clase <strong>Context</strong> que utiliza las estrategias y delega la ejecución al algoritmo seleccionado</li></ol><p>Esta separación de responsabilidades nos permite aprovechar el polimorfismo, uno de los pilares fundamentales de la programación orientada a objetos. Gracias a este mecanismo, el contexto puede intercambiar estrategias sin conocer sus implementaciones específicas, manteniendo así un bajo acoplamiento entre componentes.</p><p>La verdadera potencia de este patrón radica precisamente en su simplicidad: al encapsular cada algoritmo en su propia clase que implementa la misma interfaz, conseguimos un sistema extremadamente flexible donde añadir nuevas estrategias no requiere modificar el código existente, respetando así el principio Open/Closed de SOLID.</p><p>El diagrama UML de este patrón es muy sencillo, solo separamos las diferentes lógicas para realizar una acción sin olvidar que implemente de una interface para luego valernos del polimorfismo para que nuestro patrón funcione. Y pues la clase contexto que puede ser cualquier clase que utilice nuestras estrategias.</p><h2 id=lecciones-aprendidas-la-belleza-de-la-ortogonalidad>Lecciones aprendidas: La belleza de la ortogonalidad</h2><p>Uno de los momentos más estimulantes fue cuando un colega me pidió cambiar el comportamiento para los <em>cuadernos simples</em>. En mi antiguo diseño, habría significado revisar todo el código e incluir más <code>if/else</code> en las funciones relacionadas como <code>obtener_rutas</code> y <code>process</code>. Con este nuevo enfoque, solo modifiqué una clase y el resto del sistema siguió funcionando perfectamente. Por ende, esta experiencia me dejó tres lecciones valiosas:</p><ol><li><p><strong>Los patrones de diseño son herramientas, no dogmas</strong>: Strategy funcionó perfectamente para este caso, pero lo importante fue entender el problema antes de elegir el patrón.</p></li><li><p><strong>Las analogías son poderosas para comprender conceptos abstractos</strong>: La comparación con el rugby me ayudó a internalizar la ortogonalidad mejor que cualquier definición técnica.</p></li><li><p><strong>La ortogonalidad no solo mejora el código, sino la comunicación</strong>: Explicar el sistema a mis colegas no técnicos usando la analogía del flanker hizo que entendieran inmediatamente por qué nuestro nuevo enfoque era superior.</p></li></ol><h2 id=pases-maestros-del-rugby-al-código-elegante>Pases maestros: Del rugby al código elegante</h2><p>La implementación resultante no solo satisface los requisitos funcionales, sino que establece <em>cimientos robustos</em> para el futuro. Cada nuevo algoritmo de procesamiento puede integrarse como una estrategia adicional sin alterar el código existente, honrando así el principio Open/Closed de SOLID. Este principio, fundamental en el diseño de software moderno, nos permite extender sin modificar – exactamente como un equipo de rugby que incorpora nuevos jugadores sin cambiar sus tácticas esenciales.</p><p>Al igual que un flanker debe adaptarse constantemente sin perder su propósito fundamental, un buen diseño de software mantiene su flexibilidad sin comprometer su integridad estructural. La auténtica elegancia no reside en construir sistemas complejos, sino en la simplicidad con la que resolvemos problemas intrincados.</p><p>En conclusión, este caso ilustra vívidamente cómo los patrones de diseño, cuando se aplican con criterio, transforman requisitos complejos en soluciones elegantes y mantenibles. No basta con que el código funcione; lo verdaderamente valioso es crear arquitecturas que faciliten su evolución y mantenimiento a través del tiempo. La maestría está en comprender no solo cómo implementar estos patrones, sino también en reconocer cuándo son apropiados para cada escenario específico.</p><p>De ahora en adelante, cada vez que te enfrentes a un desafio de diseño similar, puedes recordar al flanker, versátil pero enfocado, conectado pero independiente. A veces, las mejores lecciones de software provienen de los lugares más inesperados.</p><hr><ul class=pager><li class=previous><a href=/2024/10/12/transformando-la-justicia/ data-toggle=tooltip data-placement=top title="Marduk: Un Viaje hacia la Innovación Judicial Digital">&larr;
-Previous Post</a></li><li class=next><a href=/2025/06/14/thoughts/ data-toggle=tooltip data-placement=top title="First Thoughts">Next
-Post &rarr;</a></li></ul></div><div class="col-lg-2 col-lg-offset-0
-visible-lg-block
-sidebar-container
-catalog-container"><div class=side-catalog><hr class="hidden-sm hidden-xs"><h5><a class=catalog-toggle href=#>CATALOG</a></h5><ul class=catalog-body></ul></div></div><div class="col-lg-8 col-lg-offset-2
-col-md-10 col-md-offset-1
-sidebar-container"><section><hr><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://www.alexanderoviedofadul.dev/>Alexander Oviedo Fadul</a></li></ul></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:arbe.94@hotmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/HammerDev99><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/daniel-arbelaez-/><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a href rel=alternate type=application/rss+xml title="Sprint Judicial"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Sprint Judicial 2025<br><a href=https://github.com/HammerDev99>Daniel Arbelaez Alvarez </a>|
-<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=180px height=20px src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2025-02-28-design-pattern-in-public/rugby-clasic.png">
+    <meta property="twitter:image" content="img/2025-02-28-design-pattern-in-public/rugby-clasic.png" />
+    
+
+    
+    <meta name="title" content="El programador flanker: De la cancha de rugby a la arquitectura de software" />
+    <meta property="og:title" content="El programador flanker: De la cancha de rugby a la arquitectura de software" />
+    <meta property="twitter:title" content="El programador flanker: De la cancha de rugby a la arquitectura de software" />
+    
+
+    
+    <meta name="description" content="Software | LegalTech">
+    <meta property="og:description" content="Software | LegalTech" />
+    <meta property="twitter:description" content="Software | LegalTech" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Blog, Web, Blog, Blogging, Personal Website, Internet">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>El programador flanker: De la cancha de rugby a la arquitectura de software | HammerDev99 | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2025/02/28/design-pattern-in-public/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MEASUREMENT_ID', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/dev/">dev</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech/">tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/thoughts/">thoughts</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVO</a></li>
+                    
+                        <li><a href="/about//">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2025-02-28-design-pattern-in-public/rugby-clasic.png')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/design-patterns" title="design patterns">
+                            design patterns
+                        </a>
+                        
+                        <a class="tag" href="/tags/building-in-public" title="building in public">
+                            building in public
+                        </a>
+                        
+                    </div>
+                    <h1>El programador flanker: De la cancha de rugby a la arquitectura de software</h1>
+                    <h2 class="subheading">Strategy, un patrón de diseño que convirtió el procesamiento de expedientes caóticos en código elegante</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Friday, February 28, 2025
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>En el mundo del desarrollo de software, nos encontramos frecuentemente con situaciones que requieren soluciones elegantes y mantenibles. Recientemente, me enfrenté a un caso interesante, que trataba sobre la implementación de un sistema de procesamiento de carpetas manteniendo un equilibrio entre flexibilidad y desacoplamiento.</p>
+<h2 id="el-reto-automatización-flexible-en-expedientes-judiciales">El reto: Automatización flexible en expedientes judiciales</h2>
+<p>El escenario planteaba un desafío particular. Se necesitaba desarrollar una funcionalidad que permitiera procesar carpetas de diferentes maneras, donde cada método de procesamiento compartía una estructura común pero requería su propia implementación específica. Lo fascinante de este requisito era la necesidad explícita de mantener un bajo acoplamiento, asegurando que <strong>las diferentes maneras de procesar</strong>, pudieran evolucionar de manera independiente.</p>
+<h2 id="la-inspiración-lecciones-desde-la-cancha-de-rugby">La inspiración: Lecciones desde la cancha de rugby</h2>
+<p>La ortogonalidad en software es uno de esos conceptos que, aunque fundamentales, pueden resultar abstractos hasta que encuentras la analogía perfecta. Para mí, esa analogía llegó mientras veía un partido de rugby del <em>&ldquo;Torneo de las Seis Naciones 2025&rdquo;</em> y recordé mi posición favorita de esta disciplina deportiva, el &ldquo;flanker&rdquo;.</p>
+<p>
+  <img src="/img/2025-02-28-design-pattern-in-public/flankers.jpeg" alt="alt">
+
+</p>
+<p>Un flanker (posición 6 o 7) es quizás el jugador más versátil del equipo. No está completamente especializado como un forward o un back, sino que participa en casi todas las fases del juego. Defiende, ataca, apoya, disputa balones y conecta las diferentes líneas de juego. Es ortogonal por naturaleza.</p>
+<p>No sucede lo mismo con el resto de forwards, como los pilares (posiciones 1 y 3) o el hooker (posición 2), cuyos roles estan altamente especializados en las formaciones fijas, el contacto físico y la obtención de la pelota. Tampoco es como los backs, desde el medio scrum (9) hasta los wings (11 y 14), quienes se especializan en ataque, velocidad y manejo de balón.</p>
+<p>
+  <img src="/img/2025-02-28-design-pattern-in-public/posiciones-rugby.jpg" alt="alt">
+
+</p>
+<p>El flanker existe precisamente en ese límite entre ambos mundos, tiene la potencia física de un forward pero la movilidad de un back, permitiéndole adaptarse a cada situación y mantener la cohesión entre las diferentes líneas de juego sin perder su propia función en el equipo.</p>
+<blockquote>
+<p>En programación informática, ortogonalidad significa que las operaciones cambian sólo una cosa sin afectar a otras. <a href="https://en.m.wikipedia.org/wiki/Orthogonality_%28programming%29">tomado de Wikipedia</a></p>
+</blockquote>
+<p>Este concepto tiene un paralelo sorprendentemente directo con lo que en programación llamamos &ldquo;ortogonalidad&rdquo;. Un sistema es ortogonal cuando un cambio en un componente no afecta a otros componentes no relacionados. Al igual que el flanker opera en múltiples dimensiones del juego sin perder su esencia, un código ortogonal permite que cada módulo cumpla su función específica sin interferir con otros.</p>
+<p>La ortogonalidad en software ofrece dos beneficios fundamentales que cualquier equipo de programación reconocerá inmedientamente y son la localización de problemas y adaptabilidad. Cuando un módulo falla, el error queda contenido. Cuando necesitas cambiar una estrategia, solo modificas ese componente específico. No es casualidad que los sistemas más robustos y mantenibles sean también los más ortogonales ya que pueden avanzar en su propia dirección desarrollando operaciones sin afectar las demás vias de crecimiento.</p>
+<p>En términos matemáticos, al observar estos tres planos que se intersectan en ángulos rectos (X, Y, Z), se puede evidenciar que cada uno puede moverse a lo largo de su propio eje sin afectar a los demás.</p>
+<p>
+  <img src="/img/2025-02-28-design-pattern-in-public/ortogonal.svg" alt="alt">
+
+</p>
+<blockquote>
+<p>Tres planos ortogonales - Tomado de <a href="https://es.wikipedia.org/wiki/Ortogonalidad_%28matem%C3%A1tica%29">Wikipedia</a></p>
+</blockquote>
+<p>Estos planos ortogonales no son solo una abstracción matemática, en software se manifiestan como interfaces bien definidas y responsabilidades claramente separadas, que fue exactamente lo que implementé, ahí estaba lo que necesitaba mi sistema de procesamiento de carpetas, era exactamente eso, componentes &ldquo;flanker&rdquo; con interfaces que permitan:</p>
+<ul>
+<li>Mantener su independencia (bajo acoplamiento)</li>
+<li>Ser altamente cohesivos en su función específica</li>
+<li>Interactuar con múltiples partes del sistema sin volverse dependientes</li>
+</ul>
+<p>Esta estructura requería preservar la ortogonalidad del sistema mientras permitiera distintas implementaciones para cada tipo de procesamiento de carpetas. Cada estrategia debía poder ejecutarse con la misma llamada externa, pero internamente actuar de forma completamente diferente según el contexto. Además, debía poder incorporar nuevas estrategias en el futuro sin modificar el código existente. Fue entonces cuando recordé uno de los patrones de diseño más versátiles del arsenal de la programación orientada a objetos.</p>
+<h2 id="del-caos-al-orden-cómo-el-patrón-strategy-transformó-mi-código">Del caos al orden: Cómo el patrón Strategy transformó mi código</h2>
+<p>Al analizar este escenario, el patrón Strategy emergió como la solución natural. Este patrón, uno de los pilares del diseño orientado a objetos, nos permite encapsular diferentes algoritmos en clases separadas, permitiendo que sean intercambiables. Es como tener diferentes herramientas en una caja de herramientas, donde cada una está diseñada para un propósito específico pero todas comparten la misma manera de ser utilizadas.</p>
+<p>La belleza de esta aproximación radica en su simplicidad y elegancia. Al definir una interfaz común para todos los procesadores de carpetas, creamos un contrato claro que cada implementación debe seguir. Esto no solo facilita la adición de nuevos métodos de procesamiento sino que también simplifica el mantenimiento del código existente. Es como establecer un protocolo estándar que todos los nuevos desarrollos deben seguir, asegurando consistencia y predictibilidad en el sistema.</p>
+<p>El desafío no era trivial. Estaba desarrollando un sistema para gestionar expedientes judiciales electrónicos que debía procesar carpetas de diferentes maneras según su estructura:</p>
+<ul>
+<li>Cuadernos simples</li>
+<li>Expedientes completos (uno o más cuadernos simples)</li>
+<li>Múltiples expedientes</li>
+</ul>
+<p>Cada tipo requería su propio tratamiento, pero compartían operaciones comunes. Y lo más importante que estuvieran completamente desacoplados de la lógica de procesamiento.</p>
+<p>Mi primer intento fue un gran bloque de código con condicionales anidados. Funcionaba, sí, pero era imposible de mantener. Cualquier cambio en la interfaz requería revisar toda la lógica de procesamiento y viceversa. <strong>Era como un equipo de rugby donde todos los jugadores intentaban hacer todas las posiciones a la vez</strong>. La respuesta estaba en un patrón de diseño que, al igual que un buen flanker, debía ser extremadamente versátiles.</p>
+<h3 id="el-patrón-strategy-especialistas-intercambiables">El patrón Strategy: Especialistas intercambiables</h3>
+<p>Implementé una interfaz abstracta llamada <code>ProcessStrategy</code> que definía el contrato común para todas las estrategias de procesamiento:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ProcessStrategy</span>(ABC):
+</span></span><span style="display:flex;"><span>    @abstractmethod
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">add_folder</span>(self, processor):
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">pass</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    @abstractmethod
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">process</span>(self, processor):
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">pass</span>
+</span></span></code></pre></div><p>Luego creé las clases con las estrategias concretas para cada tipo de procesamiento:</p>
+<ul>
+<li><code>SingleCuadernoStrategy</code></li>
+<li><code>SingleExpedienteStrategy</code></li>
+<li><code>MultiExpedienteStrategy</code></li>
+</ul>
+<p>Así, cada estrategia sabía exactamente cómo manejar su caso específico, pero desde fuera, todas se usaban de la misma manera. <strong>Como un flanker que sabe cuándo jugar como forward (potencia física) y cuándo jugar como back (movilidad), cambiando de rol según la situación del partido</strong>.</p>
+<p>Para más detalles en código, visita el repositorio original que contiene la clase <a href="https://github.com/HammerDev99/GestionExpedienteElectronico_Version1/blob/master/src/controller/process_strategy.py">ProcessStrategy</a></p>
+<h3 id="el-contexto-un-director-técnico-cuando-se-ejecuta-el-código">El contexto: Un director técnico cuando se ejecuta el código</h3>
+<p>Para completar la implementación del patrón Strategy, necesitaba un &ldquo;director técnico&rdquo; que decidiera qué estrategia utilizar en cada momento. Esta es la función del <code>ProcessingContext</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ProcessingContext</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;&#34;&#34;Gestiona el procesamiento de carpetas usando la estrategia apropiada.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> __init__(self, gui_notifier: GUINotifier, logger<span style="color:#ff79c6">=</span><span style="color:#ff79c6">None</span>):
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff79c6">.</span>notifier <span style="color:#ff79c6">=</span> gui_notifier
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff79c6">.</span>logger <span style="color:#ff79c6">=</span> logger <span style="color:#ff79c6">or</span> logging<span style="color:#ff79c6">.</span>getLogger(<span style="color:#f1fa8c">&#34;ProcessingContext&#34;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff79c6">.</span>_strategies <span style="color:#ff79c6">=</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f1fa8c">&#34;1&#34;</span>: SingleCuadernoStrategy(self<span style="color:#ff79c6">.</span>notifier, self<span style="color:#ff79c6">.</span>logger),
+</span></span><span style="display:flex;"><span>            <span style="color:#f1fa8c">&#34;2&#34;</span>: SingleExpedienteStrategy(self<span style="color:#ff79c6">.</span>notifier, self<span style="color:#ff79c6">.</span>logger),
+</span></span><span style="display:flex;"><span>            <span style="color:#f1fa8c">&#34;3&#34;</span>: MultiExpedienteStrategy(self<span style="color:#ff79c6">.</span>notifier, self<span style="color:#ff79c6">.</span>logger),
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><p>El contexto es sorprendentemente simple pero extremadamente poderoso. Actúa como un intermediario que permite lo siguiente:</p>
+<ol>
+<li><strong>Inicializa todas las estrategias posibles</strong>: Como un entrenador que tiene preparados a todos sus jugadores.</li>
+<li><strong>Selecciona la estrategia adecuada</strong>: Basándose en el valor proporcionado por el usuario.</li>
+<li><strong>Delega la ejecución</strong>: No realiza el trabajo directamente, sino que lo encomienda al especialista correcto.</li>
+</ol>
+<p>Por ejemplo, cuando el usuario selecciona &ldquo;Cuaderno&rdquo; en la interfaz (valor &ldquo;1&rdquo;), el contexto simplemente elige la estrategia adecuada y le pasa el control:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">process_folder</span>(self, selected_value: <span style="color:#8be9fd;font-style:italic">str</span>, processor: FileProcessor):
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># Selecciona la estrategia según el valor</span>
+</span></span><span style="display:flex;"><span>    strategy <span style="color:#ff79c6">=</span> self<span style="color:#ff79c6">.</span>_strategies<span style="color:#ff79c6">.</span>get(selected_value)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># Registra la acción (importante para depuración)</span>
+</span></span><span style="display:flex;"><span>    self<span style="color:#ff79c6">.</span>logger<span style="color:#ff79c6">.</span>info(<span style="color:#f1fa8c">f</span><span style="color:#f1fa8c">&#34;Procesando carpeta con estrategia </span><span style="color:#f1fa8c">{</span>strategy<span style="color:#ff79c6">.</span>__class__<span style="color:#ff79c6">.</span>__name__<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># Ejecuta la estrategia seleccionada</span>
+</span></span><span style="display:flex;"><span>    strategy<span style="color:#ff79c6">.</span>process(processor)
+</span></span></code></pre></div><p>Para más detalles en código, visita el repositorio original que contiene la clase <a href="https://github.com/HammerDev99/GestionExpedienteElectronico_Version1/blob/master/src/controller/processing_context.py">ProcessingContext</a></p>
+<h2 id="la-estructura-del-patrón-strategy-simplicidad-y-elegancia">La estructura del patrón Strategy: Simplicidad y elegancia</h2>
+<p>El diagrama UML del patrón Strategy ilustra perfectamente su elegancia estructural. Como se observa en la imagen, el patrón se compone de tres elementos fundamentales:</p>
+<p>
+  <img src="/img/2025-02-28-design-pattern-in-public/strategy.png" alt="alt">
+
+</p>
+<ol>
+<li>Una interfaz <strong>Strategy</strong> que define el contrato común para todos los algoritmos</li>
+<li>Las implementaciones concretas (<strong>ConcreteStrategyA</strong> y <strong>ConcreteStrategyB</strong>) que encapsulan las diferentes lógicas</li>
+<li>La clase <strong>Context</strong> que utiliza las estrategias y delega la ejecución al algoritmo seleccionado</li>
+</ol>
+<p>Esta separación de responsabilidades nos permite aprovechar el polimorfismo, uno de los pilares fundamentales de la programación orientada a objetos. Gracias a este mecanismo, el contexto puede intercambiar estrategias sin conocer sus implementaciones específicas, manteniendo así un bajo acoplamiento entre componentes.</p>
+<p>La verdadera potencia de este patrón radica precisamente en su simplicidad: al encapsular cada algoritmo en su propia clase que implementa la misma interfaz, conseguimos un sistema extremadamente flexible donde añadir nuevas estrategias no requiere modificar el código existente, respetando así el principio Open/Closed de SOLID.</p>
+<p>El diagrama UML de este patrón es muy sencillo, solo separamos las diferentes lógicas para realizar una acción sin olvidar que implemente de una interface para luego valernos del polimorfismo para que nuestro patrón funcione. Y pues la clase contexto que puede ser cualquier clase que utilice nuestras estrategias.</p>
+<h2 id="lecciones-aprendidas-la-belleza-de-la-ortogonalidad">Lecciones aprendidas: La belleza de la ortogonalidad</h2>
+<p>Uno de los momentos más estimulantes fue cuando un colega me pidió cambiar el comportamiento para los <em>cuadernos simples</em>. En mi antiguo diseño, habría significado revisar todo el código e incluir más <code>if/else</code> en las funciones relacionadas como <code>obtener_rutas</code> y <code>process</code>. Con este nuevo enfoque, solo modifiqué una clase y el resto del sistema siguió funcionando perfectamente. Por ende, esta experiencia me dejó tres lecciones valiosas:</p>
+<ol>
+<li>
+<p><strong>Los patrones de diseño son herramientas, no dogmas</strong>: Strategy funcionó perfectamente para este caso, pero lo importante fue entender el problema antes de elegir el patrón.</p>
+</li>
+<li>
+<p><strong>Las analogías son poderosas para comprender conceptos abstractos</strong>: La comparación con el rugby me ayudó a internalizar la ortogonalidad mejor que cualquier definición técnica.</p>
+</li>
+<li>
+<p><strong>La ortogonalidad no solo mejora el código, sino la comunicación</strong>: Explicar el sistema a mis colegas no técnicos usando la analogía del flanker hizo que entendieran inmediatamente por qué nuestro nuevo enfoque era superior.</p>
+</li>
+</ol>
+<h2 id="pases-maestros-del-rugby-al-código-elegante">Pases maestros: Del rugby al código elegante</h2>
+<p>La implementación resultante no solo satisface los requisitos funcionales, sino que establece <em>cimientos robustos</em> para el futuro. Cada nuevo algoritmo de procesamiento puede integrarse como una estrategia adicional sin alterar el código existente, honrando así el principio Open/Closed de SOLID. Este principio, fundamental en el diseño de software moderno, nos permite extender sin modificar – exactamente como un equipo de rugby que incorpora nuevos jugadores sin cambiar sus tácticas esenciales.</p>
+<p>Al igual que un flanker debe adaptarse constantemente sin perder su propósito fundamental, un buen diseño de software mantiene su flexibilidad sin comprometer su integridad estructural. La auténtica elegancia no reside en construir sistemas complejos, sino en la simplicidad con la que resolvemos problemas intrincados.</p>
+<p>En conclusión, este caso ilustra vívidamente cómo los patrones de diseño, cuando se aplican con criterio, transforman requisitos complejos en soluciones elegantes y mantenibles. No basta con que el código funcione; lo verdaderamente valioso es crear arquitecturas que faciliten su evolución y mantenimiento a través del tiempo. La maestría está en comprender no solo cómo implementar estos patrones, sino también en reconocer cuándo son apropiados para cada escenario específico.</p>
+<p>De ahora en adelante, cada vez que te enfrentes a un desafio de diseño similar, puedes recordar al flanker, versátil pero enfocado, conectado pero independiente. A veces, las mejores lecciones de software provienen de los lugares más inesperados.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2024/10/12/transformando-la-justicia/" data-toggle="tooltip" data-placement="top" title="Marduk: Un Viaje hacia la Innovación Judicial Digital">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2025/06/14/thoughts/" data-toggle="tooltip" data-placement="top" title="First Thoughts">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2025
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

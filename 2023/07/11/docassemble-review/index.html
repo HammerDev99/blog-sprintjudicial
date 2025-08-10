@@ -1,457 +1,1029 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Sprint Judicial"><meta property="og:type" content="article"><meta property="og:image" content="img/2023-07-11-docassemble-review/banner-papeleo.jpeg"><meta property="twitter:image" content="img/2023-07-11-docassemble-review/banner-papeleo.jpeg"><meta name=title content="Una revisión del sistema experto Docassemble"><meta property="og:title" content="Una revisión del sistema experto Docassemble"><meta property="twitter:title" content="Una revisión del sistema experto Docassemble"><meta name=description content="Software | LegalTech"><meta property="og:description" content="Software | LegalTech"><meta property="twitter:description" content="Software | LegalTech"><meta property="twitter:card" content="summary"><meta name=keyword content="Blog, Web, Blog, Blogging, Personal Website, Internet"><link rel="shortcut icon" href=/img/favicon.ico><title>Una revisión del sistema experto Docassemble | HammerDev99 | Daniel Arbelaez</title>
-<link rel=canonical href=/2023/07/11/docassemble-review/><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/css/zanshang.css><link rel=stylesheet href=/css/font-awesome.all.min.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script><script src=/js/lazysizes.min.js></script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-MEASUREMENT_ID",{anonymize_ip:!1})}</script><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<a class=navbar-brand href=/>Sprint Judicial</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Posts</a></li><li><a href=/categories/dev/>dev</a></li><li><a href=/categories/tech/>tech</a></li><li><a href=/categories/thoughts/>thoughts</a></li><li><a href=/archive//>ARCHIVO</a></li><li><a href=/about//>ACERCA DE</a></li><li><a href=/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><style type=text/css>header.intro-header{background-image:url(/img/2023-07-11-docassemble-review/banner-papeleo.jpeg)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/docassemble title=docassemble>docassemble
-</a><a class=tag href=/tags/legaltech title=legaltech>legaltech</a></div><h1>Una revisión del sistema experto Docassemble</h1><h2 class=subheading>Descubre el Superpoder de Docassemble: Transforma la Información Jurídica en Acción</h2><span class=meta>Posted by
-    "Daniel Arbelaez"
-on
-Tuesday, July 11, 2023</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2
-col-md-10 col-md-offset-1
-post-container"><p>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?</p><p>Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</p><p>Pero ¿cómo funciona realmente este misterioso superpoder? Y más importante aún, ¿cómo puedes incorporarlo en tus proyectos de software para mejorar significativamente tus prácticas de programación?</p><p>Atraviesa este viaje conmigo mientras exploramos juntos el fascinante mundo de Docassemble, descubriendo cómo sus características avanzadas pueden revolucionar la forma en que abordamos el desarrollo de software y ámbito jurídico.</p><h2 id=conceptos-basicos>Conceptos basicos</h2><p>Docassemble es un sistema experto de ensamblaje de documentos basado en Python, YAML y Markdown, hace las veces de un lenguaje de programacion declarativo (no se le dice que hacer sino el como).</p><p>El orden de las preguntas no se determina, lo elige el sistema segun sus necesidades y las respuestas dadas en la entrevistas ya que se trata de un sistema basado en reglas, leyes o normas y lo que se sigue es mas similar a una lista de chequeo, asi como cuando un piloto de avion hace una <strong>lista de chequeo</strong> de su nave, las condiciones climaticas y las condiciones propias antes de iniciar su vuelo.</p><h2 id=hello-world---prueba01>Hello world - Prueba01</h2><p><a href=https://docassemble.org/docs/helloworld.html>link al recurso</a></p><ul><li>Se hace una prueba de funcionamiento donde se hacen preguntas, se obtienen datos en <strong>variables</strong>, se usa <strong>codigo Python</strong>, se usa una <strong>plantilla de word</strong> (debe tenerse agregada al folder del proyecto como template) y se decora una pregunta con una imagen (debe agregarse al folder del proyecto como static file).</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#6272a4># En esta parte se agrega una variable planet en la pregunta inicial</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: Hello, ${ planet }! 
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  I surmise that you have no more than ${ inhabitant_count }
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  inhabitants.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>attachment</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>name</span>: A letter for the inhabitants of ${ planet }
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>filename</span>: hello
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>docx template file</span>: hello_planet.docx
-</span></span><span style=display:flex><span><span style=color:#ff79c6>buttons</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Exit</span>: exit
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your planet&#39;s name?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Your Planet</span>: planet
-</span></span><span style=display:flex><span><span style=color:#ff79c6>decoration</span>: daniel
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>code</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  if favorite_number == 42:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    inhabitant_count = 2
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  else:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    inhabitant_count = 2000 + favorite_number * 45</span>  
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: What is your favorite number?
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Number</span>: favorite_number
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>datatype</span>: number
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>image sets</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>freepik</span>:
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>images</span>:
-</span></span><span style=display:flex><span>      <span style=color:#ff79c6>daniel</span>: Foto_perfil.jpeg
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>attribution</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>      Icon made by [Freepik](https://www.flaticon.com/authors/freepik)</span>      
-</span></span><span style=display:flex><span>---
-</span></span></code></pre></div><p>Para empaquetar la entrevista o exportarla se usa la siguiente forma <a href=https://docassemble.org/docs/helloworld.html#packaging>link</a></p><h2 id=como-escribir-una-entrevista>Como escribir una entrevista</h2><p><a href=https://docassemble.org/docs/interviews.html>Link al recurso</a></p><ul><li><p>Se almacenan las respuestas en variables y se pueden agregar a preguntas o al texto de los documentos</p></li><li><p>Las preguntas dadas a un usuario pueden variar en funcion de las respuestas dadas</p></li><li><p>Solo necesitas darle el objetivo final y Docassemble hara las preguntas necesarias para llegar a ese objetivo final</p></li><li><p>El siguiente fragmento de YAML contiene la forma en la que se puede aplicar copigo <strong>python al interior de un documento word</strong>.</p></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Welcome to the interview!</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>continue button field</span>: intro
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite fruit?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Fruit</span>: favorite_fruit
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: favorite_fruit == &#39;apple&#39;
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite type of apple?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Type of apple</span>: favorite_apple
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Here is your document.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>attachment</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>content</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Your favorite fruit is ${ favorite_fruit }.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    % if favorite_fruit == &#39;apple&#39;:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Your favorite type of apple is ${ favorite_apple }.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    % endif</span>    
-</span></span></code></pre></div><ul><li>Listas y Diccionarios</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#6272a4># Lista</span>
-</span></span><span style=display:flex><span>- Sweep the porch
-</span></span><span style=display:flex><span>- Take out the garbage
-</span></span><span style=display:flex><span><span style=color:#6272a4># Diccionario</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>lawyer</span>: A person who represents you.
-</span></span><span style=display:flex><span><span style=color:#ff79c6>judge</span>: A person who decides who wins or loses a court case.
-</span></span><span style=display:flex><span><span style=color:#6272a4># Diccionario de lista</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>Frank</span>:
-</span></span><span style=display:flex><span>  - Sweep the porch
-</span></span><span style=display:flex><span>  - Take out the garbage
-</span></span><span style=display:flex><span>  - Clean the toilets
-</span></span><span style=display:flex><span><span style=color:#ff79c6>Sally</span>:
-</span></span><span style=display:flex><span>  - Rake the leaves
-</span></span><span style=display:flex><span>  - Mow the lawn
-</span></span><span style=display:flex><span><span style=color:#6272a4># Lista de diccionario</span>
-</span></span><span style=display:flex><span>- <span style=color:#ff79c6>title</span>: Tale of Two Cities
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>author</span>: Charles Dickens
-</span></span><span style=display:flex><span>- <span style=color:#ff79c6>title</span>: Moby Dick
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>author</span>: Herman Melville
-</span></span><span style=display:flex><span>- <span style=color:#ff79c6>title</span>: Green Eggs and Ham
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>author</span>: Dr. Seuss
-</span></span></code></pre></div><h2 id=bloques-iniciales>Bloques iniciales</h2><p><a href=https://docassemble.org/docs/initial.html>Link al recurso</a></p><ul><li>Se configura una <strong>parte inicial</strong> de cada entrevista que da cuenta del titulo de la entrevista y una pregunta inicial que igualmente se muestra en pantalla</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>title</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Tutela</span>    
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>short title</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Admision</span>    
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>description</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Una entrevista para solucionar un caso de uso legal</span>    
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>authors</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#ff79c6>name</span>: Daniel Arbelaez
-</span></span><span style=display:flex><span>      <span style=color:#ff79c6>organization</span>: Organization Name
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>revision_date</span>: 2023-07-12
-</span></span><span style=display:flex><span>  <span style=color:#6272a4># Hace que el login no aparezca en pantalla</span>
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>show login</span>: <span style=color:#ff79c6>False</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#6272a4># Debe de incluirse el mandatory para guiar a docassemble por donde empezar</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: Cual es tu nombre
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Nombre</span>: nombre
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#6272a4># Debe de incluirse el mandatory para guiar a docassemble por donde finalizar</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Aqui finaliza el documento</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>attachment</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>content</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Hola ${ nombre }, un gusto volver a verte!</span>    
-</span></span><span style=display:flex><span>---
-</span></span></code></pre></div><ul><li>Para importar modulos de python se usa</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>modules</span>:
-</span></span><span style=display:flex><span>  - datetime
-</span></span><span style=display:flex><span>---
-</span></span></code></pre></div><ul><li>Para usar una lista de datos en una pregunta asi:</li></ul><p><img src=/img/2023-07-11-docassemble-review/Captura%20de%20Pantalla%202023-07-12%20a%20la%28s%29%205.25.34%20a.%c2%a0m..png alt=alt></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>variable name</span>: fruits
-</span></span><span style=display:flex><span><span style=color:#ff79c6>data</span>:
-</span></span><span style=display:flex><span>  - Apple
-</span></span><span style=display:flex><span>  - Orange
-</span></span><span style=display:flex><span>  - Peach
-</span></span><span style=display:flex><span>  - Pear
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#6272a4># Si solo hay una pregunta debe ponerse el mandatory true</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite fruit?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>field</span>: user_favorite_fruit
-</span></span><span style=display:flex><span><span style=color:#ff79c6>dropdown</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>code</span>: fruits
-</span></span></code></pre></div><ul><li>Para agregar comentarios a palabras de entrevistas</li></ul><p><img src=/img/2023-07-11-docassemble-review/Captura%20de%20Pantalla%202023-07-12%20a%20la%28s%29%205.40.30%20a.%c2%a0m..png alt=alt></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>terms</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>creeper</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    A tall green creature that explodes if
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    you get too close.</span>    
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>zombie pigman</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    A harmless creature who carries a gold
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    sword.</span>    
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: Have you ever met a {creeper}?
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  If you have met a {zombie pigman}, you
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  have almost certainly met a creeper.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>yesno</span>: met_a_creeper
-</span></span></code></pre></div><ul><li>Para mostrar secciones</li></ul><p><img src=/img/2023-07-11-docassemble-review/Captura%20de%20Pantalla%202023-07-12%20a%20la%28s%29%205.51.34%20a.%c2%a0m..png alt=alt></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#6272a4># Se indican las secciones que tiene la entrevista</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>sections</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>intro</span>: Introduction
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>about</span>: About you
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>subsections</span>:
-</span></span><span style=display:flex><span>      - <span style=color:#ff79c6>contact</span>: Contact info
-</span></span><span style=display:flex><span>      - <span style=color:#ff79c6>demographic</span>: Demographics
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>prefs</span>: Preferences
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>conclusion</span>: Conclusion
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se habilita la funcion de barra de navegacion</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>features</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>navigation</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Welcome to the interview</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  If you are not on a
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  smartphone-sized device,
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  you should see a navigation
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  bar to the left.</span>  
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se agrega como variable la barra de navegacion</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>field</span>: sees_nav_bar
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  I am going to ask you some
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  questions about yourself.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>field</span>: intro_to_about_you
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se indica la seccion a la que pertenece la pregunta</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>section</span>: about
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your name?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>First Name</span>: first_name
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Last Name</span>: last_name
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se indica la seccion a la que pertenece la pregunta</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>section</span>: contact
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your e-mail address?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>E-mail</span>: email_address
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>datatype</span>: email
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your gender?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>field</span>: gender
-</span></span><span style=display:flex><span><span style=color:#ff79c6>choices</span>:
-</span></span><span style=display:flex><span>  - Male
-</span></span><span style=display:flex><span>  - Female
-</span></span><span style=display:flex><span>  - Something else
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se indica la seccion a la que pertenece la pregunta</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>section</span>: demographic
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What kind of belly button
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  do you have?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>field</span>: belly_button
-</span></span><span style=display:flex><span><span style=color:#ff79c6>choices</span>:
-</span></span><span style=display:flex><span>  - Innie
-</span></span><span style=display:flex><span>  - Outie
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite fruit?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Favorite fruit</span>: favorite_fruit
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se indica la seccion a la que pertenece la pregunta</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>section</span>: prefs
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite vegetable?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Favorite vegetable</span>: favorite_vegetable
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: Thank you.
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  ${ first_name },
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Your answers mean a lot to me.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  I am going to go eat some
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  ${ favorite_vegetable }
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  now.</span>  
-</span></span><span style=display:flex><span><span style=color:#6272a4># Se indica la seccion a la que pertenece la pregunta</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>section</span>: conclusion
-</span></span></code></pre></div><h2 id=bloques-de-preguntas>Bloques de preguntas</h2><p>Lo que ven los usuarios en cada pantalla de entrevista es un bloque de pregunta y es una seccion de <code>YAML</code> que contiene un especificador de bloque</p><p>Los bloques de preguntas pueden ser, <a href=#bloques-iniciales>bloques iniciales</a>, <a href=#preguntas-de-codigo>preguntas de codigo</a> o <a href=#bloques-de-preguntas>bloques de pregunta</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Gracias por tu dedicacion al responder **&#34;${respuesta_usuario}&#34;** </span>  
-</span></span><span style=display:flex><span><span style=color:#6272a4># La estructura Mako permite ingresar variables en otras preguntas y tambien la estructura de Markdown permite aplicar estilos al texto</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Este proyecto tendra futuro, estas de acuerdo?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Se trata de identificar la persepcion del usuario con el proyecto</span>  
-</span></span><span style=display:flex><span><span style=color:#6272a4># subquestion, es una seccion que se usa para explicar la pregunta</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>under</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Nota: Este es el `under`</span>  
-</span></span><span style=display:flex><span><span style=color:#6272a4># under es una seccion adicional del texto ubicada debajo de los botones</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>pre</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Note: este es el `pre`.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>post</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  This is the `post`, which comes
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  after `under`.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>right</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  ### Note
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  this is `right` option
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  If you did not catch this
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  movie reference, you need to
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  improve your cultural literacy.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Responder</span>: respuesta_usuario <span style=color:#6272a4># Al ingresa una variable se tiene que realizar indicandola en tipo lista (-)</span>
-</span></span></code></pre></div><p>En caso de configurar en la pregunta un texto con <code>right</code> se puede usar la caracteristica centered para alinear las pregunta y el right</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>features</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>centered</span>: <span style=color:#ff79c6>False</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is the airspeed velocity of an
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  unladen swallow?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Velocity</span>: swallow_velocity
-</span></span><span style=display:flex><span><span style=color:#ff79c6>right</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  ### Note
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  If you did not catch this
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  movie reference, you need to
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  improve your cultural literacy.</span>  
-</span></span></code></pre></div><p>Para asignar variables con preguntas se usa el siguiente proceso</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Are you at least 18 years of age?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>yesno</span>: over_eighteen
-</span></span></code></pre></div><p>Para solicitar la firma del usuario se realiza de la siguiente forma:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Sign your name</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  By signing your name, you agree to
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  our terms and conditions.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>signature</span>: target_variable
-</span></span><span style=display:flex><span><span style=color:#ff79c6>under</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  ${ user }</span>  
-</span></span></code></pre></div><p>Para crear una pantalla de finalización con botones se usa:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Felicitaciones!</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Has finalizado la creación de la providencia.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>buttons</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Exit</span>: exit
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>url</span>: https://www.ramajudicial.gov.co/portal/inicio
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Restart</span>: restart
-</span></span></code></pre></div><h2 id=establecer-variables>Establecer variables</h2><p><a href=https://docassemble.org/docs/fields.html>Link al recurso</a></p><p>Para indicarle a docassemble que almacene la entrada del usuario que recibe en respuesta a una pregunta , debe incluir en su nombre questionde variable para contener la información. También debe indicar qué tipo de variable es (p. ej., texto, una fecha, un número) y cómo desea solicitar la entrada (p. ej., con una etiqueta).</p><p>Preguntas con variable booleana, además se agrega una opción &ldquo;No sé&rdquo; que pertenece a la sigueinte instrucción:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Is Topeka the capital of Kansas?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>yesnomaybe</span>: topeka_is_capital_of_kansas
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  % if topeka_is_capital_of_kansas:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  You were right that Topeka is the capital of Kansas.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  % elif topeka_is_capital_of_kansas is None:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  You should know your state capitals!
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  % else:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Actually, Topeka is the capital of Kansas.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  % endif</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span></code></pre></div><p>Botones de opcion múltiple</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  How would you like to pay for your
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  car?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>field</span>: target_variable
-</span></span><span style=display:flex><span><span style=color:#ff79c6>buttons</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Buy it</span>: purchaser
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Lease it</span>: borrower
-</span></span></code></pre></div><p>Botones creados con código</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>field</span>: target_variable
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Your use of this system does not
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  mean that you have a lawyer.  Do
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  you understand this?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>buttons</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>code</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    [{&#39;understands&#39;: &#34;I understand&#34;},
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>     {&#39;does not understand&#39;: &#34;I do not understand&#34;},
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>     {&#39;unsure&#39;: &#34;I&#39;m not sure&#34;}]</span>    
-</span></span></code></pre></div><p>Checkboxes</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Please provide the following information.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>&#34;What is your favorite food?&#34;: </span>favorite_food
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>note</span>: Check which foods you like.
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Apples</span>: likes_apples
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>datatype</span>: yesno
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Turnips</span>: dislikes_turnips
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>datatype</span>: noyes
-</span></span></code></pre></div><h2 id=preguntas-de-codigo>Preguntas de codigo</h2><p>Ejemplo de bloque de código</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>code</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  answer = 2 + 2</span>  
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  The answer is ${ answer }.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span></code></pre></div><p>El contenido de ${ &mldr; }se procesa como código Python . El código que se puede colocar dentro ${ &mldr; }está limitado a <strong>una línea de código</strong>, cuyo resultado se coloca en el texto de la pregunta. Por lo tanto, <strong>no podría incluir varias líneas de código</strong> dentro de una ${ &mldr; } expresión.</p><p>Además de mayor que ( >) y menor que ( &lt;), los siguientes operadores condicionales están disponibles en Python :</p><p><code>a == b</code> es verdadero si es aigual a b. Hay dos signos iguales para distinguir esto de a = b, lo que establece el valor de aal valor de b. Esto funciona tanto con números como con texto.
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2023-07-11-docassemble-review/banner-papeleo.jpeg">
+    <meta property="twitter:image" content="img/2023-07-11-docassemble-review/banner-papeleo.jpeg" />
+    
+
+    
+    <meta name="title" content="Una revisión del sistema experto Docassemble" />
+    <meta property="og:title" content="Una revisión del sistema experto Docassemble" />
+    <meta property="twitter:title" content="Una revisión del sistema experto Docassemble" />
+    
+
+    
+    <meta name="description" content="Software | LegalTech">
+    <meta property="og:description" content="Software | LegalTech" />
+    <meta property="twitter:description" content="Software | LegalTech" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Blog, Web, Blog, Blogging, Personal Website, Internet">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Una revisión del sistema experto Docassemble | HammerDev99 | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2023/07/11/docassemble-review/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MEASUREMENT_ID', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/dev/">dev</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech/">tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/thoughts/">thoughts</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive//">ARCHIVO</a></li>
+                    
+                        <li><a href="/about//">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2023-07-11-docassemble-review/banner-papeleo.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/docassemble" title="docassemble">
+                            docassemble
+                        </a>
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                    </div>
+                    <h1>Una revisión del sistema experto Docassemble</h1>
+                    <h2 class="subheading">Descubre el Superpoder de Docassemble: Transforma la Información Jurídica en Acción</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;Daniel Arbelaez&#34;
+                             
+                            on 
+                            Tuesday, July 11, 2023
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?</p>
+<p>Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</p>
+<p>Pero ¿cómo funciona realmente este misterioso superpoder? Y más importante aún, ¿cómo puedes incorporarlo en tus proyectos de software para mejorar significativamente tus prácticas de programación?</p>
+<p>Atraviesa este viaje conmigo mientras exploramos juntos el fascinante mundo de Docassemble, descubriendo cómo sus características avanzadas pueden revolucionar la forma en que abordamos el desarrollo de software y ámbito jurídico.</p>
+<h2 id="conceptos-basicos">Conceptos basicos</h2>
+<p>Docassemble es un sistema experto de ensamblaje de documentos basado en Python, YAML y Markdown, hace las veces de un lenguaje de programacion declarativo (no se le dice que hacer sino el como).</p>
+<p>El orden de las preguntas no se determina, lo elige el sistema segun sus necesidades y las respuestas dadas en la entrevistas ya que se trata de un sistema basado en reglas, leyes o normas y lo que se sigue es mas similar a una lista de chequeo, asi como cuando un piloto de avion hace una <strong>lista de chequeo</strong> de su nave, las condiciones climaticas y las condiciones propias antes de iniciar su vuelo.</p>
+<h2 id="hello-world---prueba01">Hello world - Prueba01</h2>
+<p><a href="https://docassemble.org/docs/helloworld.html">link al recurso</a></p>
+<ul>
+<li>Se hace una prueba de funcionamiento donde se hacen preguntas, se obtienen datos en <strong>variables</strong>, se usa <strong>codigo Python</strong>, se usa una <strong>plantilla de word</strong> (debe tenerse agregada al folder del proyecto como template) y se decora una pregunta con una imagen (debe agregarse al folder del proyecto como static file).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># En esta parte se agrega una variable planet en la pregunta inicial</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: Hello, ${ planet }! 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  I surmise that you have no more than ${ inhabitant_count }
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  inhabitants.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">attachment</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">name</span>: A letter for the inhabitants of ${ planet }
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">filename</span>: hello
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">docx template file</span>: hello_planet.docx
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">buttons</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Exit</span>: exit
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your planet&#39;s name?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Your Planet</span>: planet
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">decoration</span>: daniel
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">code</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  if favorite_number == 42:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    inhabitant_count = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  else:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    inhabitant_count = 2000 + favorite_number * 45</span>  
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: What is your favorite number?
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Number</span>: favorite_number
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">datatype</span>: number
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">image sets</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">freepik</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">images</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">daniel</span>: Foto_perfil.jpeg
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">attribution</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">      Icon made by [Freepik](https://www.flaticon.com/authors/freepik)</span>      
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>Para empaquetar la entrevista o exportarla se usa la siguiente forma <a href="https://docassemble.org/docs/helloworld.html#packaging">link</a></p>
+<h2 id="como-escribir-una-entrevista">Como escribir una entrevista</h2>
+<p><a href="https://docassemble.org/docs/interviews.html">Link al recurso</a></p>
+<ul>
+<li>
+<p>Se almacenan las respuestas en variables y se pueden agregar a preguntas o al texto de los documentos</p>
+</li>
+<li>
+<p>Las preguntas dadas a un usuario pueden variar en funcion de las respuestas dadas</p>
+</li>
+<li>
+<p>Solo necesitas darle el objetivo final y Docassemble hara las preguntas necesarias para llegar a ese objetivo final</p>
+</li>
+<li>
+<p>El siguiente fragmento de YAML contiene la forma en la que se puede aplicar copigo <strong>python al interior de un documento word</strong>.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Welcome to the interview!</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">continue button field</span>: intro
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite fruit?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Fruit</span>: favorite_fruit
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: favorite_fruit == &#39;apple&#39;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite type of apple?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Type of apple</span>: favorite_apple
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Here is your document.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">attachment</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">content</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Your favorite fruit is ${ favorite_fruit }.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    % if favorite_fruit == &#39;apple&#39;:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Your favorite type of apple is ${ favorite_apple }.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    % endif</span>    
+</span></span></code></pre></div><ul>
+<li>Listas y Diccionarios</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#6272a4"># Lista</span>
+</span></span><span style="display:flex;"><span>- Sweep the porch
+</span></span><span style="display:flex;"><span>- Take out the garbage
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Diccionario</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">lawyer</span>: A person who represents you.
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">judge</span>: A person who decides who wins or loses a court case.
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Diccionario de lista</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">Frank</span>:
+</span></span><span style="display:flex;"><span>  - Sweep the porch
+</span></span><span style="display:flex;"><span>  - Take out the garbage
+</span></span><span style="display:flex;"><span>  - Clean the toilets
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">Sally</span>:
+</span></span><span style="display:flex;"><span>  - Rake the leaves
+</span></span><span style="display:flex;"><span>  - Mow the lawn
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Lista de diccionario</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ff79c6">title</span>: Tale of Two Cities
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">author</span>: Charles Dickens
+</span></span><span style="display:flex;"><span>- <span style="color:#ff79c6">title</span>: Moby Dick
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">author</span>: Herman Melville
+</span></span><span style="display:flex;"><span>- <span style="color:#ff79c6">title</span>: Green Eggs and Ham
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">author</span>: Dr. Seuss
+</span></span></code></pre></div><h2 id="bloques-iniciales">Bloques iniciales</h2>
+<p><a href="https://docassemble.org/docs/initial.html">Link al recurso</a></p>
+<ul>
+<li>Se configura una <strong>parte inicial</strong> de cada entrevista que da cuenta del titulo de la entrevista y una pregunta inicial que igualmente se muestra en pantalla</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">title</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Tutela</span>    
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">short title</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Admision</span>    
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">description</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Una entrevista para solucionar un caso de uso legal</span>    
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">authors</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">name</span>: Daniel Arbelaez
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">organization</span>: Organization Name
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">revision_date</span>: 2023-07-12
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4"># Hace que el login no aparezca en pantalla</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">show login</span>: <span style="color:#ff79c6">False</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Debe de incluirse el mandatory para guiar a docassemble por donde empezar</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: Cual es tu nombre
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Nombre</span>: nombre
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Debe de incluirse el mandatory para guiar a docassemble por donde finalizar</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Aqui finaliza el documento</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">attachment</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">content</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Hola ${ nombre }, un gusto volver a verte!</span>    
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><ul>
+<li>Para importar modulos de python se usa</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">modules</span>:
+</span></span><span style="display:flex;"><span>  - datetime
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><ul>
+<li>Para usar una lista de datos en una pregunta asi:</li>
+</ul>
+<p>
+  <img src="/img/2023-07-11-docassemble-review/Captura%20de%20Pantalla%202023-07-12%20a%20la%28s%29%205.25.34%20a.%c2%a0m..png" alt="alt">
+
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">variable name</span>: fruits
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">data</span>:
+</span></span><span style="display:flex;"><span>  - Apple
+</span></span><span style="display:flex;"><span>  - Orange
+</span></span><span style="display:flex;"><span>  - Peach
+</span></span><span style="display:flex;"><span>  - Pear
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Si solo hay una pregunta debe ponerse el mandatory true</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite fruit?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: user_favorite_fruit
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">dropdown</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">code</span>: fruits
+</span></span></code></pre></div><ul>
+<li>Para agregar comentarios a palabras de entrevistas</li>
+</ul>
+<p>
+  <img src="/img/2023-07-11-docassemble-review/Captura%20de%20Pantalla%202023-07-12%20a%20la%28s%29%205.40.30%20a.%c2%a0m..png" alt="alt">
+
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">terms</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">creeper</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    A tall green creature that explodes if
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    you get too close.</span>    
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">zombie pigman</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    A harmless creature who carries a gold
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    sword.</span>    
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: Have you ever met a {creeper}?
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  If you have met a {zombie pigman}, you
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  have almost certainly met a creeper.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">yesno</span>: met_a_creeper
+</span></span></code></pre></div><ul>
+<li>Para mostrar secciones</li>
+</ul>
+<p>
+  <img src="/img/2023-07-11-docassemble-review/Captura%20de%20Pantalla%202023-07-12%20a%20la%28s%29%205.51.34%20a.%c2%a0m..png" alt="alt">
+
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#6272a4"># Se indican las secciones que tiene la entrevista</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">sections</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">intro</span>: Introduction
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">about</span>: About you
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">subsections</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ff79c6">contact</span>: Contact info
+</span></span><span style="display:flex;"><span>      - <span style="color:#ff79c6">demographic</span>: Demographics
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">prefs</span>: Preferences
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">conclusion</span>: Conclusion
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se habilita la funcion de barra de navegacion</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">features</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">navigation</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Welcome to the interview</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  If you are not on a
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  smartphone-sized device,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  you should see a navigation
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  bar to the left.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se agrega como variable la barra de navegacion</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: sees_nav_bar
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  I am going to ask you some
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  questions about yourself.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: intro_to_about_you
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se indica la seccion a la que pertenece la pregunta</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">section</span>: about
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your name?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">First Name</span>: first_name
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Last Name</span>: last_name
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se indica la seccion a la que pertenece la pregunta</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">section</span>: contact
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your e-mail address?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">E-mail</span>: email_address
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">datatype</span>: email
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your gender?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: gender
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">choices</span>:
+</span></span><span style="display:flex;"><span>  - Male
+</span></span><span style="display:flex;"><span>  - Female
+</span></span><span style="display:flex;"><span>  - Something else
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se indica la seccion a la que pertenece la pregunta</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">section</span>: demographic
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What kind of belly button
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  do you have?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: belly_button
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">choices</span>:
+</span></span><span style="display:flex;"><span>  - Innie
+</span></span><span style="display:flex;"><span>  - Outie
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite fruit?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Favorite fruit</span>: favorite_fruit
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se indica la seccion a la que pertenece la pregunta</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">section</span>: prefs
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite vegetable?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Favorite vegetable</span>: favorite_vegetable
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: Thank you.
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  ${ first_name },
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Your answers mean a lot to me.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  I am going to go eat some
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  ${ favorite_vegetable }
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  now.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Se indica la seccion a la que pertenece la pregunta</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">section</span>: conclusion
+</span></span></code></pre></div><h2 id="bloques-de-preguntas">Bloques de preguntas</h2>
+<p>Lo que ven los usuarios en cada pantalla de entrevista es un bloque de pregunta y es una seccion de <code>YAML</code> que contiene un especificador de bloque</p>
+<p>Los bloques de preguntas pueden ser, <a href="#bloques-iniciales">bloques iniciales</a>, <a href="#preguntas-de-codigo">preguntas de codigo</a> o <a href="#bloques-de-preguntas">bloques de pregunta</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Gracias por tu dedicacion al responder **&#34;${respuesta_usuario}&#34;** </span>  
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># La estructura Mako permite ingresar variables en otras preguntas y tambien la estructura de Markdown permite aplicar estilos al texto</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Este proyecto tendra futuro, estas de acuerdo?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Se trata de identificar la persepcion del usuario con el proyecto</span>  
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># subquestion, es una seccion que se usa para explicar la pregunta</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">under</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Nota: Este es el `under`</span>  
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># under es una seccion adicional del texto ubicada debajo de los botones</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">pre</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Note: este es el `pre`.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">post</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  This is the `post`, which comes
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  after `under`.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">right</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  ### Note
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  this is `right` option
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  If you did not catch this
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  movie reference, you need to
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  improve your cultural literacy.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Responder</span>: respuesta_usuario <span style="color:#6272a4"># Al ingresa una variable se tiene que realizar indicandola en tipo lista (-)</span>
+</span></span></code></pre></div><p>En caso de configurar en la pregunta un texto con <code>right</code> se puede usar la caracteristica centered para alinear las pregunta y el right</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">features</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">centered</span>: <span style="color:#ff79c6">False</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is the airspeed velocity of an
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  unladen swallow?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Velocity</span>: swallow_velocity
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">right</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  ### Note
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  If you did not catch this
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  movie reference, you need to
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  improve your cultural literacy.</span>  
+</span></span></code></pre></div><p>Para asignar variables con preguntas se usa el siguiente proceso</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Are you at least 18 years of age?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">yesno</span>: over_eighteen
+</span></span></code></pre></div><p>Para solicitar la firma del usuario se realiza de la siguiente forma:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Sign your name</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  By signing your name, you agree to
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  our terms and conditions.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">signature</span>: target_variable
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">under</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  ${ user }</span>  
+</span></span></code></pre></div><p>Para crear una pantalla de finalización con botones se usa:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Felicitaciones!</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Has finalizado la creación de la providencia.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">buttons</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Exit</span>: exit
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">url</span>: https://www.ramajudicial.gov.co/portal/inicio
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Restart</span>: restart
+</span></span></code></pre></div><h2 id="establecer-variables">Establecer variables</h2>
+<p><a href="https://docassemble.org/docs/fields.html">Link al recurso</a></p>
+<p>Para indicarle a docassemble que almacene la entrada del usuario que recibe en respuesta a una pregunta , debe incluir en su nombre questionde variable para contener la información. También debe indicar qué tipo de variable es (p. ej., texto, una fecha, un número) y cómo desea solicitar la entrada (p. ej., con una etiqueta).</p>
+<p>Preguntas con variable booleana, además se agrega una opción &ldquo;No sé&rdquo; que pertenece a la sigueinte instrucción:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Is Topeka the capital of Kansas?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">yesnomaybe</span>: topeka_is_capital_of_kansas
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  % if topeka_is_capital_of_kansas:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  You were right that Topeka is the capital of Kansas.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  % elif topeka_is_capital_of_kansas is None:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  You should know your state capitals!
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  % else:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Actually, Topeka is the capital of Kansas.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  % endif</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span></code></pre></div><p>Botones de opcion múltiple</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  How would you like to pay for your
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  car?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: target_variable
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">buttons</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Buy it</span>: purchaser
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Lease it</span>: borrower
+</span></span></code></pre></div><p>Botones creados con código</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">field</span>: target_variable
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Your use of this system does not
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  mean that you have a lawyer.  Do
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  you understand this?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">buttons</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">code</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    [{&#39;understands&#39;: &#34;I understand&#34;},
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">     {&#39;does not understand&#39;: &#34;I do not understand&#34;},
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">     {&#39;unsure&#39;: &#34;I&#39;m not sure&#34;}]</span>    
+</span></span></code></pre></div><p>Checkboxes</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Please provide the following information.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">&#34;What is your favorite food?&#34;: </span>favorite_food
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">note</span>: Check which foods you like.
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Apples</span>: likes_apples
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">datatype</span>: yesno
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Turnips</span>: dislikes_turnips
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">datatype</span>: noyes
+</span></span></code></pre></div><h2 id="preguntas-de-codigo">Preguntas de codigo</h2>
+<p>Ejemplo de bloque de código</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">code</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  answer = 2 + 2</span>  
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  The answer is ${ answer }.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span></code></pre></div><p>El contenido de ${ &hellip; }se procesa como código Python . El código que se puede colocar dentro ${ &hellip; }está limitado a <strong>una línea de código</strong>, cuyo resultado se coloca en el texto de la pregunta. Por lo tanto, <strong>no podría incluir varias líneas de código</strong> dentro de una ${ &hellip; } expresión.</p>
+<p>Además de mayor que ( &gt;) y menor que ( &lt;), los siguientes operadores condicionales están disponibles en Python :</p>
+<p><code>a == b</code> es verdadero si es aigual a b. Hay dos signos iguales para distinguir esto de a = b, lo que establece el valor de aal valor de b. Esto funciona tanto con números como con texto.
 <code>a is b</code> es esencialmente sinónimo de a == b.
-<code>a >= b</code> es verdadero si aes mayor o igual que b.
+<code>a &gt;= b</code> es verdadero si aes mayor o igual que b.
 <code>a &lt;= b</code> es verdadero si aes menor o igual que b.
-<code>a in b</code> es verdadero si bes una lista , un diccionario o un conjunto y a está contenido dentro de b. Por ejemplo, <code>42 in [13, 42, 62]</code> es cierto. Esto también funciona con texto. Si lo hace <code>a = "Fred"</code>, entonces <code>a in ["Mary", "Fred", "Scott"]</code> será verdadero, mientras que <code>a in ["Harold", "Anthony"</code>, &ldquo;Norman&rdquo;]será falso. En el caso de que bsea un diccionario , a in bdevolverá verdadero si a es una clave dentro b.</p><p>Otro ejemplo del uso de bloques de código</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>code</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  if user_age &gt; 60:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    product_recommendation = &#39;Oldsmobile&#39;
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  else:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    product_recommendation = &#39;Mustang&#39;</span>  
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: What is your age?
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Age in Years</span>: user_age
-</span></span><span style=display:flex><span>    <span style=color:#ff79c6>datatype</span>: number
-</span></span><span style=display:flex><span>---
-</span></span></code></pre></div><h2 id=objetos>Objetos</h2><p>Para determinar variables de varios sujetos es recomendable usar los objetos en docassemble</p><h2 id=logica-de-entrevistas>Logica de entrevistas</h2><p>A diferencia de otros sistemas de entrevistas guiadas, en los que el desarrollador de la entrevista traza un árbol de decisiones o diagrama de flujo para indicar qué preguntas se deben hacer y en qué orden, docassemble determina qué preguntas hacer y cuándo hacerlas según las reglas que usted especifique . Estas reglas se especifican mediante bloques YAML.</p><blockquote><p>El estilo de lógica “declarativa” es muy útil en estas circunstancias. Todo lo que necesita hacer es el trabajo de un abogado: concentrarse en especificar reglas que sean legalmente correctas. Puede especificar varias reglas superpuestas, que abarquen casos especiales y casos generales.</p></blockquote><p>Una entrevista simple consta de bloques de preguntas con <code>mandatory: True</code> y las mismas se ejecutarán de forma secuencial en el orden del YAML, ejemplo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Welcome to the interview!</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>continue button field</span>: intro
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite fruit?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Fruit</span>: favorite_fruit
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite vegetable?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Vegetable</span>: favorite_vegetable
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Here is your document.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>attachment</span>:
-</span></span><span style=display:flex><span>  <span style=color:#ff79c6>content</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Your favorite fruit is ${ favorite_fruit }.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    % if favorite_fruit == &#39;apple&#39;:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    You will never need to see a doctor.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    % endif
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    Your favorite vegetable is ${ favorite_vegetable }.</span>    
-</span></span></code></pre></div><p>Es posible orientar las preguntas siguientes en función de las respuestas dadas incorporando en el mandatory una expresion en Python así:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite fruit?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Fruit</span>: favorite_fruit
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: favorite_fruit == &#39;apple&#39;
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite type of apple?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Type of apple</span>: favorite_apple
-</span></span><span style=display:flex><span>---
-</span></span></code></pre></div><p>Cuando se presentan muchas ramas anidadas de decisión en la entrevista se puede implementar la satisfacción de la dependencia para evitar que la expresión de python no sea tan compleja así:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>mandatory</span>: <span style=color:#ff79c6>True</span>
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Your favorite fruit is ${ favorite_fruit }.</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>subquestion</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  % if favorite_fruit == &#39;grapes&#39;:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Your favorite vineyard is ${ favorite_vineyard }.
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  % endif</span>  
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  Which vineyard do you think produces the best grapes?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Vineyard</span>: favorite_vineyard
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#ff79c6>question</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  What is your favorite fruit?</span>  
-</span></span><span style=display:flex><span><span style=color:#ff79c6>fields</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ff79c6>Fruit</span>: favorite_fruit
-</span></span></code></pre></div><p>Para crear un bloque de código aplicando una regla del negocio:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=display:flex><span><span style=color:#ff79c6>code</span>: |<span style=color:#f1fa8c>
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  if user.age_in_years() &gt;= 60 or user.is_disabled:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    user.eligible = True
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>  else:
-</span></span></span><span style=display:flex><span><span style=color:#f1fa8c>    user.eligible = False</span>  
-</span></span></code></pre></div><hr><p>Hemos recorrido juntos el impresionante panorama (general) de Docassemble, descubriendo cómo este sistema experto de ensamblaje de documentos puede transformar nuestra relación con la información técnica y mejorar nuestras prácticas jurídicas. Pero el viaje no termina aquí. Hay mucho más por descubrir, especialmente cuando hablamos de aplicar estas habilidades al ámbito legal.</p><p>Si sientes que hay un vacío en tu conocimiento sobre cómo ensamblar documentos legales de manera eficiente y precisa, si estás listo para expandir tus horizontes y explorar nuevas formas de integrar Docassemble en tus proyectos, te invito a seguir este blog.</p><p>Preparate para recibir regularmente contenido exclusivo sobre Docassemble, casos de estudio, consejos prácticos y tutoriales paso a paso. No te pierdas la próxima entrada.</p><hr><ul class=pager><li class=previous><a href=/2022/12/01/gestion-expediente-electronico/ data-toggle=tooltip data-placement=top title="Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico">&larr;
-Previous Post</a></li><li class=next><a href=/2023/08/15/delitos-informaticos-riesgos-ciberneticos/ data-toggle=tooltip data-placement=top title="Explorando Delitos Informáticos y Riesgos Cibernéticos: Claves para la Seguridad Digital">Next
-Post &rarr;</a></li></ul></div><div class="col-lg-2 col-lg-offset-0
-visible-lg-block
-sidebar-container
-catalog-container"><div class=side-catalog><hr class="hidden-sm hidden-xs"><h5><a class=catalog-toggle href=#>CATALOG</a></h5><ul class=catalog-body></ul></div></div><div class="col-lg-8 col-lg-offset-2
-col-md-10 col-md-offset-1
-sidebar-container"><section><hr><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://www.alexanderoviedofadul.dev/>Alexander Oviedo Fadul</a></li></ul></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:arbe.94@hotmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/HammerDev99><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/daniel-arbelaez-/><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a href rel=alternate type=application/rss+xml title="Sprint Judicial"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Sprint Judicial 2025<br><a href=https://github.com/HammerDev99>Daniel Arbelaez Alvarez </a>|
-<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=180px height=20px src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script></body></html>
+<code>a in b</code> es verdadero si bes una lista , un diccionario o un conjunto y a está contenido dentro de b. Por ejemplo, <code>42 in [13, 42, 62]</code> es cierto. Esto también funciona con texto. Si lo hace <code>a = &quot;Fred&quot;</code>, entonces <code>a in [&quot;Mary&quot;, &quot;Fred&quot;, &quot;Scott&quot;]</code> será verdadero, mientras que <code>a in [&quot;Harold&quot;, &quot;Anthony&quot;</code>, &ldquo;Norman&rdquo;]será falso. En el caso de que bsea un diccionario , a in bdevolverá verdadero si a es una clave dentro b.</p>
+<p>Otro ejemplo del uso de bloques de código</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">code</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  if user_age &gt; 60:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    product_recommendation = &#39;Oldsmobile&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  else:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    product_recommendation = &#39;Mustang&#39;</span>  
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: What is your age?
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Age in Years</span>: user_age
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">datatype</span>: number
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><h2 id="objetos">Objetos</h2>
+<p>Para determinar variables de varios sujetos es recomendable usar los objetos en docassemble</p>
+<h2 id="logica-de-entrevistas">Logica de entrevistas</h2>
+<p>A diferencia de otros sistemas de entrevistas guiadas, en los que el desarrollador de la entrevista traza un árbol de decisiones o diagrama de flujo para indicar qué preguntas se deben hacer y en qué orden, docassemble determina qué preguntas hacer y cuándo hacerlas según las reglas que usted especifique . Estas reglas se especifican mediante bloques YAML.</p>
+<blockquote>
+<p>El estilo de lógica “declarativa” es muy útil en estas circunstancias. Todo lo que necesita hacer es el trabajo de un abogado: concentrarse en especificar reglas que sean legalmente correctas. Puede especificar varias reglas superpuestas, que abarquen casos especiales y casos generales.</p>
+</blockquote>
+<p>Una entrevista simple consta de bloques de preguntas con <code>mandatory: True</code> y las mismas se ejecutarán de forma secuencial en el orden del YAML, ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Welcome to the interview!</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">continue button field</span>: intro
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite fruit?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Fruit</span>: favorite_fruit
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite vegetable?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Vegetable</span>: favorite_vegetable
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Here is your document.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">attachment</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">content</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Your favorite fruit is ${ favorite_fruit }.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    % if favorite_fruit == &#39;apple&#39;:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    You will never need to see a doctor.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    % endif
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    Your favorite vegetable is ${ favorite_vegetable }.</span>    
+</span></span></code></pre></div><p>Es posible orientar las preguntas siguientes en función de las respuestas dadas incorporando en el mandatory una expresion en Python así:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite fruit?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Fruit</span>: favorite_fruit
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: favorite_fruit == &#39;apple&#39;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite type of apple?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Type of apple</span>: favorite_apple
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>Cuando se presentan muchas ramas anidadas de decisión en la entrevista se puede implementar la satisfacción de la dependencia para evitar que la expresión de python no sea tan compleja así:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">mandatory</span>: <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Your favorite fruit is ${ favorite_fruit }.</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">subquestion</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  % if favorite_fruit == &#39;grapes&#39;:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Your favorite vineyard is ${ favorite_vineyard }.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  % endif</span>  
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  Which vineyard do you think produces the best grapes?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Vineyard</span>: favorite_vineyard
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">question</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  What is your favorite fruit?</span>  
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">fields</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">Fruit</span>: favorite_fruit
+</span></span></code></pre></div><p>Para crear un bloque de código aplicando una regla del negocio:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="color:#ff79c6">code</span>: |<span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  if user.age_in_years() &gt;= 60 or user.is_disabled:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    user.eligible = True
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  else:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    user.eligible = False</span>  
+</span></span></code></pre></div><hr>
+<p>Hemos recorrido juntos el impresionante panorama (general) de Docassemble, descubriendo cómo este sistema experto de ensamblaje de documentos puede transformar nuestra relación con la información técnica y mejorar nuestras prácticas jurídicas. Pero el viaje no termina aquí. Hay mucho más por descubrir, especialmente cuando hablamos de aplicar estas habilidades al ámbito legal.</p>
+<p>Si sientes que hay un vacío en tu conocimiento sobre cómo ensamblar documentos legales de manera eficiente y precisa, si estás listo para expandir tus horizontes y explorar nuevas formas de integrar Docassemble en tus proyectos, te invito a seguir este blog.</p>
+<p>Preparate para recibir regularmente contenido exclusivo sobre Docassemble, casos de estudio, consejos prácticos y tutoriales paso a paso. No te pierdas la próxima entrada.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/12/01/gestion-expediente-electronico/" data-toggle="tooltip" data-placement="top" title="Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2023/08/15/delitos-informaticos-riesgos-ciberneticos/" data-toggle="tooltip" data-placement="top" title="Explorando Delitos Informáticos y Riesgos Cibernéticos: Claves para la Seguridad Digital">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2025
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
