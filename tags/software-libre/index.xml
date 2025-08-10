@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Libre on Sprint Judicial</title>
-    <link>http://localhost:1313/tags/software-libre/</link>
+    <link>blog.sprintjudicial.com/tags/software-libre/</link>
     <description>Recent content in Software Libre on Sprint Judicial</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
     <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
     <lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/software-libre/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.sprintjudicial.com/tags/software-libre/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daniel Arbelaez (HammerDev99)</title>
-      <link>http://localhost:1313/2022/05/10/hello-world/</link>
+      <link>blog.sprintjudicial.com/2022/05/10/hello-world/</link>
       <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>http://localhost:1313/2022/05/10/hello-world/</guid>
+      <guid>blog.sprintjudicial.com/2022/05/10/hello-world/</guid>
       <description></description>
     </item>
   </channel>

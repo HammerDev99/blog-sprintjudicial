@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on Sprint Judicial</title>
-    <link>http://localhost:1313/categories/tech/</link>
+    <link>blog.sprintjudicial.com/categories/tech/</link>
     <description>Recent content in Tech on Sprint Judicial</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
     <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
     <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.sprintjudicial.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marduk: Un Viaje hacia la Innovación Judicial Digital</title>
-      <link>http://localhost:1313/2024/10/12/transformando-la-justicia/</link>
+      <link>blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>http://localhost:1313/2024/10/12/transformando-la-justicia/</guid>
+      <guid>blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</guid>
       <description></description>
     </item>
     <item>
       <title>Explorando Delitos Informáticos y Riesgos Cibernéticos: Claves para la Seguridad Digital</title>
-      <link>http://localhost:1313/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</link>
+      <link>blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</link>
       <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>http://localhost:1313/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</guid>
+      <guid>blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title>
-      <link>http://localhost:1313/2022/12/01/gestion-expediente-electronico/</link>
+      <link>blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>http://localhost:1313/2022/12/01/gestion-expediente-electronico/</guid>
+      <guid>blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</guid>
       <description></description>
     </item>
   </channel>

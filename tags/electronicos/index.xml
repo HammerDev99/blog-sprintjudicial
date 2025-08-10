@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronicos on Sprint Judicial</title>
-    <link>http://localhost:1313/tags/electronicos/</link>
+    <link>blog.sprintjudicial.com/tags/electronicos/</link>
     <description>Recent content in Electronicos on Sprint Judicial</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
     <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
     <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/electronicos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.sprintjudicial.com/tags/electronicos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title>
-      <link>http://localhost:1313/2022/12/01/gestion-expediente-electronico/</link>
+      <link>blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>http://localhost:1313/2022/12/01/gestion-expediente-electronico/</guid>
+      <guid>blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</guid>
       <description></description>
     </item>
   </channel>
