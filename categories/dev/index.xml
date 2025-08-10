@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on Sprint Judicial</title>
-    <link>https://blog.sprintjudicial.com/categories/dev/</link>
+    <link>http://localhost:1313/categories/dev/</link>
     <description>Recent content in Dev on Sprint Judicial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
     <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
     <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.sprintjudicial.com/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>El programador flanker: De la cancha de rugby a la arquitectura de software</title>
-      <link>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</link>
+      <link>http://localhost:1313/2025/02/28/design-pattern-in-public/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</guid>
+      <guid>http://localhost:1313/2025/02/28/design-pattern-in-public/</guid>
       <description>En el mundo del desarrollo de software, nos encontramos frecuentemente con situaciones que requieren soluciones elegantes y mantenibles. Recientemente, me enfrenté a un caso interesante, que trataba sobre la implementación de un sistema de procesamiento de carpetas manteniendo un equilibrio entre flexibilidad y desacoplamiento.&#xA;El reto: Automatización flexible en expedientes judiciales El escenario planteaba un desafío particular. Se necesitaba desarrollar una funcionalidad que permitiera procesar carpetas de diferentes maneras, donde cada método de procesamiento compartía una estructura común pero requería su propia implementación específica.</description>
     </item>
     <item>
       <title>Pilas y Colas: Estructuras de Datos Esenciales</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</link>
+      <link>http://localhost:1313/2024/04/10/stack_queue/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</guid>
+      <guid>http://localhost:1313/2024/04/10/stack_queue/</guid>
       <description>Las pilas y colas son dos estructuras de datos fundamentales en el mundo de la programación. Este blogpost desglosa sus definiciones, operaciones básicas y aplicaciones prácticas, proporcionando ejemplos claros en Python. ¡Sumérgete en el fascinante mundo de las pilas y colas y mejora tus habilidades de programación!&#xA;Introducción Las estructuras de datos son el pilar fundamental de la informática y la programación. Entre ellas, las pilas y colas destacan por su capacidad para organizar y gestionar datos de manera eficiente.</description>
     </item>
     <item>
       <title>Una revisión del sistema experto Docassemble</title>
-      <link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link>
+      <link>http://localhost:1313/2023/07/11/docassemble-review/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid>
+      <guid>http://localhost:1313/2023/07/11/docassemble-review/</guid>
       <description>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?&#xA;Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</description>
     </item>
   </channel>

@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sprint Judicial</title>
-    <link>https://blog.sprintjudicial.com/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Sprint Judicial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
     <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
     <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.sprintjudicial.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Thoughts</title>
-      <link>https://blog.sprintjudicial.com/2025/06/14/thoughts/</link>
+      <link>http://localhost:1313/2025/06/14/thoughts/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/06/14/thoughts/</guid>
+      <guid>http://localhost:1313/2025/06/14/thoughts/</guid>
       <description>Escribir acerca de link directo</description>
     </item>
     <item>
       <title>El programador flanker: De la cancha de rugby a la arquitectura de software</title>
-      <link>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</link>
+      <link>http://localhost:1313/2025/02/28/design-pattern-in-public/</link>
       <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</guid>
+      <guid>http://localhost:1313/2025/02/28/design-pattern-in-public/</guid>
       <description>En el mundo del desarrollo de software, nos encontramos frecuentemente con situaciones que requieren soluciones elegantes y mantenibles. Recientemente, me enfrenté a un caso interesante, que trataba sobre la implementación de un sistema de procesamiento de carpetas manteniendo un equilibrio entre flexibilidad y desacoplamiento.&#xA;El reto: Automatización flexible en expedientes judiciales El escenario planteaba un desafío particular. Se necesitaba desarrollar una funcionalidad que permitiera procesar carpetas de diferentes maneras, donde cada método de procesamiento compartía una estructura común pero requería su propia implementación específica.</description>
     </item>
     <item>
       <title>Marduk: Un Viaje hacia la Innovación Judicial Digital</title>
-      <link>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</link>
+      <link>http://localhost:1313/2024/10/12/transformando-la-justicia/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</guid>
+      <guid>http://localhost:1313/2024/10/12/transformando-la-justicia/</guid>
       <description>En mi trayectoria profesional dentro del sector judicial, siempre he creído firmemente en el poder transformador de la tecnología. Hace aproximadamente tres años, me encontré en una encrucijada profesional: ¿cómo podría combinar mi experiencia en el ámbito legal con mi pasión por la tecnología? Esta búsqueda me llevó a un fascinante viaje que culminó en el proyecto Marduk, una iniciativa que está revolucionando la forma en que concebimos la justicia digital en Colombia.</description>
     </item>
     <item>
       <title>Cola en un gestor de tareas</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/queue_example/</link>
+      <link>http://localhost:1313/2024/04/10/queue_example/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/queue_example/</guid>
+      <guid>http://localhost:1313/2024/04/10/queue_example/</guid>
       <description>class GestorTareas: def __init__(self): # Inicializamos la cola de trabajo como una lista vacía self.cola_de_trabajo = [] def agregar_tarea(self, tarea): # Añadimos la tarea al final de la cola de trabajo self.cola_de_trabajo.append(tarea) def procesar_siguiente_tarea(self): # Verificamos si hay tareas en la cola de trabajo if self.cola_de_trabajo: # Eliminamos y devolvemos la primera tarea de la cola return self.cola_de_trabajo.pop(0) else: # Si no hay tareas pendientes, devolvemos un mensaje indicándolo return &amp;#34;No hay tareas pendientes&amp;#34; if __name__ == &amp;#34;__main__&amp;#34;: # Ejemplo de uso del gestor de tareas gestor = GestorTareas() # Agregamos algunas tareas a la cola de trabajo gestor.</description>
     </item>
     <item>
       <title>Pila en un navegador web</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/stack_example/</link>
+      <link>http://localhost:1313/2024/04/10/stack_example/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_example/</guid>
+      <guid>http://localhost:1313/2024/04/10/stack_example/</guid>
       <description>class NavegadorWeb: def __init__(self): # Inicializamos el historial como una lista vacía self.historial = [] def abrir_pagina(self, url): # Añadimos la URL al final del historial self.historial.append(url) def retroceder(self): # Verificamos si hay más de una página en el historial if len(self.historial) &amp;gt; 1: # Retrocedemos eliminando la página actual del historial self.historial.pop() # Devolvemos la URL de la página anterior return self.historial[-1] else: # Si no hay páginas anteriores, devolvemos un mensaje indicándolo return &amp;#34;No hay páginas anteriores en el historial&amp;#34; def adelantar(self): # Podríamos implementar la funcionalidad de avanzar utilizando otra pila para las páginas adelantadas pass if __name__ == &amp;#34;__main__&amp;#34;: # Ejemplo de uso del navegador navegador = NavegadorWeb() navegador.</description>
     </item>
     <item>
       <title>Pilas y Colas: Estructuras de Datos Esenciales</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</link>
+      <link>http://localhost:1313/2024/04/10/stack_queue/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</guid>
+      <guid>http://localhost:1313/2024/04/10/stack_queue/</guid>
       <description>Las pilas y colas son dos estructuras de datos fundamentales en el mundo de la programación. Este blogpost desglosa sus definiciones, operaciones básicas y aplicaciones prácticas, proporcionando ejemplos claros en Python. ¡Sumérgete en el fascinante mundo de las pilas y colas y mejora tus habilidades de programación!&#xA;Introducción Las estructuras de datos son el pilar fundamental de la informática y la programación. Entre ellas, las pilas y colas destacan por su capacidad para organizar y gestionar datos de manera eficiente.</description>
     </item>
     <item>
       <title>Explorando Delitos Informáticos y Riesgos Cibernéticos: Claves para la Seguridad Digital</title>
-      <link>https://blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</link>
+      <link>http://localhost:1313/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</link>
       <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</guid>
+      <guid>http://localhost:1313/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</guid>
       <description>Explorando Delitos Informáticos y Riesgos Cibernéticos En el mundo digital actual, la ciberseguridad se ha vuelto esencial. Este artículo ofrece una guía conceptual sobre delitos informáticos y riesgos cibernéticos, ayudando a comprender y enfrentar las amenazas digitales. A medida que la tecnología avanza a pasos agigantados, la ciberseguridad se ha convertido en una preocupación crucial tanto para organizaciones como para individuos. Enfrentar las amenazas digitales requiere una comprensión profunda y estrategias efectivas.</description>
     </item>
     <item>
       <title>Una revisión del sistema experto Docassemble</title>
-      <link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link>
+      <link>http://localhost:1313/2023/07/11/docassemble-review/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid>
+      <guid>http://localhost:1313/2023/07/11/docassemble-review/</guid>
       <description>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?&#xA;Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</description>
     </item>
     <item>
       <title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title>
-      <link>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</link>
+      <link>http://localhost:1313/2022/12/01/gestion-expediente-electronico/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</guid>
+      <guid>http://localhost:1313/2022/12/01/gestion-expediente-electronico/</guid>
       <description>¿Alguna vez te has sentido atrapado en tareas repetitivas y tediosas durante tu jornada laboral? A principios de 2022, me encontré en una situación similar. Las demandas de digitalización en mi institución habían convertido varias actividades en procesos aburridos y monótonos. La chispa de inspiración vino cuando leí el fascinante libro &amp;ldquo;Sálvese quien pueda&amp;rdquo; de Andrés Oppenheimer, que me mostró cómo la automatización está revolucionando la industria y transformando el mercado laboral.</description>
     </item>
     <item>
       <title>Daniel Arbelaez (HammerDev99)</title>
-      <link>https://blog.sprintjudicial.com/2022/05/10/hello-world/</link>
+      <link>http://localhost:1313/2022/05/10/hello-world/</link>
       <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2022/05/10/hello-world/</guid>
+      <guid>http://localhost:1313/2022/05/10/hello-world/</guid>
       <description>Cuando leía acerca del software libre quede cautivado con una frase de Richard M. Stallman, &amp;ldquo;La cooperación con los demás constituye la base de la sociedad (extraído de &amp;ldquo;software libre para una comunidad libre&amp;rdquo;); así surgió la idea de crear este espacio para compartir conocimiento, también muestro como he podido solucionar problemáticas del día a día. ¿Quieres conocer cómo lo he hecho?, aquí te muestro cómo&amp;hellip;&#xA;Libro &amp;ldquo;Software libre para una sociedad libre&amp;rdquo;</description>
     </item>
   </channel>
