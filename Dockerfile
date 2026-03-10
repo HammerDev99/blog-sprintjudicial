@@ -15,6 +15,18 @@ RUN echo 'server { \
         try_files $uri $uri/ $uri.html /index.html; \
     } \
     \
+    location /index.xml { \
+        set \$cors_origin ""; \
+        if (\$http_origin = "https://sprintjudicial.com") { \
+            set \$cors_origin \$http_origin; \
+        } \
+        if (\$http_origin = "https://www.sprintjudicial.com") { \
+            set \$cors_origin \$http_origin; \
+        } \
+        add_header Access-Control-Allow-Origin \$cors_origin; \
+        add_header Access-Control-Allow-Methods "GET"; \
+    } \
+    \
     location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg)$ { \
         expires 1y; \
         add_header Cache-Control "public, immutable"; \
