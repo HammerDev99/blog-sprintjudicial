@@ -1,0 +1,90 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Sprint Judicial"><meta property="og:type" content="article"><meta property="og:image" content="img/2026-04-10-prompts-automatizacion-judicial/header.jpg"><meta property="twitter:image" content="img/2026-04-10-prompts-automatizacion-judicial/header.jpg"><meta name=title content="Los prompts que uso todos los días trabajando en automatización judicial"><meta property="og:title" content="Los prompts que uso todos los días trabajando en automatización judicial"><meta property="twitter:title" content="Los prompts que uso todos los días trabajando en automatización judicial"><meta name=description content="LegalTech | Código | Justicia Digital"><meta property="og:description" content="LegalTech | Código | Justicia Digital"><meta property="twitter:description" content="LegalTech | Código | Justicia Digital"><meta property="twitter:card" content="summary"><meta name=keyword content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software"><link rel="shortcut icon" href=/img/favicon.ico><title>Los prompts que uso todos los días trabajando en automatización judicial | Sprint Judicial | Daniel Arbelaez</title>
+<link rel=canonical href=/2026/02/13/prompts-automatizacion-judicial/><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/css/zanshang.css><link rel=stylesheet href=/css/font-awesome.all.min.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script><script src=/js/lazysizes.min.js></script><script defer src=https://analytics.sprintjudicial.com/script.js data-website-id=94c14f95-5e78-4070-a4f5-679329f7c8c8></script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-MEASUREMENT_ID",{anonymize_ip:!1})}</script><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=/>Sprint Judicial</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Posts</a></li><li><a href=/categories/aprendiendo/>aprendiendo</a></li><li><a href=/categories/conectando/>conectando</a></li><li><a href=/categories/construyendo/>construyendo</a></li><li><a href=/categories/pensando/>pensando</a></li><li><a href=/archive//>ARCHIVO</a></li><li><a href=/about//>ACERCA DE</a></li><li><a href=/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><style type=text/css>header.intro-header{background-image:url(/img/2026-04-10-prompts-automatizacion-judicial/header.jpg)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/prompts title=prompts>prompts
+</a><a class=tag href=/tags/inteligencia-artificial title="inteligencia artificial">inteligencia artificial
+</a><a class=tag href=/tags/automatizacion-judicial title="automatizacion judicial">automatizacion judicial
+</a><a class=tag href=/tags/legaltech title=legaltech>legaltech
+</a><a class=tag href=/tags/building-in-public title="building in public">building in public</a></div><h1>Los prompts que uso todos los días trabajando en automatización judicial</h1><h2 class=subheading>Ejemplos reales de cómo le hablo a la IA para que me ayude a construir herramientas para el sistema judicial colombiano</h2><span class=meta>Posted by
+Daniel Arbelaez
+on
+Friday, February 13, 2026</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+post-container"><p>El año pasado tuve que analizar cerca de 200 expedientes judiciales para identificar patrones de distribución de carga entre despachos. Hacerlo manualmente tomaba semanas. Con la combinación correcta de código y los prompts adecuados, lo resolví en dos días.</p><p>No fue magia. Fue saber exactamente cómo pedirle al modelo lo que necesitaba.</p><p>Llevo tiempo usando modelos de lenguaje como herramienta de trabajo diario en proyectos como Marduk y Sherlock-docs. En ese proceso fui descubriendo que la diferencia entre un resultado útil y uno genérico casi siempre está en cómo formulas la instrucción. Este post es ese aprendizaje en crudo: los tipos de prompts que uso, los patrones que me funcionan, y lo que aprendí rompiéndolos.</p><hr><h2 id=por-qué-el-contexto-lo-es-todo>Por qué el contexto lo es todo</h2><p>El error más común que veo cuando alguien empieza a usar IA en trabajo profesional es preguntar como si el modelo supiera quién eres, dónde trabajas y para qué necesitas la respuesta.</p><p>No lo sabe.</p><p>Antes de cualquier tarea compleja, siempre establezco el contexto:</p><pre tabindex=0><code>Eres un asistente especializado en el sistema judicial colombiano.
+Estoy desarrollando una herramienta de automatización para analizar
+expedientes electrónicos bajo el Código General del Proceso (CGP).
+El sistema genera documentos en formato Word que siguen la estructura
+definida por el Consejo Superior de la Judicatura.
+</code></pre><p>Este bloque de contexto va al inicio de cualquier sesión donde voy a hacer trabajo técnico relacionado con lo judicial. Cambia completamente la calidad de las respuestas porque el modelo ahora sabe el marco de referencia en el que opera.</p><p><strong>El patrón:</strong> rol + dominio específico + herramienta o sistema concreto.</p><hr><h2 id=análisis-de-documentos-legales>Análisis de documentos legales</h2><p>Una parte importante de mi trabajo es procesar texto extraído de expedientes, autos, sentencias y demandas. Los documentos judiciales tienen una estructura particular — están llenos de referencias normativas, citas jurisprudenciales y fórmulas procesales que para un modelo genérico son ruido.</p><p>El prompt que más uso en esta categoría:</p><pre tabindex=0><code>Analiza el siguiente texto extraído de un auto judicial colombiano.
+Identifica y extrae en formato JSON:
+1. Tipo de actuación (auto, sentencia, decreto, etc.)
+2. Fecha de emisión
+3. Despacho que lo emite
+4. Partes procesales mencionadas (demandante, demandado, terceros)
+5. Normas procesales citadas (artículo y código)
+6. Decisión principal adoptada
+7. Términos procesales que otorga (si aplica)
+
+Si algún campo no está presente, indícalo como null.
+Responde únicamente con el JSON, sin explicaciones adicionales.
+
+TEXTO:
+[pegar el texto del documento aquí]
+</code></pre><p>La clave de este prompt es el formato de salida (JSON estructurado) y la instrucción final de no agregar texto extra. Cuando el output va a alimentar código Python, necesito que sea predecible.</p><hr><h2 id=generación-de-código-para-automatización>Generación de código para automatización</h2><p>Aquí es donde más tiempo ahorro. En lugar de escribir código desde cero, uso el modelo como par de programación que entiende el contexto del problema.</p><p>El patrón que me funciona tiene tres partes:</p><pre tabindex=0><code>CONTEXTO:
+Estoy construyendo un módulo en Python para procesar expedientes judiciales.
+Ya tengo implementada la clase `ExpedienteProcessor` que lee archivos .docx
+y extrae texto plano. El sistema usa Python 3.11, la librería python-docx
+y sigue una arquitectura de repositorio.
+
+TAREA:
+Necesito un método que reciba el texto extraído de un expediente y detecte
+automáticamente si contiene una medida cautelar. Las medidas cautelares en
+Colombia típicamente incluyen frases como &#34;decreto medida cautelar&#34;,
+&#34;embargo y secuestro&#34;, &#34;inscripción de demanda&#34;.
+
+RESTRICCIONES:
+- No uses expresiones regulares complejas, prefiere lógica de búsqueda simple
+- El método debe retornar True/False más el fragmento de texto donde encontró la coincidencia
+- Agrega docstring con ejemplo de uso
+</code></pre><p>Lo que diferencia este prompt de uno genérico: el contexto técnico exacto (versión de Python, librería específica, arquitectura), la descripción del problema en términos del dominio (medidas cautelares, terminología colombiana), y las restricciones de implementación.</p><hr><h2 id=síntesis-y-resúmenes-para-toma-de-decisiones>Síntesis y resúmenes para toma de decisiones</h2><p>Este es el tipo de prompt que creo que más valor tiene para abogados, aunque también es el que más cuidado requiere.</p><p>Cuando tengo que revisar múltiples documentos y necesito un resumen que me ayude a decidir qué hacer después:</p><pre tabindex=0><code>Lee los siguientes fragmentos de tres autos del mismo proceso judicial.
+Tu objetivo es ayudarme a entender el estado actual del proceso, no resumir
+cada documento por separado.
+
+Dime:
+1. ¿Qué etapa procesal se está tramitando?
+2. ¿Hay términos vencidos o próximos a vencer?
+3. ¿Qué actuación debería ocurrir a continuación según el CGP?
+4. ¿Hay alguna irregularidad procesal evidente?
+
+Responde en máximo 200 palabras. Señala con [VERIFICAR] cualquier 
+conclusión donde no tengas certeza absoluta por falta de información.
+
+DOCUMENTOS:
+[fragmentos aquí]
+</code></pre><p>La instrucción <code>[VERIFICAR]</code> es crítica. Le pido explícitamente al modelo que sea honesto sobre su incertidumbre. En contexto legal, un dato presentado con falsa confianza puede ser peor que ningún dato.</p><hr><h2 id=revisión-de-código-que-escribí-hace-seis-meses>Revisión de código que escribí hace seis meses</h2><p>Este uso es menos obvio pero igual de valioso. Los proyectos en los que trabajo tienen código que yo mismo escribí hace meses y que ya no recuerdo bien. En lugar de leer todo el archivo, uso esto:</p><pre tabindex=0><code>Analiza el siguiente código Python que forma parte de un sistema de
+automatización judicial. Explícame:
+1. Qué hace exactamente, sin asumir que conozco el contexto
+2. Qué dependencias externas necesita para funcionar
+3. Qué edge cases no está manejando
+4. Qué cambiaría si quisiera hacerlo más testeable
+
+No sugieras refactorizaciones completas. Solo responde las cuatro preguntas.
+
+[código aquí]
+</code></pre><p>La restricción &ldquo;no sugieras refactorizaciones completas&rdquo; es importante. Sin ella, el modelo tiende a reescribir todo. A veces eso es lo que quiero, pero cuando solo necesito entender algo rápido, es ruido.</p><hr><h2 id=lo-que-aprendí-sobre-escribir-buenos-prompts>Lo que aprendí sobre escribir buenos prompts</h2><p>Después de meses haciendo esto de manera sistemática, el patrón que emerge es siempre el mismo:</p><p><strong>Contexto específico > instrucción vaga.</strong> Cuanto más le digo al modelo dónde está parado, mejor me entiende.</p><p><strong>Formato de salida explícito.</strong> Si necesito JSON, pido JSON. Si necesito máximo 200 palabras, lo digo. Los modelos respetan las restricciones formales mejor que las cualitativas.</p><p><strong>Honestidad sobre la incertidumbre.</strong> En cualquier prompt que vaya a informar una decisión sobre un proceso real, siempre agrego alguna variante de &ldquo;señala lo que no sabes con certeza&rdquo;. El modelo no es omnisciente — y en contexto legal, ese reconocimiento importa.</p><p><strong>Iterar, no perfeccionar.</strong> El primer prompt casi nunca es el mejor. Lo que funciona es tener una base, ver qué falla y ajustar.</p><hr><p>Estos no son los únicos prompts que uso, ni son fórmulas mágicas. Son los que me han funcionado en el contexto específico en el que trabajo. Si tu contexto es diferente, las variables cambian.</p><p>Si usas IA en tu trabajo legal o judicial y tienes una forma particular de pedirle las cosas que te funciona, me interesa saberlo.</p><hr><p><em>Este post es parte de la serie [Construyendo] — donde comparto en abierto las herramientas, patrones y decisiones detrás de los proyectos en los que trabajo.</em></p><hr><ul class=pager><li class=previous><a href=/2026/01/08/por-que-transforme-este-espacio/ data-toggle=tooltip data-placement=top title="Por qué transformé este espacio">&larr;
+Previous Post</a></li><li class=next><a href=/2026/03/12/que-es-un-vps-para-abogados/ data-toggle=tooltip data-placement=top title="Qué es un VPS y por qué tu firma jurídica debería entenderlo">Next
+Post &rarr;</a></li></ul></div><div class="col-lg-2 col-lg-offset-0
+visible-lg-block
+sidebar-container
+catalog-container"><div class=side-catalog><hr class="hidden-sm hidden-xs"><h5><a class=catalog-toggle href=#>CATALOG</a></h5><ul class=catalog-body></ul></div></div><div class="col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+sidebar-container"><section><hr><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://www.alexanderoviedofadul.dev/>Alexander Oviedo Fadul</a></li></ul></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:arbe.94@hotmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/HammerDev99><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/daniel-arbelaez-/><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a href rel=alternate type=application/rss+xml title="Sprint Judicial"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Sprint Judicial 2026<br><a href=https://github.com/HammerDev99>Daniel Arbelaez Alvarez </a>|
+<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=180px height=20px src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script></body></html>
