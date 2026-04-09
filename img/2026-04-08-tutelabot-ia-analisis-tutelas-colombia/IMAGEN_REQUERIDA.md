@@ -6,6 +6,6 @@
 
 ## Descripción visual sugerida
 
-Imagen que evoque el sistema judicial colombiano + tecnología: una pantalla con código o JSON, papeles de tutela, o elementos que representen la intersección entre derecho y automatización. Puede ser abstracta con colores que sugieran precisión y justicia (azul, blanco, gris).
+Se trata de la misma imagen que evoca el sistema judicial, especificamente la msima que esta publicada en la pagina del modelo en la plataforma de ollama https://ollama.com/bladealex/tutelabot.
 
 Tono: técnico pero accesible, no corporativo.
