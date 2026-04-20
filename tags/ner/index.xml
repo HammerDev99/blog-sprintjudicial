@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ner on Sprint Judicial</title>
+    <link>https://blog.sprintjudicial.com/tags/ner/</link>
+    <description>Recent content in Ner on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.sprintjudicial.com/tags/ner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title>
+      <link>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

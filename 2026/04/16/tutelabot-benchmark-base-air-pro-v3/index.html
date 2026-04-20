@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-04-16-tutelabot-benchmark-base-air-pro-v3/header.jpg">
+    <meta property="twitter:image" content="img/2026-04-16-tutelabot-benchmark-base-air-pro-v3/header.jpg" />
+    
+
+    
+    <meta name="title" content="TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales" />
+    <meta property="og:title" content="TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales" />
+    <meta property="twitter:title" content="TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2026/04/16/tutelabot-benchmark-base-air-pro-v3/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="https://blog.sprintjudicial.com/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-04-16-tutelabot-benchmark-base-air-pro-v3/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/tutelabot" title="tutelabot">
+                            tutelabot
+                        </a>
+                        
+                        <a class="tag" href="/tags/ollama" title="ollama">
+                            ollama
+                        </a>
+                        
+                        <a class="tag" href="/tags/llm" title="llm">
+                            llm
+                        </a>
+                        
+                        <a class="tag" href="/tags/ner" title="ner">
+                            ner
+                        </a>
+                        
+                        <a class="tag" href="/tags/benchmark" title="benchmark">
+                            benchmark
+                        </a>
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                    </div>
+                    <h1>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</h1>
+                    <h2 class="subheading">Tres versiones del modelo, 358 tutelas del Juzgado Civil Municipal de Bello y once notebooks después: lo que aprendí sobre prompts, num_ctx y saturación de parámetros en extracción estructurada.</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Thursday, April 16, 2026
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h1 id="tutelabot-a-fondo-benchmark-de-base-air-y-pro-v3-sobre-tutelas-reales">TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</h1>
+<p>Hace una semana escribí sobre TutelaBot, el modelo de IA que Alexander Oviedo Fadul publicó en Ollama para analizar acciones de tutela. Ese post se quedó en la versión base: la de 2 GB que corre en cualquier máquina con 16 de RAM.</p>
+<p>Pero la familia son tres modelos. Base (3.2B parámetros), Air (10B) y Pro v3 (16B). Los tres se instalan con un <code>ollama pull</code> y responden al mismo prompt. La diferencia está en lo que hacen con ese prompt.</p>
+<p>Pasé tres semanas corriéndolos contra tutelas reales del Juzgado Civil Municipal de Bello. 24 PDFs al principio. 460 después. 358 en la última iteración. Once notebooks, cinco consolidaciones, una tabla de Excel con resultados que cabía en mi cabeza hasta el benchmark número seis.</p>
+<p>Este es el resumen de lo que encontré. Qué hace bien cada versión, qué hace mal, y qué aprendí reiterando sobre la misma pregunta: <strong>¿puede un LLM abierto de 3.2B parámetros extraer información estructurada de una tutela colombiana sin inventar datos?</strong></p>
+<p>La respuesta corta es sí. Si el prompt está bien hecho y si aceptas que la medida provisional la va a alucinar un 26% de las veces.</p>
+<p>La respuesta larga requiere tablas.</p>
+<hr>
+<h2 id="las-tres-versiones-en-una-tabla">Las tres versiones en una tabla</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Versión</th>
+          <th>Base</th>
+          <th>Parámetros</th>
+          <th>Tamaño</th>
+          <th>Cuantización</th>
+          <th>Uso sugerido</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>tutelabot</code></td>
+          <td>Llama 3.2</td>
+          <td>3.2B</td>
+          <td>2.0 GB</td>
+          <td>Q4_K_M</td>
+          <td>Desarrollo local, CPU, iteración rápida</td>
+      </tr>
+      <tr>
+          <td><code>tutelabot-air</code></td>
+          <td>Llama 3.2</td>
+          <td>~10B</td>
+          <td>10 GB</td>
+          <td>Q4_K_M</td>
+          <td>Balance producción, GPU 8 GB</td>
+      </tr>
+      <tr>
+          <td><code>tutelabot-pro-v3</code></td>
+          <td>Llama 3.2</td>
+          <td>~16B</td>
+          <td>16 GB</td>
+          <td>Q4_K_M</td>
+          <td>Máxima precisión, GPU 16 GB+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Las tres comparten ventana de contexto de 128,000 tokens y el mismo conjunto de templates de prompt del autor. Ante documentos pequeños las tres devuelven JSON estructurado sin sudar.</p>
+<p>Lo que cambia de una a otra no es el prompt. Es el tamaño del modelo, el hardware que necesita y el costo por segundo que pagas cuando procesas 300 tutelas seguidas.</p>
+<hr>
+<h2 id="cómo-medimos-esto">Cómo medimos esto</h2>
+<p>No fue una corrida. Fueron cinco iteraciones consolidadas (V1 a V5) y once notebooks independientes. Cada notebook respondía una pregunta distinta:</p>
+<ul>
+<li><strong>NB02</strong>: benchmark formal, 10 PDFs × 3 modelos, con ground truth anotado a mano en 5 de los 10.</li>
+<li><strong>NB05</strong>: extracción masiva sobre 24 PDFs, modelo fijo, sin ground truth, solo cobertura sintáctica.</li>
+<li><strong>NB06</strong>: prompt extendido a 57 campos, para ver qué pasa cuando el schema se agranda.</li>
+<li><strong>NB07 al NB10</strong>: consolidaciones progresivas con más documentos, mejores prompts y configuración de <code>num_ctx</code> ajustada.</li>
+<li><strong>NB11</strong>: auditoría de seis estrategias de extracción (regex-as-context, dual output, self-verification, JSON constrained, evidence grounded, agreement score).</li>
+</ul>
+<p>El corpus evolucionó con las corridas. Empezamos con 24 PDFs controlados. Saltamos a 460 documentos mixtos (incluyendo correos, anexos y actas de reparto que clasificamos después como no-tutelas). Terminamos con 358 documentos refinados y un ground truth manual sobre dos casos difíciles.</p>
+<p>El prompt de referencia para todos los notebooks se parecía a esto (no es el prompt final que usa Sherlock-docs, es un prompt ilustrativo del tipo de contrato que se le entrega al modelo):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>PROMPT_SISTEMA <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">Eres un asistente experto en documentos judiciales colombianos.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">Analiza el documento y extrae información en formato JSON estricto
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">según este schema:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">{
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;tipo_documento&#34;: &#34;tutela | habeas_corpus | demanda&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;radicado&#34;: &#34;string o null&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;fecha&#34;: &#34;YYYY-MM-DD o null&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;accionante&#34;: {
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#34;nombre&#34;: &#34;string&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#34;documento_identidad&#34;: &#34;string&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#34;tipo_documento_id&#34;: &#34;CC | TI | CE&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  },
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;accionado&#34;: {
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#34;nombre&#34;: &#34;string&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#34;tipo_entidad&#34;: &#34;string&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  },
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;hechos&#34;: [&#34;string&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;derechos_vulnerados&#34;: [&#34;string&#34;],
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">  &#34;pretensiones&#34;: [&#34;string&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">}
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">Reglas:
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">- Responde SOLO con JSON válido, sin texto adicional.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">- Si un campo no aparece en el documento, usa null o [].
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">- No infieras datos que no estén explícitos.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;&#34;&#34;</span>
+</span></span></code></pre></div><p>Tres reglas simples. La última es la que se rompe más seguido, como veremos.</p>
+<hr>
+<h2 id="tutelabot-base-rápido-frágil-pero-útil">TutelaBot base: rápido, frágil, pero útil</h2>
+<p>La versión base corre en CPU. Ocupa 2 GB de disco, no pide GPU, no pide configuración especial. Es la puerta de entrada. Para un juzgado que no tiene presupuesto de infraestructura, es la única versión que importa.</p>
+<p>Los números del benchmark NB02 sobre 10 PDFs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Métrica</th>
+          <th>Valor</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>JSON válido</td>
+          <td>90% (9/10)</td>
+      </tr>
+      <tr>
+          <td>Latencia promedio</td>
+          <td>6.3s</td>
+      </tr>
+      <tr>
+          <td>Latencia P95</td>
+          <td>9.0s</td>
+      </tr>
+      <tr>
+          <td>RAM pico</td>
+          <td>1,692 MB</td>
+      </tr>
+      <tr>
+          <td>Precisión promedio</td>
+          <td>61%</td>
+      </tr>
+      <tr>
+          <td>Recall promedio</td>
+          <td>75%</td>
+      </tr>
+      <tr>
+          <td>F1 promedio</td>
+          <td>65%</td>
+      </tr>
+  </tbody>
+</table>
+<p>El 10% de fallos en JSON fue el mismo documento: una tutela con tablas anidadas de 38 páginas que saturó el contexto útil del modelo. El P95 de 9 segundos es lo que pagas por documentos grandes; el P50 queda por debajo de 7.</p>
+<p>Lo que sorprende no son los números, es la curva. El mismo modelo, el mismo corpus, con un prompt ajustado y <code>num_ctx=32768</code>, alcanza <strong>93.9% de JSON válido sobre 358 documentos</strong>. La diferencia no está en el modelo. Está en cómo le hablas.</p>
+<p><strong>Lecciones del base:</strong></p>
+<ol>
+<li><strong>El prompt pesa más que el tamaño.</strong> Cambiar de un prompt genérico a un prompt con role-input-steps-expectation (RISE) pasó la cobertura de accionantes de 0% a 100% en el mismo modelo, sobre los mismos documentos.</li>
+<li><strong><code>num_ctx</code> es el parámetro oculto que nadie documenta.</strong> Con <code>num_ctx=8192</code> y documentos de 50 KB, el modelo trunca el JSON a mitad y se rompe la extracción. Subirlo a 32,768 resuelve el 95% de los fallos sin tocar el prompt.</li>
+<li><strong>6.3 segundos por documento no es lento para un juzgado.</strong> El SLA de Sherlock-docs es menos de 2 minutos por documento de 20 páginas. Base entra por debajo del 10% de ese presupuesto.</li>
+</ol>
+<p>Si alguien me pregunta por dónde empezar a explorar LLMs aplicados a justicia, empiezo por base. No porque sea el mejor. Porque es el único que te deja iterar el prompt 40 veces en una tarde sin pagar por GPU.</p>
+<hr>
+<h2 id="tutelabot-air-el-balance">TutelaBot Air: el balance</h2>
+<p>Air es el modelo de 10B parámetros. Necesita GPU (8 GB de VRAM bastan) y saca los siguientes números sobre el mismo corpus de 10 PDFs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Métrica</th>
+          <th>Valor</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>JSON válido</td>
+          <td>100% (10/10)</td>
+      </tr>
+      <tr>
+          <td>Latencia promedio</td>
+          <td>16.6s</td>
+      </tr>
+      <tr>
+          <td>Latencia P95</td>
+          <td>17.6s</td>
+      </tr>
+      <tr>
+          <td>Precisión promedio</td>
+          <td>70%</td>
+      </tr>
+      <tr>
+          <td>Recall promedio</td>
+          <td>92%</td>
+      </tr>
+      <tr>
+          <td>F1 promedio</td>
+          <td>78%</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pagas 2.5 veces más latencia que en base. Ganas 13 puntos de F1, 17 puntos de recall y eliminas completamente los fallos de JSON. Para un pipeline en producción con validación humana, esos 10 puntos extra de JSON válido son la diferencia entre escribir código de fallback o no.</p>
+<p>Donde Air se destaca especialmente es en campos narrativos: derechos invocados, hechos relevantes, pretensiones. El base los captura parcialmente; Air los captura completos, con estructura y sin inventar.</p>
+<p><strong>Lecciones del Air:</strong></p>
+<ol>
+<li><strong>Es el punto dulce de costo-beneficio.</strong> Si tienes GPU de 8 GB, no hay razón para quedarse en base.</li>
+<li><strong>Recall de 92% cambia el flujo de validación.</strong> El operador valida menos campos vacíos y más campos llenos pero posiblemente incorrectos. Eso reorganiza el tiempo del validador.</li>
+<li><strong>La tasa de fallo JSON a cero es subestimada.</strong> En un pipeline que procesa 100 documentos al día, cada fallo de JSON requiere manejo de excepciones, reintento y, eventualmente, revisión humana. Quitarlos simplifica tres capas del sistema.</li>
+</ol>
+<p>Air es el modelo que usaría en producción si tuviera que elegir uno hoy.</p>
+<hr>
+<h2 id="tutelabot-pro-v3-más-grande-no-es-mejor">TutelaBot Pro v3: más grande no es mejor</h2>
+<p>Pro v3 es el modelo de 16B parámetros. Necesita GPU de 16 GB o más. Los números:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Métrica</th>
+          <th>Valor</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>JSON válido</td>
+          <td>100% (10/10)</td>
+      </tr>
+      <tr>
+          <td>Latencia promedio</td>
+          <td>98.9s</td>
+      </tr>
+      <tr>
+          <td>Latencia P95</td>
+          <td>116.0s</td>
+      </tr>
+      <tr>
+          <td>Precisión promedio</td>
+          <td>65%</td>
+      </tr>
+      <tr>
+          <td>Recall promedio</td>
+          <td>92%</td>
+      </tr>
+      <tr>
+          <td>F1 promedio</td>
+          <td>76%</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pagas 6 veces más latencia que Air. El F1 <strong>baja</strong> 2 puntos. La precisión baja 5 puntos. El recall es igual.</p>
+<p>Esto es lo que los papers académicos llaman &ldquo;saturación de retorno&rdquo;. En extracción estructurada sobre documentos cortos (una tutela promedio tiene entre 5 y 40 páginas), un modelo de 16B no tiene qué hacer con parámetros extra. La tarea es más de comprensión de formato que de razonamiento, y el formato se aprende con mucho menos.</p>
+<p>Donde Pro v3 sí ganaría es en tareas de razonamiento complejo: resumir una sentencia de 400 páginas, comparar dos jurisprudencias, redactar un memorando. Eso no es lo que hicimos en el benchmark, porque no es lo que un juzgado de primera instancia necesita hacer automáticamente.</p>
+<p><strong>Lecciones del Pro v3:</strong></p>
+<ol>
+<li><strong>Para extracción estructurada, no vale la pena.</strong> 6x latencia por -2pp F1 no es un trade-off aceptable.</li>
+<li><strong>Reservar para tareas generativas.</strong> Redacción de borradores, resúmenes, análisis comparado.</li>
+<li><strong>El tamaño no compensa un prompt flojo.</strong> Lo demuestra el mismo corpus con prompt RISE. El base llega a 92.5% de JSON válido. Pro v3 no va más allá.</li>
+</ol>
+<hr>
+<h2 id="la-serie-v1v5-cinco-iteraciones-cinco-lecciones">La serie V1→V5: cinco iteraciones, cinco lecciones</h2>
+<p>Las métricas individuales de cada modelo son la mitad de la historia. La otra mitad es cómo llegamos a esas métricas. Cinco iteraciones, cada una resolviendo un problema encontrado en la anterior.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Versión</th>
+          <th>n</th>
+          <th>num_ctx</th>
+          <th>Schema</th>
+          <th>JSON ✓</th>
+          <th>Latencia P50</th>
+          <th>Cobertura accionante</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>V1</td>
+          <td>249</td>
+          <td>32768</td>
+          <td>57 campos</td>
+          <td>95.2%</td>
+          <td>6.70s</td>
+          <td>99.2%</td>
+      </tr>
+      <tr>
+          <td>V2</td>
+          <td>460</td>
+          <td>32768</td>
+          <td>57 campos</td>
+          <td>96.3%</td>
+          <td>6.24s</td>
+          <td>93.3% real / 99% nominal</td>
+      </tr>
+      <tr>
+          <td>V3</td>
+          <td>358</td>
+          <td><strong>8192</strong></td>
+          <td>57 campos</td>
+          <td><strong>55.3%</strong></td>
+          <td>5.44s</td>
+          <td>93.9% con prompt / 1.6% sin</td>
+      </tr>
+      <tr>
+          <td>V4</td>
+          <td>5</td>
+          <td>32768</td>
+          <td>subset + regex</td>
+          <td>100%</td>
+          <td>14.30s</td>
+          <td>100%</td>
+      </tr>
+      <tr>
+          <td>V5</td>
+          <td>358</td>
+          <td>32768</td>
+          <td>subset + regex + prompt</td>
+          <td>92.5%</td>
+          <td>6.11s</td>
+          <td>92.5%</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>V1</strong>: Línea base. 249 documentos controlados, modelo base, 57 campos. Primer número de referencia.</p>
+<p><strong>V2</strong>: Saltamos a 460 documentos y descubrimos el problema de la cobertura nominal vs real. El CSV oficial decía 99.3% en accionante. Al filtrar los &ldquo;no especifica&rdquo;, &ldquo;no aplica&rdquo; y strings vacíos, la cobertura real bajaba al 93.3%. En radicado la brecha era brutal: 98.9% nominal, 30.7% real. <strong>Lección</strong>: el modelo cumple con la forma del JSON aunque el contenido no aporte.</p>
+<p><strong>V3</strong>: El bug del siglo. Bajamos <code>num_ctx</code> a 8192 tokens pensando que aceleraría la extracción. El JSON válido cayó del 96% al 55%. Dos semanas de debug después, la tabla clave fue esta:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tamaño documento</th>
+          <th>n</th>
+          <th>% fallo con num_ctx=8192</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0-5k caracteres</td>
+          <td>39</td>
+          <td>2.6%</td>
+      </tr>
+      <tr>
+          <td>5-15k</td>
+          <td>86</td>
+          <td>3.5%</td>
+      </tr>
+      <tr>
+          <td>15-30k</td>
+          <td>98</td>
+          <td>24.5%</td>
+      </tr>
+      <tr>
+          <td><strong>30-60k</strong></td>
+          <td><strong>67</strong></td>
+          <td><strong>100%</strong></td>
+      </tr>
+      <tr>
+          <td>60-100k</td>
+          <td>28</td>
+          <td>96.4%</td>
+      </tr>
+      <tr>
+          <td>100-250k</td>
+          <td>33</td>
+          <td>93.9%</td>
+      </tr>
+      <tr>
+          <td>&gt;250k</td>
+          <td>7</td>
+          <td>100%</td>
+      </tr>
+  </tbody>
+</table>
+<p>El umbral es 30,000 caracteres. Con <code>num_ctx=8192</code> tokens y un prompt de 2,000 tokens, quedan 6,000 tokens útiles. Eso son aproximadamente 24,000 caracteres. Pasado ese umbral, el modelo trunca el JSON, devuelve <code>}</code>  sin cerrar estructuras y todo colapsa. <strong>Lección</strong>: el parámetro más barato de ajustar es el que más rompe cuando se mueve sin medir.</p>
+<p><strong>V4</strong>: Piloto con 5 documentos anotados a mano. Prompt refinado con RISE, schema reducido a los 12 campos que realmente usa Sherlock-docs, regex complementario para cédula, email y radicado. JSON 100%, cobertura 100%, latencia 14.3s. El piloto funcionó. Pero 5 documentos no son un corpus.</p>
+<p><strong>V5</strong>: Escala del piloto sobre los 358 documentos refinados. JSON 92.5%, cobertura útil 92.5%, latencia P50 6.11s. Esta es la corrida que consideramos candidata a producción. La brecha con V4 (92.5% vs 100%) se explica por documentos que en V4 no estaban: escaneados de baja calidad, tutelas colectivas, PDFs con tablas anidadas.</p>
+<p><strong>Lección de la serie completa</strong>: el modelo no mejoró entre V1 y V5. Lo que mejoró fue todo lo demás. Prompt, configuración, validación, schema, post-procesamiento con regex. El LLM es una pieza más en un sistema, no el sistema entero.</p>
+<hr>
+<h2 id="insights-accionables-por-versión">Insights accionables por versión</h2>
+<p>Si vas a usar uno de estos modelos en tu propio proyecto, estas son las tres cosas que yo haría diferente en cada uno.</p>
+<h3 id="base-32b">Base (3.2B)</h3>
+<ol>
+<li><strong>Usa <code>num_ctx=32768</code> siempre.</strong> El default de Ollama de 4096 no alcanza para tutelas reales. 32768 es el mínimo. 65536 si los documentos pasan de 80 KB.</li>
+<li><strong>Empieza con un schema de 10 campos, no de 57.</strong> La cobertura de los 23 campos adicionales del schema completo es marginal y los errores se propagan. Menos schema, más precisión.</li>
+<li><strong>Valida siempre con regex paralelo en campos estructurales.</strong> Cédula, email y radicado se extraen 4,767 veces más rápido con regex que con LLM, y con mayor precisión. Usa el LLM para resolver ambigüedades, no para extraer patrones deterministas.</li>
+</ol>
+<h3 id="air-10b">Air (10B)</h3>
+<ol>
+<li><strong>Precalienta el modelo antes del primer documento real.</strong> El primer request de Ollama tiene overhead de carga. Si tu pipeline corre en burst, manda una request de warmup.</li>
+<li><strong>No pierdas los 10 puntos de JSON extra haciendo post-procesamiento débil.</strong> Si pagaste la latencia por JSON 100%, aprovéchalo: parsea estricto, no tolerante.</li>
+<li><strong>Mide latencia por percentil, no por promedio.</strong> El P95 de Air es 1 segundo más que el promedio. El P99 es otro animal. Si tu SLA es duro, dimensiona por P99.</li>
+</ol>
+<h3 id="pro-v3-16b">Pro v3 (16B)</h3>
+<ol>
+<li><strong>No lo uses para extracción estructurada.</strong> El análisis del benchmark deja claro que no aporta sobre Air.</li>
+<li><strong>Úsalo para lo que sí sabe hacer.</strong> Resumir una sentencia, comparar jurisprudencias, redactar un memo. Ahí Pro v3 muestra de qué es capaz.</li>
+<li><strong>Si lo usas, bloquea recursos.</strong> 98.9 segundos de latencia por documento significa que un worker de Pro v3 procesa 36 documentos por hora. Planifica infraestructura acorde.</li>
+</ol>
+<hr>
+<h2 id="aplicación-práctica-qué-hicimos-con-todo-esto">Aplicación práctica: qué hicimos con todo esto</h2>
+<p>La versión corta es que TutelaBot Air, configurado con <code>num_ctx=32768</code>, prompt RISE, schema reducido a 12 campos y regex paralelo para campos estructurales, es candidato a entrar como Nivel 6 del ensemble NER de Sherlock-docs.</p>
+<p>Nivel 1 a 5 son los extractores actuales (Marker, SpaCy, Regex, Address, Contact). Nivel 6 sería TutelaBot como resolver de conflictos y extractor de campos narrativos (hechos, derechos, pretensiones).</p>
+<p>El plan de integración, el prompt final afinado para el dominio colombiano específico de Bello, y la auditoría NB11 de seis estrategias de mitigación de alucinaciones (incluyendo por qué descartamos la estrategia de auto-verificación adversarial por sycophancy), merecen su propio post. Pronto.</p>
+<hr>
+<h2 id="lo-que-todavía-no-funciona-bien">Lo que todavía no funciona bien</h2>
+<p><strong>La medida provisional sigue alucinada en 26% de los casos.</strong> El modelo reporta <code>medida_provisional=true</code> en documentos donde el regex determinista no encuentra las keywords asociadas. Puede ser que el modelo detecte semánticamente la medida donde el regex falla. Puede ser que la invente. No tenemos ground truth manual suficiente para saberlo. Hay 30 documentos anotados a mano pendientes para resolver esta pregunta.</p>
+<p><strong>La concordancia regex↔LLM en cédulas es del 55%.</strong> En el 45% restante, el LLM extrae una cédula distinta a la que captura el regex. A veces es el abogado apoderado en lugar del accionante. A veces es un dato de jurisprudencia citada. El modelo no se equivoca. El documento tiene ambigüedad real, y resolverla exige ranking y validación posterior.</p>
+<p><strong>El corpus de 358 documentos es pequeño para afirmaciones fuertes.</strong> Todos los números de este post hay que leerlos con intervalo de confianza mental. F1 de 78% en Air significa algo entre 74% y 82% si repitiéramos el experimento con otros 358 documentos.</p>
+<p><strong>Los documentos escaneados de baja calidad rompen el pipeline antes de llegar al LLM.</strong> El OCR de Sherlock-docs tiene sus propios puntos de falla. TutelaBot nunca ve el documento original. Solo recibe el texto que el OCR reconoció. Un 5% de error en OCR se traduce en 10% de error en extracción, porque el modelo no puede recuperar información que nunca recibió.</p>
+<hr>
+<p>Después del benchmark tengo una convicción. Los LLMs abiertos, con el prompt y la configuración correctos, son herramientas útiles en legaltech colombiano. No son magia. No reemplazan al operador humano, y tampoco resuelven el volumen por sí mismos.</p>
+<p>Pero convierten 15 minutos de captura manual en 20 segundos de validación de campos pre-llenados. Y eso, repetido 80 veces al día en un juzgado de Bello, es tiempo que el equipo puede dedicar al trabajo que sí requiere criterio jurídico.</p>
+<p>Alexander Oviedo Fadul publicó TutelaBot en Ollama y cualquiera puede descargarlo. Si alguien está trabajando en un modelo similar para otro tipo de proceso (acciones populares, nulidades electorales, disciplinarios), los datos de este benchmark están disponibles para que no tengan que hacer las 11 corridas desde cero.</p>
+<hr>
+<p><em>Stack técnico: Ollama 0.5+, Llama 3.2 (3.2B/10B/16B, cuantización Q4_K_M), corpus de 358 tutelas del Juzgado Civil Municipal de Bello, 11 notebooks Jupyter, 5 análisis consolidados (V1 a V5). Los modelos están disponibles en <a href="https://ollama.com/bladealex/tutelabot">ollama.com/bladealex/tutelabot</a>.</em></p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/04/15/analiticas-presencia-digital-abogados/" data-toggle="tooltip" data-placement="top" title="Cómo leer las analíticas de tu presencia digital como abogado: lo que los números realmente dicen">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

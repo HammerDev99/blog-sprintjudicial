@@ -1,29 +1,561 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Sprint Judicial"><meta property="og:type" content="article"><meta property="og:image" content="img/2026-06-05-modelo-seci-memoria-institucional-juzgados/header.jpg"><meta property="twitter:image" content="img/2026-06-05-modelo-seci-memoria-institucional-juzgados/header.jpg"><meta name=title content="El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va"><meta property="og:title" content="El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va"><meta property="twitter:title" content="El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va"><meta name=description content="LegalTech | Código | Justicia Digital"><meta property="og:description" content="LegalTech | Código | Justicia Digital"><meta property="twitter:description" content="LegalTech | Código | Justicia Digital"><meta property="twitter:card" content="summary"><meta name=keyword content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software"><link rel="shortcut icon" href=/img/favicon.ico><title>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va | Sprint Judicial | Daniel Arbelaez</title>
-<link rel=canonical href=/2025/06/05/modelo-seci-memoria-institucional-juzgados/><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/css/zanshang.css><link rel=stylesheet href=/css/font-awesome.all.min.css><link rel=stylesheet href=https://blog.sprintjudicial.com/css/sprint-judicial.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script><script src=/js/lazysizes.min.js></script><script defer src=https://analytics.sprintjudicial.com/script.js data-website-id=94c14f95-5e78-4070-a4f5-679329f7c8c8></script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-MEASUREMENT_ID",{anonymize_ip:!1})}</script><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<a class=navbar-brand href=/>Sprint Judicial</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Posts</a></li><li><a href=/categories/construyendo/>CONSTRUYENDO</a></li><li><a href=/categories/pensando/>PENSANDO</a></li><li><a href=/categories/conectando/>CONECTANDO</a></li><li><a href=/categories/aprendiendo/>APRENDIENDO</a></li><li><a href=/archive/>ARCHIVO</a></li><li><a href=/about/>ACERCA DE</a></li><li><a href=/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><style type=text/css>header.intro-header{background-image:url(/img/2026-06-05-modelo-seci-memoria-institucional-juzgados/header.jpg)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/conocimiento-institucional title="conocimiento institucional">conocimiento institucional
-</a><a class=tag href=/tags/gestion-del-conocimiento title="gestion del conocimiento">gestion del conocimiento
-</a><a class=tag href=/tags/seci title=SECI>SECI
-</a><a class=tag href=/tags/sistema-judicial title="sistema judicial">sistema judicial
-</a><a class=tag href=/tags/legaltech title=legaltech>legaltech</a></div><h1>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va</h1><h2 class=subheading>Nonaka y Takeuchi describieron cómo el conocimiento se convierte en poder colectivo. En los juzgados colombianos, ese proceso falla sistemáticamente.</h2><span class=meta>Posted by
-Daniel Arbelaez
-on
-Thursday, June 5, 2025</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2
-col-md-10 col-md-offset-1
-post-container"><p>Hace unos años, en un despacho judicial que conozco bien, llegó un nuevo juez a reemplazar a uno que llevaba once años en ese cargo.</p><p>El juez saliente era de esos que el sistema produce raramente, alguien que conocía cada proceso como si fuera propio, que sabía exactamente por qué ciertos expedientes tenían ese folio extra archivado al final, que había desarrollado un criterio muy preciso para decretar medidas cautelares en casos de familia que nunca estaba escrito en ningún manual. Los funcionarios del despacho lo consultaban como si fuera el repositorio vivo de once años de jurisprudencia interna.</p><p>Cuando se fue, se llevó todo eso consigo.</p><p>El nuevo juez llegó con sus propios criterios, sus propias lecturas del CGP, sus propias intuiciones sobre cómo funcionaba el flujo del despacho. Y el equipo, que había trabajado con coherencia durante años, tuvo que recalibrarse desde cero. El conocimiento que sostenía esa coherencia no estaba en ningún lado. Estaba en la cabeza del que se fue.</p><p>Esa historia tiene nombre en la teoría organizacional. Se llama falla de gestión del conocimiento. Y tiene un modelo que la explica mejor que cualquier otro.</p><hr><h2 id=el-modelo-seci-cuatro-cuadrantes-para-entender-cómo-viaja-el-conocimiento>El modelo SECI: cuatro cuadrantes para entender cómo viaja el conocimiento</h2><p>En 1995, los investigadores japoneses Ikujiro Nonaka e Hirotaka Takeuchi publicaron <em>The Knowledge-Creating Company</em>, un libro que cambió cómo las organizaciones piensan sobre lo que saben y cómo lo aprenden.</p><p>Su argumento central era este: el conocimiento no es solo información almacenada. Hay un tipo de conocimiento que vive en la experiencia, en el instinto, en la práctica acumulada, extraordinariamente difícil de capturar. Lo llamaron conocimiento tácito.</p><p>El otro tipo, el que puedes escribir en un manual, registrar en un sistema o enseñar en una clase, es el conocimiento explícito.</p><p>El modelo SECI describe cómo las organizaciones convierten el uno en el otro, y cómo ese ciclo, cuando funciona bien, genera conocimiento colectivo que sobrevive a las personas.</p><p>Cuatro momentos, cuatro cuadrantes:</p><p><strong>Socialización</strong> — de tácito a tácito. Conocimiento que se transfiere por observación y práctica compartida, sin necesidad de palabras. El auxiliar que aprende viendo cómo el juez conduce una audiencia. El judicante que entiende el ritmo del despacho simplemente estando presente. Aquí el conocimiento viaja, pero sigue atrapado en personas.</p><p><strong>Externalización</strong> — de tácito a explícito. El momento más valioso y más difícil, cuando alguien convierte lo que sabe en algo que puede ser leído, usado y transmitido. Un juez que escribe sus criterios de decisión. Un secretario que documenta el flujo real del despacho, no el que dice el manual. Una herramienta que registra los patrones de cómo se procesan ciertos tipos de solicitudes.</p><p><strong>Combinación</strong> — de explícito a explícito. Cuando el conocimiento ya externalizado se organiza, conecta y enriquece con otro conocimiento explícito. Las bases de datos. Los sistemas de gestión documental. Los informes que agregan lo que todos los despachos saben por separado.</p><p><strong>Internalización</strong> — de explícito a tácito. El ciclo que cierra: cuando alguien lee, practica y termina integrando ese conocimiento explícito hasta volverlo instinto propio. El juez que absorbe la jurisprudencia hasta que sus decisiones la reflejan sin necesidad de consultar cada vez.</p><p>El ciclo es virtuoso cuando funciona. El problema es que en los juzgados colombianos casi nunca llega al segundo cuadrante.</p><hr><h2 id=cómo-aplica-cada-cuadrante-en-un-juzgado-colombiano>Cómo aplica cada cuadrante en un juzgado colombiano</h2><p>Veamos esto en concreto. <strong>Socialización</strong> ocurre todo el tiempo en los despachos. El auxiliar judicial que lleva tres años en el cargo sabe cosas que ningún reglamento describe, que las peticiones urgentes hay que radicarlas antes de las diez de la mañana, que cierto tipo de recursos tiende a reprocesarse si no va con determinado soporte, que el flujo de una audiencia de este juez tiene tiempos distintos a los de la ley. Ese conocimiento circula entre las personas del despacho con fluidez natural.</p><p>Pero circula en silencio. No deja rastro.</p><p><strong>Externalización</strong> es donde el sistema falla. ¿Cuántos juzgados en Colombia tienen documentados sus criterios internos de interpretación? ¿Cuántos jueces han escrito, aunque sea informalmente, los patrones que los llevan a decidir de una manera y no de otra? ¿Cuántos despachos tienen un protocolo real sobre cómo funciona el día a día, distinto del que dice el manual del CSJ?. Sé que si existen hoy en dia jueces que lo hacen porque los he visto, sin embargo trabajan como islas de forma independiente y no hay una convención o estandarización del proceso.</p><p>La respuesta honesta es, muy pocos. No por negligencia de los jueces. El sistema no les pide eso, no les da tiempo para hacerlo, y no tiene mecanismos para capturarlo.</p><p><strong>Combinación</strong> existe en forma incompleta. El Sistema de Gestión de Despachos Judiciales registra actuaciones y tambien tiene un sistema documental (recientemente). El TYBA, SGDE o SIERJU tiene datos, pero esos datos describen individualmente la información de los procesos. Es como tener el historial clínico sin las notas del médico. Los sistemas independientes que tienen información relacionada implican una carga adicional para los funcionarios, que no siempre se traduce en un beneficio claro para el despacho. La información existe, pero no está organizada de manera que facilite la transferencia de conocimiento.</p><p><strong>Internalización</strong> ocurre individualmente, pero se reinicia con cada cambio de titular. Cada juez que llega a un despacho tiene que recorrer su propio ciclo de aprendizaje desde cero. Y ese costo, que en un hospital se mediría en errores médicos y en una empresa en pérdida de clientes, en el sistema judicial se mide en procesos mal tramitados, términos mal contados y decisiones inconsistentes durante los primeros meses del nuevo cargo.</p><hr><h2 id=rotación-judicial-y-gestión-del-conocimiento>Rotación judicial y gestión del conocimiento</h2><p>Colombia rota a sus jueces (entre otros tipos de empleados). En muchos casos es un problema por lo que se pierde en cada rotación cuando no hay mecanismos para capturarlo.</p><p>Un juez que lleva diez años en un juzgado de familia en Medellín ha desarrollado un conjunto de interpretaciones, criterios y prácticas que generan coherencia en el despacho. Las partes aprenden a operar con ese criterio. Los funcionarios entienden qué esperar. La jurisprudencia interna del despacho, aunque nunca escrita, funciona como ancla.</p><p>Cuando ese juez rota, esa coherencia no se transfiere automáticamente. El nuevo juez interpreta el mismo artículo de manera diferente. Prioriza procesos distintos. Tiene un ritmo de audiencias diferente. Y todo el ecosistema de abogados, auxiliares y usuarios que había aprendido a operar con el criterio anterior tiene que recalibrarse.</p><p>El problema no es la rotación en sí — es que las organizaciones que rotan sin mecanismos de captura del conocimiento generan una curva de aprendizaje perpetua. La teoría de gestión del conocimiento lleva décadas describiendo esto, y también las soluciones, documentación de criterios, protocolos de empalme estructurados, sistemas que conserven la memoria institucional más allá de quien ocupa el cargo.</p><p>Eso es exactamente lo que la tecnología puede apoyar. No para eliminar la rotación ni para congelar el criterio del juez saliente, sino para reducir el costo de la transición, que el juez entrante llegue con contexto, no a folio cero.</p><h2 id=lo-que-la-tecnología-puede-hacer-y-lo-que-no>Lo que la tecnología puede hacer, y lo que no</h2><p>Aquí viene la parte que me corresponde contar desde adentro. Los sistemas de gestión judicial, la Maloca digital, Agilex, Sherlock, las plataformas que hemos construido en proyectos como Marduk, capturan actuaciones, tiempos, tipos de procesos y resoluciones. Esa información existe. El problema es que capturar datos no es capturar conocimiento.</p><p>Lo que la tecnología sí puede hacer es crear las condiciones para que la externalización ocurra. Un sistema bien diseñado puede pedirle al juez, al momento de dictar una providencia, que registre brevemente el criterio central de su decisión. Una etiqueta, una categoría, un patrón, algo que en el futuro permita a otro juez o a un sistema de análisis entender qué lógica estaba operando. Eso puede que ya lo apliquen en programas como TYBA y SGDE (item de observaciones), pero no es una práctica generalizada ni estandarizada, o no hay cultura institucional que la exija.</p><p>Puede registrar qué secuencias de decisiones son más frecuentes en qué contextos, de modo que el nuevo titular tenga acceso a los patrones de su antecesor aunque no haya trabajado con él. Puede funcionar como un repositorio de criterios internos del despacho, el know-how informal que hoy muere con cada rotación.</p><p>Eso es externalización mediada por tecnología. Es posible. No está hecho.</p><hr><h2 id=lo-que-estoy-viendo-desde-adentro>Lo que estoy viendo desde adentro</h2><p>Trabajar en automatización judicial en Colombia tiene una paradoja particular.</p><p>Por un lado, hay datos. Más datos que antes, expedientes digitalizados, actuaciones registradas, estadísticas del sistema. El Consejo Superior de la Judicatura tiene tableros de control que antes no existían.</p><p>Por otro lado, ese volumen de datos registran el qué pero no el por qué. La tecnología captura actuaciones pero no criterios. Y cada vez que un juez rota, el ciclo SECI se reinicia en el punto uno.</p><p>En Marduk exploramos cómo extraer patrones de los expedientes, no para tomar decisiones sino para que el conocimiento acumulado en las actuaciones pasadas pudiera informar las futuras. El sistema puede leer miles de providencias y detectar que en cierto tipo de caso, el criterio dominante tiende a ser X. No es inteligencia artificial decidiendo. Es tecnología haciendo lo que el sistema debería haber estado haciendo desde siempre, no dejar que el conocimiento institucional muera cuando cambia la persona.</p><p>Pero hay un límite claro. La herramienta solo puede capturar lo que alguien dejó registrado. El conocimiento que nunca se externalizó, las conversaciones de pasillo, las intuiciones que nunca se escribieron, los criterios que operaban en silencio, eso no está en ningún expediente ni en ningún sistema.</p><p>Y ese conocimiento, que es frecuentemente el más valioso, sigue evaporándose con cada traslado, cada jubilación, cada fin de encargo.</p><hr><h2 id=el-conocimiento-que-nadie-digitaliza>El conocimiento que nadie digitaliza</h2><p>Nonaka y Takeuchi describieron el ciclo de creación de conocimiento en empresas japonesas que querían aprender más rápido que la competencia. Porque las herramientas para capturarlo, aunque imperfectas, ya existen. Lo que falta es la práctica institucional de usarlas.</p><hr><p><em>Este post es parte de la serie [Conectando] donde exploro los puentes entre marcos conceptuales de otras disciplinas y la realidad del sistema judicial colombiano, desde adentro.</em></p><hr><ul class=pager><li class=previous><a href=/2025/04/05/flisol-2025-software-libre-justicia-digital/ data-toggle=tooltip data-placement=top title="Hablé en FliSol 2025 sobre software libre y justicia digital">&larr;
-Previous Post</a></li><li class=next><a href=/2025/06/14/thoughts/ data-toggle=tooltip data-placement=top title="First Thoughts">Next
-Post &rarr;</a></li></ul></div><div class="col-lg-2 col-lg-offset-0
-visible-lg-block
-sidebar-container
-catalog-container"><div class=side-catalog><hr class="hidden-sm hidden-xs"><h5><a class=catalog-toggle href=#>CATALOG</a></h5><ul class=catalog-body></ul></div></div><div class="col-lg-8 col-lg-offset-2
-col-md-10 col-md-offset-1
-sidebar-container"><section><hr><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://www.alexanderoviedofadul.dev/>Alexander Oviedo Fadul</a></li></ul></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:arbe.94@hotmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/HammerDev99><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/daniel-arbelaez-/><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a href rel=alternate type=application/rss+xml title="Sprint Judicial"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
-<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Sprint Judicial 2026<br><a href=https://github.com/HammerDev99>Daniel Arbelaez Alvarez </a>|
-<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=180px height=20px src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-06-05-modelo-seci-memoria-institucional-juzgados/header.jpg">
+    <meta property="twitter:image" content="img/2026-06-05-modelo-seci-memoria-institucional-juzgados/header.jpg" />
+    
+
+    
+    <meta name="title" content="El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va" />
+    <meta property="og:title" content="El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va" />
+    <meta property="twitter:title" content="El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2025/06/05/modelo-seci-memoria-institucional-juzgados/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="https://blog.sprintjudicial.com/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-06-05-modelo-seci-memoria-institucional-juzgados/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/conocimiento-institucional" title="conocimiento institucional">
+                            conocimiento institucional
+                        </a>
+                        
+                        <a class="tag" href="/tags/gestion-del-conocimiento" title="gestion del conocimiento">
+                            gestion del conocimiento
+                        </a>
+                        
+                        <a class="tag" href="/tags/seci" title="SECI">
+                            SECI
+                        </a>
+                        
+                        <a class="tag" href="/tags/sistema-judicial" title="sistema judicial">
+                            sistema judicial
+                        </a>
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                    </div>
+                    <h1>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va</h1>
+                    <h2 class="subheading">Nonaka y Takeuchi describieron cómo el conocimiento se convierte en poder colectivo. En los juzgados colombianos, ese proceso falla sistemáticamente.</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Thursday, June 5, 2025
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>Hace unos años, en un despacho judicial que conozco bien, llegó un nuevo juez a reemplazar a uno que llevaba once años en ese cargo.</p>
+<p>El juez saliente era de esos que el sistema produce raramente, alguien que conocía cada proceso como si fuera propio, que sabía exactamente por qué ciertos expedientes tenían ese folio extra archivado al final, que había desarrollado un criterio muy preciso para decretar medidas cautelares en casos de familia que nunca estaba escrito en ningún manual. Los funcionarios del despacho lo consultaban como si fuera el repositorio vivo de once años de jurisprudencia interna.</p>
+<p>Cuando se fue, se llevó todo eso consigo.</p>
+<p>El nuevo juez llegó con sus propios criterios, sus propias lecturas del CGP, sus propias intuiciones sobre cómo funcionaba el flujo del despacho. Y el equipo, que había trabajado con coherencia durante años, tuvo que recalibrarse desde cero. El conocimiento que sostenía esa coherencia no estaba en ningún lado. Estaba en la cabeza del que se fue.</p>
+<p>Esa historia tiene nombre en la teoría organizacional. Se llama falla de gestión del conocimiento. Y tiene un modelo que la explica mejor que cualquier otro.</p>
+<hr>
+<h2 id="el-modelo-seci-cuatro-cuadrantes-para-entender-cómo-viaja-el-conocimiento">El modelo SECI: cuatro cuadrantes para entender cómo viaja el conocimiento</h2>
+<p>En 1995, los investigadores japoneses Ikujiro Nonaka e Hirotaka Takeuchi publicaron <em>The Knowledge-Creating Company</em>, un libro que cambió cómo las organizaciones piensan sobre lo que saben y cómo lo aprenden.</p>
+<p>Su argumento central era este: el conocimiento no es solo información almacenada. Hay un tipo de conocimiento que vive en la experiencia, en el instinto, en la práctica acumulada, extraordinariamente difícil de capturar. Lo llamaron conocimiento tácito.</p>
+<p>El otro tipo, el que puedes escribir en un manual, registrar en un sistema o enseñar en una clase, es el conocimiento explícito.</p>
+<p>El modelo SECI describe cómo las organizaciones convierten el uno en el otro, y cómo ese ciclo, cuando funciona bien, genera conocimiento colectivo que sobrevive a las personas.</p>
+<p>Cuatro momentos, cuatro cuadrantes:</p>
+<p><strong>Socialización</strong> — de tácito a tácito. Conocimiento que se transfiere por observación y práctica compartida, sin necesidad de palabras. El auxiliar que aprende viendo cómo el juez conduce una audiencia. El judicante que entiende el ritmo del despacho simplemente estando presente. Aquí el conocimiento viaja, pero sigue atrapado en personas.</p>
+<p><strong>Externalización</strong> — de tácito a explícito. El momento más valioso y más difícil, cuando alguien convierte lo que sabe en algo que puede ser leído, usado y transmitido. Un juez que escribe sus criterios de decisión. Un secretario que documenta el flujo real del despacho, no el que dice el manual. Una herramienta que registra los patrones de cómo se procesan ciertos tipos de solicitudes.</p>
+<p><strong>Combinación</strong> — de explícito a explícito. Cuando el conocimiento ya externalizado se organiza, conecta y enriquece con otro conocimiento explícito. Las bases de datos. Los sistemas de gestión documental. Los informes que agregan lo que todos los despachos saben por separado.</p>
+<p><strong>Internalización</strong> — de explícito a tácito. El ciclo que cierra: cuando alguien lee, practica y termina integrando ese conocimiento explícito hasta volverlo instinto propio. El juez que absorbe la jurisprudencia hasta que sus decisiones la reflejan sin necesidad de consultar cada vez.</p>
+<p>El ciclo es virtuoso cuando funciona. El problema es que en los juzgados colombianos casi nunca llega al segundo cuadrante.</p>
+<hr>
+<h2 id="cómo-aplica-cada-cuadrante-en-un-juzgado-colombiano">Cómo aplica cada cuadrante en un juzgado colombiano</h2>
+<p>Veamos esto en concreto. <strong>Socialización</strong> ocurre todo el tiempo en los despachos. El auxiliar judicial que lleva tres años en el cargo sabe cosas que ningún reglamento describe, que las peticiones urgentes hay que radicarlas antes de las diez de la mañana, que cierto tipo de recursos tiende a reprocesarse si no va con determinado soporte, que el flujo de una audiencia de este juez tiene tiempos distintos a los de la ley. Ese conocimiento circula entre las personas del despacho con fluidez natural.</p>
+<p>Pero circula en silencio. No deja rastro.</p>
+<p><strong>Externalización</strong> es donde el sistema falla. ¿Cuántos juzgados en Colombia tienen documentados sus criterios internos de interpretación? ¿Cuántos jueces han escrito, aunque sea informalmente, los patrones que los llevan a decidir de una manera y no de otra? ¿Cuántos despachos tienen un protocolo real sobre cómo funciona el día a día, distinto del que dice el manual del CSJ?. Sé que si existen hoy en dia jueces que lo hacen porque los he visto, sin embargo trabajan como islas de forma independiente y no hay una convención o estandarización del proceso.</p>
+<p>La respuesta honesta es, muy pocos. No por negligencia de los jueces. El sistema no les pide eso, no les da tiempo para hacerlo, y no tiene mecanismos para capturarlo.</p>
+<p><strong>Combinación</strong> existe en forma incompleta. El Sistema de Gestión de Despachos Judiciales registra actuaciones y tambien tiene un sistema documental (recientemente). El TYBA, SGDE o SIERJU tiene datos, pero esos datos describen individualmente la información de los procesos. Es como tener el historial clínico sin las notas del médico. Los sistemas independientes que tienen información relacionada implican una carga adicional para los funcionarios, que no siempre se traduce en un beneficio claro para el despacho. La información existe, pero no está organizada de manera que facilite la transferencia de conocimiento.</p>
+<p><strong>Internalización</strong> ocurre individualmente, pero se reinicia con cada cambio de titular. Cada juez que llega a un despacho tiene que recorrer su propio ciclo de aprendizaje desde cero. Y ese costo, que en un hospital se mediría en errores médicos y en una empresa en pérdida de clientes, en el sistema judicial se mide en procesos mal tramitados, términos mal contados y decisiones inconsistentes durante los primeros meses del nuevo cargo.</p>
+<hr>
+<h2 id="rotación-judicial-y-gestión-del-conocimiento">Rotación judicial y gestión del conocimiento</h2>
+<p>Colombia rota a sus jueces (entre otros tipos de empleados). En muchos casos es un problema por lo que se pierde en cada rotación cuando no hay mecanismos para capturarlo.</p>
+<p>Un juez que lleva diez años en un juzgado de familia en Medellín ha desarrollado un conjunto de interpretaciones, criterios y prácticas que generan coherencia en el despacho. Las partes aprenden a operar con ese criterio. Los funcionarios entienden qué esperar. La jurisprudencia interna del despacho, aunque nunca escrita, funciona como ancla.</p>
+<p>Cuando ese juez rota, esa coherencia no se transfiere automáticamente. El nuevo juez interpreta el mismo artículo de manera diferente. Prioriza procesos distintos. Tiene un ritmo de audiencias diferente. Y todo el ecosistema de abogados, auxiliares y usuarios que había aprendido a operar con el criterio anterior tiene que recalibrarse.</p>
+<p>El problema no es la rotación en sí — es que las organizaciones que rotan sin mecanismos de captura del conocimiento generan una curva de aprendizaje perpetua. La teoría de gestión del conocimiento lleva décadas describiendo esto, y también las soluciones, documentación de criterios, protocolos de empalme estructurados, sistemas que conserven la memoria institucional más allá de quien ocupa el cargo.</p>
+<p>Eso es exactamente lo que la tecnología puede apoyar. No para eliminar la rotación ni para congelar el criterio del juez saliente, sino para reducir el costo de la transición, que el juez entrante llegue con contexto, no a folio cero.</p>
+<h2 id="lo-que-la-tecnología-puede-hacer-y-lo-que-no">Lo que la tecnología puede hacer, y lo que no</h2>
+<p>Aquí viene la parte que me corresponde contar desde adentro. Los sistemas de gestión judicial, la Maloca digital, Agilex, Sherlock, las plataformas que hemos construido en proyectos como Marduk, capturan actuaciones, tiempos, tipos de procesos y resoluciones. Esa información existe. El problema es que capturar datos no es capturar conocimiento.</p>
+<p>Lo que la tecnología sí puede hacer es crear las condiciones para que la externalización ocurra. Un sistema bien diseñado puede pedirle al juez, al momento de dictar una providencia, que registre brevemente el criterio central de su decisión. Una etiqueta, una categoría, un patrón, algo que en el futuro permita a otro juez o a un sistema de análisis entender qué lógica estaba operando. Eso puede que ya lo apliquen en programas como TYBA y SGDE (item de observaciones), pero no es una práctica generalizada ni estandarizada, o no hay cultura institucional que la exija.</p>
+<p>Puede registrar qué secuencias de decisiones son más frecuentes en qué contextos, de modo que el nuevo titular tenga acceso a los patrones de su antecesor aunque no haya trabajado con él. Puede funcionar como un repositorio de criterios internos del despacho, el know-how informal que hoy muere con cada rotación.</p>
+<p>Eso es externalización mediada por tecnología. Es posible. No está hecho.</p>
+<hr>
+<h2 id="lo-que-estoy-viendo-desde-adentro">Lo que estoy viendo desde adentro</h2>
+<p>Trabajar en automatización judicial en Colombia tiene una paradoja particular.</p>
+<p>Por un lado, hay datos. Más datos que antes, expedientes digitalizados, actuaciones registradas, estadísticas del sistema. El Consejo Superior de la Judicatura tiene tableros de control que antes no existían.</p>
+<p>Por otro lado, ese volumen de datos registran el qué pero no el por qué. La tecnología captura actuaciones pero no criterios. Y cada vez que un juez rota, el ciclo SECI se reinicia en el punto uno.</p>
+<p>En Marduk exploramos cómo extraer patrones de los expedientes, no para tomar decisiones sino para que el conocimiento acumulado en las actuaciones pasadas pudiera informar las futuras. El sistema puede leer miles de providencias y detectar que en cierto tipo de caso, el criterio dominante tiende a ser X. No es inteligencia artificial decidiendo. Es tecnología haciendo lo que el sistema debería haber estado haciendo desde siempre, no dejar que el conocimiento institucional muera cuando cambia la persona.</p>
+<p>Pero hay un límite claro. La herramienta solo puede capturar lo que alguien dejó registrado. El conocimiento que nunca se externalizó, las conversaciones de pasillo, las intuiciones que nunca se escribieron, los criterios que operaban en silencio, eso no está en ningún expediente ni en ningún sistema.</p>
+<p>Y ese conocimiento, que es frecuentemente el más valioso, sigue evaporándose con cada traslado, cada jubilación, cada fin de encargo.</p>
+<hr>
+<h2 id="el-conocimiento-que-nadie-digitaliza">El conocimiento que nadie digitaliza</h2>
+<p>Nonaka y Takeuchi describieron el ciclo de creación de conocimiento en empresas japonesas que querían aprender más rápido que la competencia. Porque las herramientas para capturarlo, aunque imperfectas, ya existen. Lo que falta es la práctica institucional de usarlas.</p>
+<hr>
+<p><em>Este post es parte de la serie [Conectando] donde exploro los puentes entre marcos conceptuales de otras disciplinas y la realidad del sistema judicial colombiano, desde adentro.</em></p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2025/04/05/flisol-2025-software-libre-justicia-digital/" data-toggle="tooltip" data-placement="top" title="Hablé en FliSol 2025 sobre software libre y justicia digital">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2025/06/14/thoughts/" data-toggle="tooltip" data-placement="top" title="First Thoughts">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

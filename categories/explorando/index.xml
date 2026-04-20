@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explorando on Sprint Judicial</title><link>https://blog.sprintjudicial.com/categories/explorando/</link><description>Recent content in Explorando on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Sat, 05 Apr 2025 15:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/categories/explorando/index.xml" rel="self" type="application/rss+xml"/><item><title>Hablé en FliSol 2025 sobre software libre y justicia digital</title><link>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</link><pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid><description>Antes de mostrar una sola diapositiva, le hice una pregunta a la sala: &amp;ldquo;En una escala del 1 al 5, ¿cuánto confían en que una inteligencia artificial pueda ayudar en procesos judiciales?&amp;rdquo; La mayoría levantó la mano entre el 2 y el 3. Ingenieros, activistas de software libre, estudiantes de tecnología, personas que entienden perfectamente cómo funcionan estos sistemas. Y aun así, escepticismo. Eso me pareció lo más honesto que pasó el sábado 5 de abril en el FliSol Medellín 2025.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Explorando on Sprint Judicial</title>
+    <link>https://blog.sprintjudicial.com/categories/explorando/</link>
+    <description>Recent content in Explorando on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Sat, 05 Apr 2025 15:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.sprintjudicial.com/categories/explorando/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hablé en FliSol 2025 sobre software libre y justicia digital</title>
+      <link>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</link>
+      <pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
