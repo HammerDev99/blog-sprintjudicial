@@ -1,189 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sprint Judicial</title>
-    <link>https://blog.sprintjudicial.com/</link>
-    <description>Recent content on Sprint Judicial</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
-    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
-    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.sprintjudicial.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title>
-      <link>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cómo leer las analíticas de tu presencia digital como abogado: lo que los números realmente dicen</title>
-      <link>https://blog.sprintjudicial.com/2026/04/15/analiticas-presencia-digital-abogados/</link>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/04/15/analiticas-presencia-digital-abogados/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title>
-      <link>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>El juez con IA: de leer 500 folios a tomar decisiones con información sintetizada</title>
-      <link>https://blog.sprintjudicial.com/2026/04/03/ia-para-jueces-principio-concentracion/</link>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/04/03/ia-para-jueces-principio-concentracion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Qué es un VPS y por qué tu firma jurídica debería entenderlo</title>
-      <link>https://blog.sprintjudicial.com/2026/03/12/que-es-un-vps-para-abogados/</link>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/03/12/que-es-un-vps-para-abogados/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Los prompts que uso todos los días trabajando en automatización judicial</title>
-      <link>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</link>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Por qué transformé este espacio</title>
-      <link>https://blog.sprintjudicial.com/2026/01/08/por-que-transforme-este-espacio/</link>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2026/01/08/por-que-transforme-este-espacio/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lo que los sistemas judiciales ocultan (y cómo la transparencia algorítmica cambia el derecho)</title>
-      <link>https://blog.sprintjudicial.com/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</link>
-      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>First Thoughts</title>
-      <link>https://blog.sprintjudicial.com/2025/06/14/thoughts/</link>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/06/14/thoughts/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Escribir acerca de &lt;a href=&#34;https://keep.google.com/#LIST/1ai8F-_aBmcGHjUo2xUsLS2qlvN1OGOpgPBddBYzRLszUpEE5xPEzoOQYUmmP82DuHRZW&#34;&gt;link directo&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
-    </item>
-    <item>
-      <title>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va</title>
-      <link>https://blog.sprintjudicial.com/2025/06/05/modelo-seci-memoria-institucional-juzgados/</link>
-      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/06/05/modelo-seci-memoria-institucional-juzgados/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hablé en FliSol 2025 sobre software libre y justicia digital</title>
-      <link>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</link>
-      <pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>El programador flanker: De la cancha de rugby a la arquitectura de software</title>
-      <link>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</link>
-      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Planificadores digitales en el despacho: herramientas que ya usan los mejores estudios jurídicos</title>
-      <link>https://blog.sprintjudicial.com/2025/02/13/planificadores-digitales-despacho/</link>
-      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2025/02/13/planificadores-digitales-despacho/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Marduk: Un Viaje hacia la Innovación Judicial Digital</title>
-      <link>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</link>
-      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cola en un gestor de tareas</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/queue_example/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/queue_example/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;GestorTareas&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; __init__(self):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Inicializamos la cola de trabajo como una lista vacía&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;cola_de_trabajo &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; []&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;agregar_tarea&lt;/span&gt;(self, tarea):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Añadimos la tarea al final de la cola de trabajo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;cola_de_trabajo&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;append(tarea)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;procesar_siguiente_tarea&lt;/span&gt;(self):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Verificamos si hay tareas en la cola de trabajo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;cola_de_trabajo:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#6272a4&#34;&gt;# Eliminamos y devolvemos la primera tarea de la cola&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;cola_de_trabajo&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;pop(&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#6272a4&#34;&gt;# Si no hay tareas pendientes, devolvemos un mensaje indicándolo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;No hay tareas pendientes&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; __name__ &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Ejemplo de uso del gestor de tareas&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    gestor &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; GestorTareas()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Agregamos algunas tareas a la cola de trabajo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;agregar_tarea(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Revisar informe mensual&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;agregar_tarea(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Enviar correo de seguimiento&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;agregar_tarea(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Preparar presentación para reunión&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Procesamos y mostramos la tarea actual&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Tarea actual:&amp;#34;&lt;/span&gt;, gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;procesar_siguiente_tarea())&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Simulamos procesar algunas tareas adicionales&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Tarea actual:&amp;#34;&lt;/span&gt;, gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;procesar_siguiente_tarea())&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Tarea actual:&amp;#34;&lt;/span&gt;, gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;procesar_siguiente_tarea())&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Agregamos más tareas a la cola de trabajo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;agregar_tarea(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Resolver problema de software&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;agregar_tarea(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Entrevistar candidato para puesto vacante&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Procesamos y mostramos la siguiente tarea&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Tarea actual:&amp;#34;&lt;/span&gt;, gestor&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;procesar_siguiente_tarea())&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://blog.sprintjudicial.com/2024/04/10/stack_queue/&#34;&gt;Volver&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pila en un navegador web</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/stack_example/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_example/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;NavegadorWeb&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; __init__(self):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Inicializamos el historial como una lista vacía&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;historial &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; []&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;abrir_pagina&lt;/span&gt;(self, url):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Añadimos la URL al final del historial&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;historial&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;append(url)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;retroceder&lt;/span&gt;(self):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Verificamos si hay más de una página en el historial&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;len&lt;/span&gt;(self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;historial) &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#6272a4&#34;&gt;# Retrocedemos eliminando la página actual del historial&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;historial&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;pop()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#6272a4&#34;&gt;# Devolvemos la URL de la página anterior&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; self&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;historial[&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#6272a4&#34;&gt;# Si no hay páginas anteriores, devolvemos un mensaje indicándolo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;No hay páginas anteriores en el historial&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;adelantar&lt;/span&gt;(self):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6272a4&#34;&gt;# Podríamos implementar la funcionalidad de avanzar utilizando otra pila para las páginas adelantadas&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;pass&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; __name__ &lt;span style=&#34;color:#ff79c6&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Ejemplo de uso del navegador&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    navegador &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; NavegadorWeb()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    navegador&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;abrir_pagina(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://www.ejemplo.com/pagina1&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    navegador&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;abrir_pagina(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://www.ejemplo.com/pagina2&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    navegador&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;abrir_pagina(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://www.ejemplo.com/pagina3&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Imprimimos la página actual&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Página actual:&amp;#34;&lt;/span&gt;, navegador&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;historial[&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Retrocedemos una página y mostramos la página anterior&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    pagina_anterior &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; navegador&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;retroceder()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Página anterior:&amp;#34;&lt;/span&gt;, pagina_anterior)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6272a4&#34;&gt;# Retrocedemos otra página y mostramos la página anterior&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    pagina_anterior &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; navegador&lt;span style=&#34;color:#ff79c6&#34;&gt;.&lt;/span&gt;retroceder()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Página anterior:&amp;#34;&lt;/span&gt;, pagina_anterior)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://blog.sprintjudicial.com/2024/04/10/stack_queue/&#34;&gt;Volver&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pilas y Colas: Estructuras de Datos Esenciales</title>
-      <link>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Explorando Delitos Informáticos y Riesgos Cibernéticos: Claves para la Seguridad Digital</title>
-      <link>https://blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</link>
-      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Una revisión del sistema experto Docassemble</title>
-      <link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link>
-      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title>
-      <link>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Daniel Arbelaez (HammerDev99)</title>
-      <link>https://blog.sprintjudicial.com/2022/05/10/hello-world/</link>
-      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/2022/05/10/hello-world/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://blog.sprintjudicial.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/about/</guid>
-      <description>&lt;h2 id=&#34;sobre-mí&#34;&gt;Sobre mí&lt;/h2&gt;&#xA;&lt;p&gt;Soy Daniel Arbelaez, ingeniero de software trabajando en el sistema judicial colombiano desde Bello, Antioquia.&lt;/p&gt;&#xA;&lt;p&gt;Mi trabajo diario consiste en construir herramientas que hacen que la justicia funcione mejor. No desde la teoría, sino desde adentro: entendiendo cómo opera un juzgado, dónde se atoran los procesos, y cómo un buen algoritmo puede marcar la diferencia entre un expediente que avanza y uno que se pierde en el tiempo.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://blog.sprintjudicial.com/notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/notes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://blog.sprintjudicial.com/search/placeholder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/search/placeholder/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Posts Archive</title>
-      <link>https://blog.sprintjudicial.com/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
-      <guid>https://blog.sprintjudicial.com/archive/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sprint Judicial</title><link>https://blog.sprintjudicial.com/</link><description>Recent content on Sprint Judicial</description><generator>Hugo</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/index.xml" rel="self" type="application/rss+xml"/><item><title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title><link>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link><pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid><description/></item><item><title>Cómo leer las analíticas de tu presencia digital como abogado: lo que los números realmente dicen</title><link>https://blog.sprintjudicial.com/2026/04/15/analiticas-presencia-digital-abogados/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/15/analiticas-presencia-digital-abogados/</guid><description/></item><item><title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title><link>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid><description/></item><item><title>El juez con IA: de leer 500 folios a tomar decisiones con información sintetizada</title><link>https://blog.sprintjudicial.com/2026/04/03/ia-para-jueces-principio-concentracion/</link><pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/03/ia-para-jueces-principio-concentracion/</guid><description/></item><item><title>Qué es un VPS y por qué tu firma jurídica debería entenderlo</title><link>https://blog.sprintjudicial.com/2026/03/12/que-es-un-vps-para-abogados/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/03/12/que-es-un-vps-para-abogados/</guid><description/></item><item><title>Los prompts que uso todos los días trabajando en automatización judicial</title><link>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</guid><description/></item><item><title>Por qué transformé este espacio</title><link>https://blog.sprintjudicial.com/2026/01/08/por-que-transforme-este-espacio/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/01/08/por-que-transforme-este-espacio/</guid><description/></item><item><title>Lo que los sistemas judiciales ocultan y cómo la transparencia algorítmica cambia el derecho</title><link>https://blog.sprintjudicial.com/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</guid><description/></item><item><title>First Thoughts</title><link>https://blog.sprintjudicial.com/2025/06/14/thoughts/</link><pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/06/14/thoughts/</guid><description>&lt;blockquote>
+&lt;p>Escribir acerca de &lt;a href="https://keep.google.com/#LIST/1ai8F-_aBmcGHjUo2xUsLS2qlvN1OGOpgPBddBYzRLszUpEE5xPEzoOQYUmmP82DuHRZW">link directo&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va</title><link>https://blog.sprintjudicial.com/2025/06/05/modelo-seci-memoria-institucional-juzgados/</link><pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/06/05/modelo-seci-memoria-institucional-juzgados/</guid><description/></item><item><title>Hablé en FliSol 2025 sobre software libre y justicia digital</title><link>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</link><pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid><description/></item><item><title>El programador flanker: De la cancha de rugby a la arquitectura de software</title><link>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</link><pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</guid><description/></item><item><title>Marduk: Un Viaje hacia la Innovación Judicial Digital</title><link>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</guid><description/></item><item><title>Cola en un gestor de tareas</title><link>https://blog.sprintjudicial.com/2024/04/10/queue_example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/04/10/queue_example/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">class&lt;/span> &lt;span style="color:#50fa7b">GestorTareas&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> __init__(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Inicializamos la cola de trabajo como una lista vacía&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#ff79c6">.&lt;/span>cola_de_trabajo &lt;span style="color:#ff79c6">=&lt;/span> []
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">agregar_tarea&lt;/span>(self, tarea):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Añadimos la tarea al final de la cola de trabajo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#ff79c6">.&lt;/span>cola_de_trabajo&lt;span style="color:#ff79c6">.&lt;/span>append(tarea)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">procesar_siguiente_tarea&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Verificamos si hay tareas en la cola de trabajo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">if&lt;/span> self&lt;span style="color:#ff79c6">.&lt;/span>cola_de_trabajo:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Eliminamos y devolvemos la primera tarea de la cola&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">return&lt;/span> self&lt;span style="color:#ff79c6">.&lt;/span>cola_de_trabajo&lt;span style="color:#ff79c6">.&lt;/span>pop(&lt;span style="color:#bd93f9">0&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">else&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Si no hay tareas pendientes, devolvemos un mensaje indicándolo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">return&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;No hay tareas pendientes&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">if&lt;/span> __name__ &lt;span style="color:#ff79c6">==&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;__main__&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Ejemplo de uso del gestor de tareas&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gestor &lt;span style="color:#ff79c6">=&lt;/span> GestorTareas()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Agregamos algunas tareas a la cola de trabajo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gestor&lt;span style="color:#ff79c6">.&lt;/span>agregar_tarea(&lt;span style="color:#f1fa8c">&amp;#34;Revisar informe mensual&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gestor&lt;span style="color:#ff79c6">.&lt;/span>agregar_tarea(&lt;span style="color:#f1fa8c">&amp;#34;Enviar correo de seguimiento&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gestor&lt;span style="color:#ff79c6">.&lt;/span>agregar_tarea(&lt;span style="color:#f1fa8c">&amp;#34;Preparar presentación para reunión&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Procesamos y mostramos la tarea actual&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Tarea actual:&amp;#34;&lt;/span>, gestor&lt;span style="color:#ff79c6">.&lt;/span>procesar_siguiente_tarea())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Simulamos procesar algunas tareas adicionales&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Tarea actual:&amp;#34;&lt;/span>, gestor&lt;span style="color:#ff79c6">.&lt;/span>procesar_siguiente_tarea())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Tarea actual:&amp;#34;&lt;/span>, gestor&lt;span style="color:#ff79c6">.&lt;/span>procesar_siguiente_tarea())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Agregamos más tareas a la cola de trabajo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gestor&lt;span style="color:#ff79c6">.&lt;/span>agregar_tarea(&lt;span style="color:#f1fa8c">&amp;#34;Resolver problema de software&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gestor&lt;span style="color:#ff79c6">.&lt;/span>agregar_tarea(&lt;span style="color:#f1fa8c">&amp;#34;Entrevistar candidato para puesto vacante&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Procesamos y mostramos la siguiente tarea&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Tarea actual:&amp;#34;&lt;/span>, gestor&lt;span style="color:#ff79c6">.&lt;/span>procesar_siguiente_tarea())
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://blog.sprintjudicial.com/2024/04/10/stack_queue/">Volver&lt;/a>&lt;/p></description></item><item><title>Pila en un navegador web</title><link>https://blog.sprintjudicial.com/2024/04/10/stack_example/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/04/10/stack_example/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">class&lt;/span> &lt;span style="color:#50fa7b">NavegadorWeb&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> __init__(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Inicializamos el historial como una lista vacía&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#ff79c6">.&lt;/span>historial &lt;span style="color:#ff79c6">=&lt;/span> []
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">abrir_pagina&lt;/span>(self, url):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Añadimos la URL al final del historial&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#ff79c6">.&lt;/span>historial&lt;span style="color:#ff79c6">.&lt;/span>append(url)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">retroceder&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Verificamos si hay más de una página en el historial&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">if&lt;/span> &lt;span style="color:#8be9fd;font-style:italic">len&lt;/span>(self&lt;span style="color:#ff79c6">.&lt;/span>historial) &lt;span style="color:#ff79c6">&amp;gt;&lt;/span> &lt;span style="color:#bd93f9">1&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Retrocedemos eliminando la página actual del historial&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#ff79c6">.&lt;/span>historial&lt;span style="color:#ff79c6">.&lt;/span>pop()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Devolvemos la URL de la página anterior&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">return&lt;/span> self&lt;span style="color:#ff79c6">.&lt;/span>historial[&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">1&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">else&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Si no hay páginas anteriores, devolvemos un mensaje indicándolo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">return&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;No hay páginas anteriores en el historial&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">def&lt;/span> &lt;span style="color:#50fa7b">adelantar&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Podríamos implementar la funcionalidad de avanzar utilizando otra pila para las páginas adelantadas&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">if&lt;/span> __name__ &lt;span style="color:#ff79c6">==&lt;/span> &lt;span style="color:#f1fa8c">&amp;#34;__main__&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Ejemplo de uso del navegador&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> navegador &lt;span style="color:#ff79c6">=&lt;/span> NavegadorWeb()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> navegador&lt;span style="color:#ff79c6">.&lt;/span>abrir_pagina(&lt;span style="color:#f1fa8c">&amp;#34;https://www.ejemplo.com/pagina1&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> navegador&lt;span style="color:#ff79c6">.&lt;/span>abrir_pagina(&lt;span style="color:#f1fa8c">&amp;#34;https://www.ejemplo.com/pagina2&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> navegador&lt;span style="color:#ff79c6">.&lt;/span>abrir_pagina(&lt;span style="color:#f1fa8c">&amp;#34;https://www.ejemplo.com/pagina3&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Imprimimos la página actual&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Página actual:&amp;#34;&lt;/span>, navegador&lt;span style="color:#ff79c6">.&lt;/span>historial[&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">1&lt;/span>])
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Retrocedemos una página y mostramos la página anterior&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pagina_anterior &lt;span style="color:#ff79c6">=&lt;/span> navegador&lt;span style="color:#ff79c6">.&lt;/span>retroceder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Página anterior:&amp;#34;&lt;/span>, pagina_anterior)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#6272a4"># Retrocedemos otra página y mostramos la página anterior&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pagina_anterior &lt;span style="color:#ff79c6">=&lt;/span> navegador&lt;span style="color:#ff79c6">.&lt;/span>retroceder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8be9fd;font-style:italic">print&lt;/span>(&lt;span style="color:#f1fa8c">&amp;#34;Página anterior:&amp;#34;&lt;/span>, pagina_anterior)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://blog.sprintjudicial.com/2024/04/10/stack_queue/">Volver&lt;/a>&lt;/p></description></item><item><title>Pilas y Colas: Estructuras de Datos Esenciales</title><link>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/04/10/stack_queue/</guid><description/></item><item><title>Explorando Delitos Informáticos y Riesgos Cibernéticos: Claves para la Seguridad Digital</title><link>https://blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2023/08/15/delitos-informaticos-riesgos-ciberneticos/</guid><description/></item><item><title>Una revisión del sistema experto Docassemble</title><link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid><description/></item><item><title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title><link>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</link><pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</guid><description/></item><item><title>Daniel Arbelaez (HammerDev99)</title><link>https://blog.sprintjudicial.com/2022/05/10/hello-world/</link><pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2022/05/10/hello-world/</guid><description/></item><item><title/><link>https://blog.sprintjudicial.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/about/</guid><description>&lt;h2 id="sobre-mí">Sobre mí&lt;/h2>
+&lt;p>Soy Daniel Arbelaez, ingeniero de software trabajando en el sistema judicial colombiano desde Bello, Antioquia.&lt;/p>
+&lt;p>Mi trabajo diario consiste en construir herramientas que hacen que la justicia funcione mejor. No desde la teoría, sino desde adentro: entendiendo cómo opera un juzgado, dónde se atoran los procesos, y cómo un buen algoritmo puede marcar la diferencia entre un expediente que avanza y uno que se pierde en el tiempo.&lt;/p></description></item><item><title/><link>https://blog.sprintjudicial.com/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/notes/</guid><description/></item><item><title/><link>https://blog.sprintjudicial.com/search/placeholder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/search/placeholder/</guid><description/></item><item><title>Posts Archive</title><link>https://blog.sprintjudicial.com/archive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/archive/</guid><description/></item></channel></rss>
