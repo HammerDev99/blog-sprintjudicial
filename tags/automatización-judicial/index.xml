@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automatización Judicial on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/automatizaci%C3%B3n-judicial/</link>
+    <description>Recent content in Automatización Judicial on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 04 Sep 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/automatizaci%C3%B3n-judicial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cómo unifico todos mis proyectos judiciales en un solo sistema</title>
+      <link>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</link>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</guid>
+      <description>&lt;p&gt;El día que sherlock-docs dejó de leer el índice que AgilEx había generado fue el día que entendí que tenía un problema de arquitectura, no solo de código. AgilEx había cambiado la estructura de sus columnas en el Excel de salida, y el adaptador que conecta ambos proyectos no sabía qué hacer con eso. Cuarenta y cinco minutos de diagnóstico para un cambio que había tomado tres líneas en el otro repositorio.&lt;/p&gt;&#xA;&lt;p&gt;Eso pasa cuando tienes cinco proyectos que se hablan entre sí y ningún contrato formal entre ellos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

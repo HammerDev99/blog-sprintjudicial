@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58305&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-12-04-altruismo-sistema-judicial-tecnologia-publica/header.jpg">
+    <meta property="twitter:image" content="img/2026-12-04-altruismo-sistema-judicial-tecnologia-publica/header.jpg" />
+    
+
+    
+    <meta name="title" content="Altruismo en el sistema judicial" />
+    <meta property="og:title" content="Altruismo en el sistema judicial" />
+    <meta property="twitter:title" content="Altruismo en el sistema judicial" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Altruismo en el sistema judicial | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2026/12/04/altruismo-sistema-judicial-tecnologia-publica/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="http://localhost:58305/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-12-04-altruismo-sistema-judicial-tecnologia-publica/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/agilex" title="agilex">
+                            agilex
+                        </a>
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                        <a class="tag" href="/tags/reflexi%C3%B3n" title="reflexión">
+                            reflexión
+                        </a>
+                        
+                        <a class="tag" href="/tags/tecnolog%C3%ADa-p%C3%BAblica" title="tecnología pública">
+                            tecnología pública
+                        </a>
+                        
+                    </div>
+                    <h1>Altruismo en el sistema judicial</h1>
+                    <h2 class="subheading">Qué significa construir herramientas que nadie pidió para una institución que no te paga</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Friday, December 4, 2026
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>AgilEx no tiene cliente. Sherlock-docs no tiene cliente. HabeasSafe no tiene cliente. VIGÍA alimenta modelos que tampoco tienen contrato con nadie. Son cuatro proyectos activos que resuelven problemas reales del sector judicial colombiano, usados por funcionarios reales en despachos reales, y ninguno de ellos surgió de una licitación, un convenio, o una solicitud institucional. Los construí porque el problema existía y tenía las herramientas para atacarlo.</p>
+<p>Fin de año es buen momento para preguntarse qué significa eso exactamente.</p>
+<h2 id="el-inventario-de-lo-que-nadie-pidió">El inventario de lo que nadie pidió</h2>
+<p>AgilEx automatiza la creación del índice electrónico que exige el Acuerdo PCSJA20-11567. Lo usan secretarios y auxiliares de despacho en juzgados que nunca visité, distribuido por cadenas informales de WhatsApp. La versión 1.5.1 tiene firma digital Authenticode SHA256 porque los SOC institucionales bloquean ejecutables sin certificado. No hay contrato que financie esa firma.</p>
+<p>Sherlock-docs procesa los índices que produce AgilEx y extrae campos jurídicos con TutelaBot Air, F1 de 78% sobre 358 tutelas del Juzgado Civil Municipal de Bello. Es un pipeline de NER que nadie me pidió construir pero que reduce a segundos lo que antes tomaba varios minutos por expediente.</p>
+<p>HabeasSafe anonimiza PII en documentos legales colombianos antes de cualquier envío fuera del despacho, cumpliendo Ley 1581/2012 y PCSJA24-12243. Detecta nombres, cédulas, emails, direcciones y teléfonos mientras preserva entidades públicas y vocabulario jurídico. Nadie me lo encargó.</p>
+<p>VIGÍA scrapea sentencias de la Corte Constitucional y construye un corpus de alrededor de dieciocho mil sentencias para alimentar legal-tuners, un proyecto de fine-tuning de modelos de lenguaje para el dominio legal colombiano. Tampoco hay cliente.</p>
+<h2 id="por-qué-se-hace">Por qué se hace</h2>
+<p>La respuesta honesta no es tan noble como podría sonar. Construyo estas herramientas porque aprendo haciéndolas. Cada proyecto resuelve un problema técnico que me interesa y que tiene además consecuencias reales para personas reales. Esa combinación es difícil de encontrar en proyectos de práctica inventados. No construyo tutoriales de CRUD genéricos porque no me enseñan nada; construyo AgilEx porque los problemas de distribución de software en entornos institucionales con antivirus corporativos, COM automation sobre Excel y firma de ejecutables son problemas técnicos genuinos con consecuencias que importan.</p>
+<p>El altruismo, si existe, es un subproducto. La motivación primaria es que el problema es interesante y tiene fricción real.</p>
+<h2 id="la-pregunta-sin-respuesta-limpia">La pregunta sin respuesta limpia</h2>
+<p>Lo que sí me preocupa, con más claridad a medida que pasa el tiempo, es la sostenibilidad. AgilEx funciona porque yo lo mantengo. Sherlock-docs funciona porque yo lo mantengo. Cuando alguien reporta un bug en AgilEx desde un juzgado que nunca visité, hay alguien que responde. Si paro, hay despachos con una herramienta sin soporte y sin nadie que sepa qué hacer cuando algo falla.</p>
+<p>La Rama Judicial no tiene ningún mecanismo formal para exigir que ese mantenimiento continúe, porque nunca hubo contrato. El código de AgilEx es público con licencia MIT, lo que significa que alguien podría tomarlo y sostenerlo, pero eso no ocurre solo. El open source resuelve la propiedad del código; no resuelve la continuidad del trabajo.</p>
+<p>Esta no es una queja. Es un reconocimiento de que el modelo tiene una fecha de vencimiento que no conozco.</p>
+<h2 id="una-posición-tentativa">Una posición tentativa</h2>
+<p>Lo que existe, sin que nadie lo haya llamado así, es tecnología pública informal. No es infraestructura oficial, no tiene presupuesto, no tiene SLA, no tiene número de mesa de ayuda. Pero cumple una función que el Estado no ha cubierto con herramientas propias y que el mercado no cubre porque el sector judicial colombiano no es un mercado atractivo para software propietario a escala pequeña.</p>
+<p>Si AgilEx fuera parte de la infraestructura oficial de la Rama Judicial, tendría soporte, actualizaciones coordinadas y un proceso de homologación. También perdería la velocidad de iteración que tiene ahora, que es la razón por la que funciona para sus usuarios actuales. Las dos cosas son ciertas al mismo tiempo.</p>
+<p>No sé si lo que hago es altruismo, aprendizaje con consecuencias positivas, o infraestructura pública por accidente. Probablemente es las tres cosas en proporciones que cambian según el día. Lo que sí sé es que el problema existe, las herramientas funcionan, y mientras eso sea verdad hay razones para seguir.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/11/20/estrategia-rise-crear-mvp-sin-programar/" data-toggle="tooltip" data-placement="top" title="Estrategia RISE para crear MVPs sin saber programar">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/" data-toggle="tooltip" data-placement="top" title="Claude Code y agentes especializados en el flujo de trabajo técnico">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

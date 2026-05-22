@@ -1,3 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prompts on Sprint Judicial</title><link>https://blog.sprintjudicial.com/tags/prompts/</link><description>Recent content in Prompts on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/tags/prompts/index.xml" rel="self" type="application/rss+xml"/><item><title>Los prompts que uso todos los días trabajando en automatización judicial</title><link>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</guid><description>El año pasado tuve que analizar cerca de 200 expedientes judiciales para identificar patrones de distribución de carga entre despachos. Hacerlo manualmente tomaba semanas. Con la combinación correcta de código y los prompts adecuados, lo resolví en dos días.
-La diferencia estaba en saber exactamente cómo pedirle al modelo lo que necesitaba.
-Llevo tiempo usando modelos de lenguaje como herramienta de trabajo diario en proyectos como Marduk y Sherlock-docs. En ese proceso fui descubriendo que la diferencia entre un resultado útil y uno genérico casi siempre está en cómo formulas la instrucción.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prompts on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/prompts/</link>
+    <description>Recent content in Prompts on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 20 Nov 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/prompts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estrategia RISE para crear MVPs sin saber programar</title>
+      <link>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</link>
+      <pubDate>Fri, 20 Nov 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</guid>
+      <description>&lt;p&gt;Un auxiliar de despacho en un juzgado con carga alta me preguntó en agosto si existía alguna herramienta para llevar el seguimiento de las tutelas que llegaban cada semana. Su problema era concreto. Cada lunes radicaban entre ocho y doce tutelas. Tenía un Excel manual que actualizaba cuando podía, pero el formato no era consistente, no había filtros útiles, y los campos que necesitaba cambiar el criterio según quién lo llenaba. Le pregunté si tenía acceso a un LLM con capacidad de generar código. Dijo que sí. En veinte minutos tenía un formulario de seguimiento funcional sin haber escrito una sola línea de código.&lt;/p&gt;&#xA;&lt;p&gt;Lo que usamos para construirlo se llama RISE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Los prompts que uso todos los días trabajando en automatización judicial</title>
+      <link>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

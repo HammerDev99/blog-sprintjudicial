@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58305&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-10-02-procesos-prioridades-turnos-juzgado/header.jpg">
+    <meta property="twitter:image" content="img/2026-10-02-procesos-prioridades-turnos-juzgado/header.jpg" />
+    
+
+    
+    <meta name="title" content="Cómo un servidor decide quién trabaja primero" />
+    <meta property="og:title" content="Cómo un servidor decide quién trabaja primero" />
+    <meta property="twitter:title" content="Cómo un servidor decide quién trabaja primero" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Cómo un servidor decide quién trabaja primero | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2026/10/02/procesos-prioridades-turnos-juzgado/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="http://localhost:58305/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-10-02-procesos-prioridades-turnos-juzgado/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/sistemas-operativos" title="sistemas operativos">
+                            sistemas operativos
+                        </a>
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                        <a class="tag" href="/tags/gesti%C3%B3n-judicial" title="gestión judicial">
+                            gestión judicial
+                        </a>
+                        
+                        <a class="tag" href="/tags/aprendiendo" title="aprendiendo">
+                            aprendiendo
+                        </a>
+                        
+                    </div>
+                    <h1>Cómo un servidor decide quién trabaja primero</h1>
+                    <h2 class="subheading">Procesos, prioridades y turnos en un sistema operativo y en un juzgado</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Friday, October 2, 2026
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>La secretaria de un juzgado llega un lunes con cuarenta expedientes esperando actuación. Hay tutelas con término de diez días hábiles que ya llevan ocho. Hay escritos de pruebas que se radicaron hace tres semanas. Hay oficios a entidades que nadie ha respondido todavía. Todo está esperando. Todo tiene término. No todo puede atenderse a la vez. La decisión de qué atender primero no es obvia ni neutral.</p>
+<p>Un procesador de computador tiene el mismo problema todos los microsegundos de su existencia.</p>
+<h2 id="el-scheduler-y-la-secretaria-hacen-lo-mismo">El scheduler y la secretaria hacen lo mismo</h2>
+<p>Un sistema operativo moderno ejecuta cientos de procesos de forma aparentemente simultánea. En realidad los ejecuta uno a la vez, rotando entre ellos tan rápido que parece concurrencia real. La pieza que decide a cuál proceso le toca el procesador y por cuánto tiempo se llama scheduler, y su problema central es idéntico al de cualquier despacho judicial con carga alta. Los recursos son limitados, los demandantes son múltiples y las prioridades compiten.</p>
+<p>Cada proceso en un sistema operativo tiene un identificador único llamado PID. Ese PID no dice nada sobre importancia o urgencia; es solo un número de turno. El equivalente en un juzgado es el número de radicación, un código único que identifica cada expediente o escrito desde que entra al sistema. El radicado no dice si la tutela vence mañana o si el escrito lleva tres meses sin respuesta. Para saber eso hay que leer el expediente, igual que para saber si un proceso necesita CPU urgente hay que conocer su tipo y su historia.</p>
+<h2 id="fifo-el-orden-de-llegada-como-política-de-equidad">FIFO: el orden de llegada como política de equidad</h2>
+<p>El algoritmo más simple es FIFO (First In, First Out). El primer proceso que llega es el primero que se atiende; cuando termina, el siguiente en la cola toma su lugar. Es el sistema de turnos de una panadería aplicado a la computación.</p>
+<p>Muchos despachos judiciales operan de facto en FIFO para ciertos tipos de escritos. Los memoriales que llegan por correo se atienden en el orden en que llegaron. Eso tiene una virtud clara. Es transparente y difícil de manipular. También tiene un defecto conocido. Si el primer proceso de la cola es muy largo, todos los demás esperan sin importar cuán urgentes sean. En sistemas operativos ese fenómeno se llama convoy effect; en los juzgados se llama acumulación por procesos complejos. Un expediente con miles de folios que necesita auto de trámite puede bloquear la atención de veinte tutelas sencillas que están detrás.</p>
+<h2 id="prioridad-las-tutelas-siempre-primero">Prioridad: las tutelas siempre primero</h2>
+<p>La solución obvia es asignar prioridades. El scheduler puede interrumpir un proceso de baja prioridad para atender uno de alta prioridad que acaba de llegar. Eso es preemption. El proceso activo pierde el procesador aunque no haya terminado.</p>
+<p>La Constitución colombiana hace algo análogo con las tutelas. El artículo 86 establece que la tutela es preferente y sumaria. Eso es una regla de prioridad con preemption incorporada. El despacho debe interrumpir su flujo ordinario para atender la tutela antes de que venza el término. Los sistemas de gestión judicial modernos implementan esta regla con alertas de vencimiento de términos, que son exactamente una cola de prioridad. El expediente con el término más próximo sube al tope de la lista.</p>
+<p>Las colas de prioridad tienen un problema que los sistemas operativos conocen bien, que es el hambre o starvation. Si siempre llegan procesos de alta prioridad, los de baja prioridad nunca llegan al procesador. Traducido al juzgado, si el despacho solo atiende tutelas y procesos urgentes, los expedientes ordinarios pueden llevar meses o años sin actuación. Las estadísticas de duración promedio de los procesos ordinarios en Colombia sugieren que ese fenómeno no es teórico.</p>
+<h2 id="el-envejecimiento-como-solución-al-hambre">El envejecimiento como solución al hambre</h2>
+<p>Los sistemas operativos resuelven el starvation con aging, envejecimiento. Un proceso que lleva mucho tiempo esperando va aumentando su prioridad artificialmente hasta que eventualmente llega al tope de la cola. El sistema garantiza que ningún proceso espere indefinidamente.</p>
+<p>La Rama Judicial tiene mecanismos parecidos aunque no siempre bien calibrados. Los términos procesales son una forma de aging forzado. Después de cierto tiempo sin actuación, el proceso puede quedar en silencio administrativo, lo que obliga al despacho a actuar o a explicar el retraso. Las estadísticas de rendimiento que publica el Consejo Superior de la Judicatura miden cuántos procesos superan ciertos umbrales de tiempo, que funcionan como alarmas de starvation a nivel sistémico.</p>
+<h2 id="round-robin-nadie-espera-para-siempre">Round Robin: nadie espera para siempre</h2>
+<p>El scheduler más común en sistemas modernos es una variante de Round Robin. Cada proceso recibe una cantidad fija de tiempo de CPU, llamada quantum. Cuando se agota, el proceso vuelve al final de la cola y el siguiente toma su turno. Nadie acapara el procesador indefinidamente.</p>
+<p>Traducido al despacho, una secretaria que dedica treinta minutos por expediente antes de pasar al siguiente está aplicando Round Robin manualmente. La mayoría no lo hace así porque los expedientes tienen distinto nivel de complejidad y las actuaciones tienen distinto costo cognitivo. Pero el principio de no dejar que un solo expediente consuma toda la jornada es la misma lógica.</p>
+<h2 id="por-qué-entender-esto-ayuda">Por qué entender esto ayuda</h2>
+<p>Un abogado que entiende cómo funciona el scheduling judicial puede anticipar comportamientos que parecen arbitrarios. El despacho que no ha respondido un escrito en tres semanas probablemente tiene la cola de tutelas llena y el expediente ordinario está esperando su turno con prioridad baja. El juzgado que responde rápido los lunes y lento los jueves puede estar procesando en batch la correspondencia de la semana. Los patrones tienen lógica aunque no sea visible desde afuera.</p>
+<p>La tecnología que se está incorporando en los sistemas de gestión judicial empieza a hacer ese scheduling más explícito. Las alertas de vencimiento de términos son colas de prioridad. Los dashboards de carga por despacho son monitores de utilización. Entender los algoritmos detrás ayuda a interpretar los números correctamente, a saber cuándo el sistema está funcionando bien y cuándo está en starvation.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/09/25/agilex-por-que-codigo-es-publico/" data-toggle="tooltip" data-placement="top" title="¿Por qué el código de AgilEx es público?">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2026/10/09/agilex-de-bello-a-la-rama-nacional/" data-toggle="tooltip" data-placement="top" title="De un juzgado de Bello a la Rama Judicial nacional">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

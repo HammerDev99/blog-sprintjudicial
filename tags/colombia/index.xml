@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Colombia on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/colombia/</link>
+    <description>Recent content in Colombia on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 05 Feb 2027 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/colombia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gobernanza de la IA en el sector judicial colombiano</title>
+      <link>http://localhost:58305/2027/02/05/gobernanza-ia-sector-judicial-colombia/</link>
+      <pubDate>Fri, 05 Feb 2027 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2027/02/05/gobernanza-ia-sector-judicial-colombia/</guid>
+      <description>&lt;p&gt;El Consejo Superior de la Judicatura emitió en 2024 el Acuerdo PCSJA24-12243, que establece lineamientos sobre el uso de inteligencia artificial en los despachos judiciales colombianos. El acuerdo existe. Lo que no existe todavía es un mecanismo de verificación que permita saber si los despachos que usan herramientas de IA las están usando dentro de los parámetros que el acuerdo establece. La regulación llegó antes de la infraestructura para hacerla cumplir.&lt;/p&gt;&#xA;&lt;p&gt;Eso es lo que caracteriza el momento actual de la gobernanza de IA en el sector judicial colombiano.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

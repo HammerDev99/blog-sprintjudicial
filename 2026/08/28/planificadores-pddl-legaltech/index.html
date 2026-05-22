@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58305&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-08-28-planificadores-pddl-legaltech/header.jpg">
+    <meta property="twitter:image" content="img/2026-08-28-planificadores-pddl-legaltech/header.jpg" />
+    
+
+    
+    <meta name="title" content="Lo que aprendí modelando una tutela en PDDL" />
+    <meta property="og:title" content="Lo que aprendí modelando una tutela en PDDL" />
+    <meta property="twitter:title" content="Lo que aprendí modelando una tutela en PDDL" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Lo que aprendí modelando una tutela en PDDL | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2026/08/28/planificadores-pddl-legaltech/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="http://localhost:58305/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-08-28-planificadores-pddl-legaltech/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                        <a class="tag" href="/tags/inteligencia-artificial" title="inteligencia artificial">
+                            inteligencia artificial
+                        </a>
+                        
+                        <a class="tag" href="/tags/pddl" title="PDDL">
+                            PDDL
+                        </a>
+                        
+                        <a class="tag" href="/tags/planificaci%C3%B3n-automatizada" title="planificación automatizada">
+                            planificación automatizada
+                        </a>
+                        
+                        <a class="tag" href="/tags/tutela" title="tutela">
+                            tutela
+                        </a>
+                        
+                    </div>
+                    <h1>Lo que aprendí modelando una tutela en PDDL</h1>
+                    <h2 class="subheading">Un planificador no alucina — pero tampoco perdona</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Friday, August 28, 2026
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>El planificador generó un plan de seis pasos en 0,59 milisegundos. Eligió correctamente la vía de legitimación por nombre propio. Nadie le dijo cuál escoger; lo calculó solo porque los hechos del problema lo indicaban.</p>
+<p>Eso fue lo que me dejó sin palabras la primera vez que vi correr el dominio PDDL que escribí para el proceso de admisión de la acción de tutela colombiana.</p>
+<p>Llevo años trabajando con software para la Rama Judicial. Conozco los flujos procesales, las resoluciones del Consejo Superior, los acuerdos del Consejo Seccional de Antioquia. Cuando empecé a investigar planificadores de IA simbólica para lo que terminó siendo un artículo académico en el Tecnológico de Antioquia, pensé que PDDL sería una herramienta más del repertorio. Terminó siendo algo más incómodo que eso: una forma diferente de pensar sobre qué significa que un procedimiento sea correcto.</p>
+<h2 id="el-problema-con-los-llms-en-contextos-legales">El problema con los LLMs en contextos legales</h2>
+<p>Un modelo de lenguaje grande aprende patrones estadísticos de corpus masivos. Su fortaleza es leer lenguaje natural con fluidez; su limitación estructural es que opera por probabilidad. Puede generar una respuesta plausible sobre la legitimación en causa de una tutela y equivocarse en un detalle que invalida todo el razonamiento. En derecho, un detalle que invalida el razonamiento es el razonamiento entero.</p>
+<p>GPT-4, según el estudio PROC2PDDL, tiene tasas de éxito inferiores al 35% cuando se le pide generar representaciones formales PDDL desde texto. Un humano con conocimiento del dominio lo hace mejor. Eso no es una crítica al modelo; es una descripción de qué tipo de problema resuelve cada herramienta.</p>
+<p>Un planificador simbólico opera de forma radicalmente distinta. La analogía que más me ayudó fue la del GPS. El GPS no conduce el vehículo; calcula la secuencia exacta de pasos respetando todas las restricciones del entorno. Si el GPS fuera un LLM, podría sugerir &ldquo;volar sobre el tráfico&rdquo; cuando hay un trancón. Un planificador clásico nunca puede sugerir algo que viole las precondiciones del dominio. Esa garantía arquitectónica —que el plan generado es válido por construcción— es precisamente lo que lo hace interesante para aplicaciones legales donde el cumplimiento normativo no es opcional.</p>
+<h2 id="qué-es-pddl-y-por-qué-importa-aquí">Qué es PDDL y por qué importa aquí</h2>
+<p>PDDL (Planning Domain Definition Language) es el lenguaje estándar para describir problemas de planificación automatizada. Todo problema tiene tres componentes. Un estado inicial (los hechos conocidos del caso), un estado objetivo (lo que se quiere lograr), y un conjunto de acciones, cada una con precondiciones y efectos.</p>
+<p>La parte que me tomó un tiempo entender bien es que PDDL es declarativo. No se programa el algoritmo; se describe el mundo. El planificador hace el resto. Escribes &ldquo;para emitir el auto admisorio se requiere que la legitimación esté acreditada, que el juzgado sea competente, que el derecho fundamental esté invocado, que la entidad accionada sea válida, que los hechos y pretensiones sean claros, que se haya cumplido la subsidiariedad y que se haya cumplido la inmediatez&rdquo; y el planificador encuentra solo el camino para satisfacer esas siete condiciones a partir del estado inicial que le das.</p>
+<p>Eso significa que si el estado inicial tiene una tutela interpuesta por un agente oficioso a favor de una persona con dificultad para actuar sin cédula del titular, el planificador elige automáticamente la vía de legitimación correcta. Sin if/else explícito. Sin lógica de bifurcación programada a mano.</p>
+<h2 id="el-dominio-tutela-admision">El dominio tutela-admision</h2>
+<p>Modelé la admisión de la acción de tutela colombiana anclado en la Constitución Política (art. 86), el Decreto 2591 de 1991, el Decreto 333 de 2021 sobre requisitos funcionales de la entidad accionada, y el Acuerdo CSJANT17-2172 del Consejo Seccional de la Judicatura de Antioquia, que establece competencia territorial en Bello.</p>
+<p>Para clasificar los predicados usé el marco teórico de García Restrepo (2023) sobre la verdad procesal. García Restrepo distingue entre proposiciones fácticas —verificables empíricamente— y proposiciones jurídicas —verificables por subsunción normativa—. Eso se traduce directamente en dos tipos de predicados. Los predicados fácticos <code>[F]</code> como <code>(datos-consistentes ?s)</code> o <code>(hechos-y-pretensiones-claros ?s)</code> son verificables revisando el expediente. Los predicados jurídicos <code>[J]</code> como <code>(legitimacion-acreditada ?p ?s)</code> o <code>(subsidiariedad-cumplida ?s)</code> requieren aplicar la norma al hecho.</p>
+<p>La distinción importa porque en una arquitectura neurosimbólica el componente neuronal —un LLM como TutelaBot— es quien extrae los predicados fácticos del texto del escrito de tutela. El planificador verifica la coherencia normativa sobre esa representación. Cada capa hace lo que mejor sabe hacer.</p>
+<p>La lógica deóntica también encajó naturalmente. García Restrepo clasifica las normas en obligatorias, prohibidas, permitidas y facultativas. En PDDL, las obligatorias se modelan como precondiciones ineludibles del estado objetivo; las prohibidas, como precondiciones negativas <code>(not ?s)</code>; las permitidas, como acciones disponibles sin obligatoriedad de uso; las facultativas, como efectos opcionales. No fue un mapeo forzado: la estructura de PDDL parece haber sido diseñada, sin saberlo, para capturar razonamiento normativo.</p>
+<h2 id="lo-que-encontré-al-validar">Lo que encontré al validar</h2>
+<p>Construí dos casos de prueba y los corrí con pyperplan, un planificador Python que soporta heurísticas hFF y landmark.</p>
+<p>El caso 1 modela una tutela presentada en nombre propio por un solicitante con cédula aportada, invocando el derecho a la salud contra una EPS ante un juzgado de pequeñas causas de Bello, con solicitud de medida provisional. El planificador generó un plan de seis pasos en 0,59 ms con heurística hFF (A*) y eligió correctamente <code>acreditar-legitimacion-nombre-propio</code>. Con heurística landmark produjo el mismo plan en 0,42 ms.</p>
+<p>Ese dato de los landmarks fue el que más me hizo pensar. Un landmark es un hito que todo plan válido debe atravesar obligatoriamente. El planificador identificó que los predicados jurídicos derivados —legitimación, competencia, validez de entidad— operan como landmarks en el sentido técnico de LAMA. La analogía con el hito procesal obligatorio no es metafórica: es computacionalmente operativa. La audiencia previa a la sentencia es un landmark porque no existe camino legal válido que la omita. El planificador lo descubre solo.</p>
+<p>El caso 2 modela una tutela por agente oficioso a favor de una persona con dificultad acreditada, sin cédula del titular. Cinco pasos, 0,45 ms, eligió <code>acreditar-legitimacion-agente-oficioso</code>. El mismo dominio, distinto estado inicial, distinto camino.</p>
+<h2 id="lo-que-no-resuelve">Lo que no resuelve</h2>
+<p>El dominio que construí es un prototipo. Formalizar el proceso de admisión completo —con todas las variantes de competencia, todos los derechos invocables, todos los tipos de entidades accionadas— requeriría meses de trabajo de alguien con formación jurídica profunda. Esa es la fricción real de PDDL: exige formalización manual, y la formalización manual es cara.</p>
+<p>También hay una comparación directa con los sistemas expertos tipo árbol de decisión, como los flujos Docassemble que construí para el concurso JusticiaLab 2025 en el Juzgado Cuarto Penal Municipal de Bello. Docassemble recorre preguntas en orden predefinido y bloquea el flujo cuando una respuesta no satisface las precondiciones esperadas. Es directamente desplegable como interfaz web sin infraestructura adicional. PDDL exige un motor de planificación, pero a cambio ofrece algo que Docassemble no puede dar: optimización nativa, verificación de coherencia garantizada por construcción, y capacidad de paralelizar la evaluación de evidencias independientes.</p>
+<p>Ninguno de los dos reemplaza al otro. Son herramientas con garantías distintas para problemas distintos.</p>
+<h2 id="lo-que-queda-abierto">Lo que queda abierto</h2>
+<p>El componente neuronal de la arquitectura puede materializarse con TutelaBot v1, el modelo fine-tuneado a partir de Gemma para extraer estructura jurídica de acciones de tutela y derechos de petición colombianos. Pesa 2 GB en formato GGUF, tiene una ventana de contexto de 128K tokens, y alcanzó un F1 de 78% sobre 358 tutelas del Juzgado Civil Municipal de Bello. La combinación con pyperplan o Fast Downward como motor de planificación es ejecutable localmente, sin dependencia de servicios en la nube.</p>
+<p>Si el Acuerdo PCSJA24-12243 del Consejo Superior exige que los expedientes judiciales no salgan del despacho, una arquitectura que corre completamente en hardware local no es un lujo técnico. Es un requisito.</p>
+<p>Lo que aprendí modelando esta tutela en PDDL es que la garantía de corrección lógica tiene un costo concreto: hay que formalizar el dominio antes de que el planificador pueda hacer algo útil. Ese trabajo no se puede delegar al modelo. Alguien que conozca la norma tiene que sentarse a traducirla a predicados. Eso es incómodo. También es honesto sobre lo que la IA simbólica puede y no puede hacer sola.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/08/14/agilex-firma-digital-confianza-distribuir-software-judicial/" data-toggle="tooltip" data-placement="top" title="Antivirus, firma digital y confianza institucional: cómo distribuir software judicial en Colombia">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2026/09/04/como-unifico-proyectos-judiciales/" data-toggle="tooltip" data-placement="top" title="Cómo unifico todos mis proyectos judiciales en un solo sistema">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

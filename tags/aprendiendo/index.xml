@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aprendiendo on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/aprendiendo/</link>
+    <description>Recent content in Aprendiendo on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 20 Nov 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/aprendiendo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estrategia RISE para crear MVPs sin saber programar</title>
+      <link>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</link>
+      <pubDate>Fri, 20 Nov 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</guid>
+      <description>&lt;p&gt;Un auxiliar de despacho en un juzgado con carga alta me preguntó en agosto si existía alguna herramienta para llevar el seguimiento de las tutelas que llegaban cada semana. Su problema era concreto. Cada lunes radicaban entre ocho y doce tutelas. Tenía un Excel manual que actualizaba cuando podía, pero el formato no era consistente, no había filtros útiles, y los campos que necesitaba cambiar el criterio según quién lo llenaba. Le pregunté si tenía acceso a un LLM con capacidad de generar código. Dijo que sí. En veinte minutos tenía un formulario de seguimiento funcional sin haber escrito una sola línea de código.&lt;/p&gt;&#xA;&lt;p&gt;Lo que usamos para construirlo se llama RISE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo un servidor decide quién trabaja primero</title>
+      <link>http://localhost:58305/2026/10/02/procesos-prioridades-turnos-juzgado/</link>
+      <pubDate>Fri, 02 Oct 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/10/02/procesos-prioridades-turnos-juzgado/</guid>
+      <description>&lt;p&gt;La secretaria de un juzgado llega un lunes con cuarenta expedientes esperando actuación. Hay tutelas con término de diez días hábiles que ya llevan ocho. Hay escritos de pruebas que se radicaron hace tres semanas. Hay oficios a entidades que nadie ha respondido todavía. Todo está esperando. Todo tiene término. No todo puede atenderse a la vez. La decisión de qué atender primero no es obvia ni neutral.&lt;/p&gt;&#xA;&lt;p&gt;Un procesador de computador tiene el mismo problema todos los microsegundos de su existencia.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

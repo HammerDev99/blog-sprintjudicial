@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/open-source/</link>
+    <description>Recent content in Open Source on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 25 Sep 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Por qué el código de AgilEx es público?</title>
+      <link>http://localhost:58305/2026/09/25/agilex-por-que-codigo-es-publico/</link>
+      <pubDate>Fri, 25 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/25/agilex-por-que-codigo-es-publico/</guid>
+      <description>&lt;p&gt;Un funcionario judicial que usa AgilEx no tiene forma de saber qué hace el ejecutable que descargó, a menos que pueda leer el código fuente. El archivo &lt;code&gt;AgilEx_by_Marduk.exe&lt;/code&gt; que llega a su despacho es un binario opaco. PyInstaller empaqueta Python, dependencias y recursos en un solo archivo que no se puede abrir y leer como se abriría un documento Word. La firma digital Authenticode SHA256 garantiza que el binario no fue modificado después de que lo firmé, pero no dice nada sobre qué hace el código que está adentro.&lt;/p&gt;&#xA;&lt;p&gt;Publicar el código en GitHub no resuelve ese problema del todo, porque pocos funcionarios van a leer Python. Pero sí hace algo distinto, que es dejar el código auditable para quien pueda leerlo.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

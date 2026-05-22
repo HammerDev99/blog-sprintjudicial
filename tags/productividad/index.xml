@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productividad on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/productividad/</link>
+    <description>Recent content in Productividad on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 20 Nov 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/productividad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estrategia RISE para crear MVPs sin saber programar</title>
+      <link>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</link>
+      <pubDate>Fri, 20 Nov 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</guid>
+      <description>&lt;p&gt;Un auxiliar de despacho en un juzgado con carga alta me preguntó en agosto si existía alguna herramienta para llevar el seguimiento de las tutelas que llegaban cada semana. Su problema era concreto. Cada lunes radicaban entre ocho y doce tutelas. Tenía un Excel manual que actualizaba cuando podía, pero el formato no era consistente, no había filtros útiles, y los campos que necesitaba cambiar el criterio según quién lo llenaba. Le pregunté si tenía acceso a un LLM con capacidad de generar código. Dijo que sí. En veinte minutos tenía un formulario de seguimiento funcional sin haber escrito una sola línea de código.&lt;/p&gt;&#xA;&lt;p&gt;Lo que usamos para construirlo se llama RISE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Planificadores digitales en el despacho y las herramientas que usan los mejores estudios</title>
+      <link>http://localhost:58305/2026/07/17/planificadores-digitales-despacho/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/07/17/planificadores-digitales-despacho/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

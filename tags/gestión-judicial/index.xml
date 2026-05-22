@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gestión Judicial on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/gesti%C3%B3n-judicial/</link>
+    <description>Recent content in Gestión Judicial on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 02 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/gesti%C3%B3n-judicial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cómo un servidor decide quién trabaja primero</title>
+      <link>http://localhost:58305/2026/10/02/procesos-prioridades-turnos-juzgado/</link>
+      <pubDate>Fri, 02 Oct 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/10/02/procesos-prioridades-turnos-juzgado/</guid>
+      <description>&lt;p&gt;La secretaria de un juzgado llega un lunes con cuarenta expedientes esperando actuación. Hay tutelas con término de diez días hábiles que ya llevan ocho. Hay escritos de pruebas que se radicaron hace tres semanas. Hay oficios a entidades que nadie ha respondido todavía. Todo está esperando. Todo tiene término. No todo puede atenderse a la vez. La decisión de qué atender primero no es obvia ni neutral.&lt;/p&gt;&#xA;&lt;p&gt;Un procesador de computador tiene el mismo problema todos los microsegundos de su existencia.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

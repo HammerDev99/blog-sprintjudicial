@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Claude Code on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/claude-code/</link>
+    <description>Recent content in Claude Code on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 15 Jan 2027 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code y agentes especializados en el flujo de trabajo técnico</title>
+      <link>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</link>
+      <pubDate>Fri, 15 Jan 2027 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</guid>
+      <description>&lt;p&gt;El post que estás leyendo lo escribió un agente llamado &lt;code&gt;blog-writer&lt;/code&gt;. La imagen del encabezado la descargó otro proceso automático. El frontmatter fue generado siguiendo un SPEC definido en un archivo de planning. El commit que publicó el archivo tiene un mensaje en formato convencional que ningún humano escribió. No porque el humano no pudiera — sino porque el sistema está configurado para hacerlo de esa forma, y el humano puede concentrarse en qué decir en lugar de en cómo decirlo.&lt;/p&gt;&#xA;&lt;p&gt;Eso es lo que cambia cuando Claude Code tiene contexto del dominio y agentes especializados.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

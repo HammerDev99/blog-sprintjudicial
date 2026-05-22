@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58305&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-09-04-como-unifico-proyectos-judiciales/header.jpg">
+    <meta property="twitter:image" content="img/2026-09-04-como-unifico-proyectos-judiciales/header.jpg" />
+    
+
+    
+    <meta name="title" content="Cómo unifico todos mis proyectos judiciales en un solo sistema" />
+    <meta property="og:title" content="Cómo unifico todos mis proyectos judiciales en un solo sistema" />
+    <meta property="twitter:title" content="Cómo unifico todos mis proyectos judiciales en un solo sistema" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Cómo unifico todos mis proyectos judiciales en un solo sistema | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2026/09/04/como-unifico-proyectos-judiciales/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="http://localhost:58305/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-09-04-como-unifico-proyectos-judiciales/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                        <a class="tag" href="/tags/automatizaci%C3%B3n-judicial" title="automatización judicial">
+                            automatización judicial
+                        </a>
+                        
+                        <a class="tag" href="/tags/arquitectura-de-software" title="arquitectura de software">
+                            arquitectura de software
+                        </a>
+                        
+                        <a class="tag" href="/tags/building-in-public" title="building in public">
+                            building in public
+                        </a>
+                        
+                    </div>
+                    <h1>Cómo unifico todos mis proyectos judiciales en un solo sistema</h1>
+                    <h2 class="subheading">Cinco herramientas, un expediente, demasiadas costuras</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Friday, September 4, 2026
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>El día que sherlock-docs dejó de leer el índice que AgilEx había generado fue el día que entendí que tenía un problema de arquitectura, no solo de código. AgilEx había cambiado la estructura de sus columnas en el Excel de salida, y el adaptador que conecta ambos proyectos no sabía qué hacer con eso. Cuarenta y cinco minutos de diagnóstico para un cambio que había tomado tres líneas en el otro repositorio.</p>
+<p>Eso pasa cuando tienes cinco proyectos que se hablan entre sí y ningún contrato formal entre ellos.</p>
+<h2 id="el-objeto-que-lo-une-todo">El objeto que lo une todo</h2>
+<p>Todos mis proyectos de automatización judicial convergen sobre el mismo objeto, el expediente electrónico. Un expediente judicial en Colombia es una carpeta con cientos de documentos (escritos de tutela, poderes, autos de admisión, pruebas, sentencias) que la Rama Judicial exige indexar según el Acuerdo PCSJA20-11567 de 2020. Ese índice tiene que estar en un formato Excel específico, con columnas estandarizadas para nombre de archivo, extensión, fecha de creación y número de páginas. Cumplir esa norma a mano para un expediente de 300 folios toma entre una y dos horas. Multiplicado por los expedientes que pasan por un despacho en una semana, el número se vuelve insostenible.</p>
+<p>AgilEx nació de ese problema. Pero lo que no vi al principio fue que resolver el problema del índice iba a crear un punto de entrada para todos los demás proyectos que vinieron después.</p>
+<h2 id="la-cadena-en-orden">La cadena, en orden</h2>
+<p>AgilEx v1.5.1 genera el índice electrónico como archivo Excel. Usa xlwings para la automatización COM con Microsoft Excel, lo que significa que Excel tiene que estar instalado en la máquina — eso es una restricción de diseño, no un descuido. Hay tres modos de procesamiento (cuaderno único, expediente único y múltiples expedientes en batch) y el output es siempre el mismo, un Excel con metadatos estandarizados de cada documento del expediente.</p>
+<p>Ese Excel es lo que sherlock-docs consume como primer insumo. sherlock-docs es un pipeline de extracción de información que usa un ensemble de extractores. Marker para los PDFs, SpaCy para entidades nombradas, reglas de regex para patrones específicos del derecho colombiano, y TutelaBot como candidato de extracción jurídica de Nivel 6. TutelaBot Air, la versión de 10 mil millones de parámetros, alcanza un F1 de 78% con JSON válido en el 100% de los casos y una latencia de 16.6 segundos por documento, medido sobre un corpus de 358 tutelas del Juzgado Civil Municipal de Bello. El output de sherlock-docs es un JSON estructurado con los campos que cualquier sistema de gestión necesita saber de cada tutela. El accionante, el accionado, los derechos invocados, las pretensiones.</p>
+<p>Antes de que cualquier dato salga del despacho, entra HabeasSafe. Esta herramienta anonimiza la información de identificación personal en documentos legales colombianos, detectando nombres con spaCy (<code>es_core_news_lg</code>), cédulas, correos, direcciones y teléfonos, pero preservando las entidades públicas conocidas (EPS, ministerios, corporaciones) y todo el vocabulario jurídico técnico. Cumple la Ley 1581 de 2012 y el Acuerdo PCSJA24-12243 del Consejo Superior, que establece que los expedientes judiciales no pueden salir del despacho sin tratamiento de datos. HabeasSafe corre localmente, sin dependencia de APIs externas.</p>
+<p>El eslabón más largo de la cadena es VIGÍA. El scraper descarga sentencias de la Corte Constitucional desde datos.gov.co y desde el sitio oficial de la Corte. El corpus objetivo son alrededor de 18.000 sentencias en español del período 2000–presente, almacenadas en un archivo <code>corpus_cc.jsonl</code> con campos de metadatos estandarizados. Ese corpus alimenta legal-tuners, el proyecto hermano que hace fine-tuning de modelos de lenguaje para el dominio legal colombiano. La lógica es que cada ciclo de trabajo con expedientes reales mejora los datos de entrenamiento que van a mejorar los modelos que van a mejorar la extracción del siguiente ciclo.</p>
+<h2 id="lo-que-está-afuera-de-la-cadena">Lo que está afuera de la cadena</h2>
+<p>SIRAL es el proyecto que más me preguntan cuando describo el ecosistema, probablemente porque es el único que tiene interfaz web. Es un sistema de gestión integral de quejas de acoso laboral para la Rama Judicial, con FastAPI, PostgreSQL 16, Streamlit, autenticación JWT con control de roles y despliegue en Docker Swarm. El cliente es el Oficial Mayor de la Seccional Antioquia. SIRAL no se conecta con ninguno de los otros proyectos porque resuelve un problema distinto, la gestión de recursos humanos y procedimientos disciplinarios, no el procesamiento de expedientes. Lo menciono porque es tentador asumir que todo debería integrarse con todo, y SIRAL es el ejemplo de que a veces dos problemas en la misma institución son simplemente dos problemas distintos.</p>
+<h2 id="las-costuras-que-todavía-se-ven">Las costuras que todavía se ven</h2>
+<p>El problema de sherlock-docs y el Excel de AgilEx que describí al principio no está resuelto del todo. Hay un adaptador que transforma el output de AgilEx al formato que espera sherlock-docs, pero ese adaptador no tiene tests de contrato. Cuando AgilEx agrega o renombra columnas, el adaptador falla silenciosamente o produce JSON malformado. La solución correcta es un schema compartido entre ambos proyectos, pero eso requiere decidir cuál de los dos es el productor canónico y cuál el consumidor, y esa conversación aún no ocurrió conmigo mismo.</p>
+<p>VIGÍA tampoco tiene pipeline automatizado. El corpus se actualiza cuando hay tiempo para correr el scraper manualmente, lo que en la práctica significa que el corpus de entrenamiento de legal-tuners tiene entre uno y tres meses de rezago respecto a las sentencias más recientes de la Corte. Para el tipo de fine-tuning que hacemos, eso no es crítico; pero es una deuda técnica que crecerá si el corpus se vuelve más grande.</p>
+<p>HabeasSafe tampoco está integrado en el flujo de sherlock-docs de forma automática. Hoy se invoca por separado, después de que sherlock-docs produce el JSON. En teoría debería ser un paso del pipeline, no un paso manual. En la práctica, la integración requiere decidir en qué punto exacto del flujo aplicar la anonimización (antes de la extracción, durante o después de ella). Esa decisión tiene implicaciones sobre qué campos extraen los modelos y con qué datos se entrenan.</p>
+<h2 id="por-qué-lo-muestro-así">Por qué lo muestro así</h2>
+<p>Cuando alguien me pregunta cómo funciona el sistema, la respuesta fácil sería describir cada herramienta por separado y no mencionar que el adaptador entre AgilEx y sherlock-docs se rompe con los cambios de versión. La respuesta útil señala que un ecosistema de herramientas que comparten el mismo dominio acumula deuda de integración exactamente en los puntos donde los proyectos se tocan. Esos puntos son los que más trabajo dan y los que menos documentación tienen, porque cuando se construyen parecen temporales.</p>
+<p>La cadena funciona. Los 358 tutelas del benchmark de sherlock-docs salieron de expedientes que AgilEx indexó. HabeasSafe anonimizó los que se compartieron fuera del despacho. VIGÍA tiene en este momento más de 14.000 sentencias scrapeadas del corpus objetivo. El sistema produce resultados reales en producción. Las costuras siguen siendo costuras, y las voy a seguir mostrando.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/08/28/planificadores-pddl-legaltech/" data-toggle="tooltip" data-placement="top" title="Lo que aprendí modelando una tutela en PDDL">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2026/09/11/agilex-arquitectura-script-herramienta-nacional/" data-toggle="tooltip" data-placement="top" title="De script de Python a herramienta nacional: la arquitectura de AgilEx">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

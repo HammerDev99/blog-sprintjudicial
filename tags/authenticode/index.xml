@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authenticode on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/authenticode/</link>
+    <description>Recent content in Authenticode on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/authenticode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Antivirus, firma digital y confianza institucional: cómo distribuir software judicial en Colombia</title>
+      <link>http://localhost:58305/2026/08/14/agilex-firma-digital-confianza-distribuir-software-judicial/</link>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/08/14/agilex-firma-digital-confianza-distribuir-software-judicial/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

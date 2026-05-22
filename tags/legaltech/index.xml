@@ -1,8 +1,161 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Legaltech on Sprint Judicial</title><link>https://blog.sprintjudicial.com/tags/legaltech/</link><description>Recent content in Legaltech on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/tags/legaltech/index.xml" rel="self" type="application/rss+xml"/><item><title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title><link>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link><pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid><description>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales Hace una semana escribí sobre TutelaBot, el modelo de IA que Alexander Oviedo Fadul publicó en Ollama para analizar acciones de tutela. Ese post se quedó en la versión base: la de 2 GB que corre en cualquier máquina con 16 de RAM.
-Pero la familia son tres modelos. Base (3.2B parámetros), Air (10B) y Pro v3 (16B).</description></item><item><title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title><link>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid><description>El volumen de acciones de tutela en Colombia es una presión concreta que llega a los despachos judiciales en forma de pilas de papel, carpetas escaneadas y correos que acumulan términos. En un juzgado donde trabajé, las tutelas llegaban sin parar los lunes, miércoles y viernes, sin importar qué otro proceso estuviera en curso. El plazo de diez días para fallar no negocia. Cuando vi lo que Alexander Oviedo Fadul publicó en Ollama, lo primero que pensé fue que eso necesitaba existir hace años.</description></item><item><title>Qué es un VPS y por qué tu firma jurídica debería entenderlo</title><link>https://blog.sprintjudicial.com/2026/03/12/que-es-un-vps-para-abogados/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/03/12/que-es-un-vps-para-abogados/</guid><description>Imagina que tu firma tiene una oficina física, tienes dos opciones: arrendar un escritorio en un coworking donde compartes espacio, internet y hasta impresoras con desconocidos, o arrendar tu propia oficina donde controlas quién entra, cómo está organizada y qué pasa adentro.
-Esa diferencia entre el coworking y la oficina propia es exactamente lo que separa un hosting compartido de un VPS.
-Y aunque suene a decisión técnica que le corresponde a alguien más, en realidad es una decisión de negocio.</description></item><item><title>Los prompts que uso todos los días trabajando en automatización judicial</title><link>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</guid><description>El año pasado tuve que analizar cerca de 200 expedientes judiciales para identificar patrones de distribución de carga entre despachos. Hacerlo manualmente tomaba semanas. Con la combinación correcta de código y los prompts adecuados, lo resolví en dos días.
-La diferencia estaba en saber exactamente cómo pedirle al modelo lo que necesitaba.
-Llevo tiempo usando modelos de lenguaje como herramienta de trabajo diario en proyectos como Marduk y Sherlock-docs. En ese proceso fui descubriendo que la diferencia entre un resultado útil y uno genérico casi siempre está en cómo formulas la instrucción.</description></item><item><title>Lo que los sistemas judiciales ocultan y cómo la transparencia algorítmica cambia el derecho</title><link>https://blog.sprintjudicial.com/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</guid><description>Una tarde buscando un precedente en un sistema de consulta judicial escribí exactamente lo que necesitaba con términos precisos y fechas aproximadas. El sistema me devolvió cero resultados aunque sabía que el documento existía porque lo había visto antes en papel. Después de media hora probando combinaciones encontré el archivo que simplemente no había sido indexado de la manera esperada. Esa decisión técnica sobre cómo organizar la información tuvo consecuencias reales en mi trabajo y pudo haberlas tenido en una decisión judicial.</description></item><item><title>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va</title><link>https://blog.sprintjudicial.com/2025/06/05/modelo-seci-memoria-institucional-juzgados/</link><pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/06/05/modelo-seci-memoria-institucional-juzgados/</guid><description>Hace unos años, en un despacho judicial que conozco bien, llegó un nuevo juez a reemplazar a uno que llevaba once años en ese cargo.
-El juez saliente era de esos que el sistema produce raramente: alguien que conocía cada proceso como si fuera propio, que sabía exactamente por qué ciertos expedientes tenían ese folio extra archivado al final, que había desarrollado un criterio muy preciso para decretar medidas cautelares en casos de familia que nunca estaba escrito en ningún manual.</description></item><item><title>Hablé en FliSol 2025 sobre software libre y justicia digital</title><link>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</link><pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid><description>Antes de mostrar una sola diapositiva, le hice una pregunta a la sala: &amp;ldquo;En una escala del 1 al 5, ¿cuánto confían en que una inteligencia artificial pueda ayudar en procesos judiciales?&amp;rdquo; La mayoría levantó la mano entre el 2 y el 3. Ingenieros, activistas de software libre, estudiantes de tecnología, personas que entienden perfectamente cómo funcionan estos sistemas. Y aun así, escepticismo. Eso me pareció lo más honesto que pasó el sábado 5 de abril en el FliSol Medellín 2025.</description></item><item><title>Una revisión del sistema experto Docassemble</title><link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid><description>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?
-Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Legaltech on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/legaltech/</link>
+    <description>Recent content in Legaltech on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 05 Feb 2027 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/legaltech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gobernanza de la IA en el sector judicial colombiano</title>
+      <link>http://localhost:58305/2027/02/05/gobernanza-ia-sector-judicial-colombia/</link>
+      <pubDate>Fri, 05 Feb 2027 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2027/02/05/gobernanza-ia-sector-judicial-colombia/</guid>
+      <description>&lt;p&gt;El Consejo Superior de la Judicatura emitió en 2024 el Acuerdo PCSJA24-12243, que establece lineamientos sobre el uso de inteligencia artificial en los despachos judiciales colombianos. El acuerdo existe. Lo que no existe todavía es un mecanismo de verificación que permita saber si los despachos que usan herramientas de IA las están usando dentro de los parámetros que el acuerdo establece. La regulación llegó antes de la infraestructura para hacerla cumplir.&lt;/p&gt;&#xA;&lt;p&gt;Eso es lo que caracteriza el momento actual de la gobernanza de IA en el sector judicial colombiano.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claude Code y agentes especializados en el flujo de trabajo técnico</title>
+      <link>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</link>
+      <pubDate>Fri, 15 Jan 2027 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</guid>
+      <description>&lt;p&gt;El post que estás leyendo lo escribió un agente llamado &lt;code&gt;blog-writer&lt;/code&gt;. La imagen del encabezado la descargó otro proceso automático. El frontmatter fue generado siguiendo un SPEC definido en un archivo de planning. El commit que publicó el archivo tiene un mensaje en formato convencional que ningún humano escribió. No porque el humano no pudiera — sino porque el sistema está configurado para hacerlo de esa forma, y el humano puede concentrarse en qué decir en lugar de en cómo decirlo.&lt;/p&gt;&#xA;&lt;p&gt;Eso es lo que cambia cuando Claude Code tiene contexto del dominio y agentes especializados.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Altruismo en el sistema judicial</title>
+      <link>http://localhost:58305/2026/12/04/altruismo-sistema-judicial-tecnologia-publica/</link>
+      <pubDate>Fri, 04 Dec 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/12/04/altruismo-sistema-judicial-tecnologia-publica/</guid>
+      <description>&lt;p&gt;AgilEx no tiene cliente. Sherlock-docs no tiene cliente. HabeasSafe no tiene cliente. VIGÍA alimenta modelos que tampoco tienen contrato con nadie. Son cuatro proyectos activos que resuelven problemas reales del sector judicial colombiano, usados por funcionarios reales en despachos reales, y ninguno de ellos surgió de una licitación, un convenio, o una solicitud institucional. Los construí porque el problema existía y tenía las herramientas para atacarlo.&lt;/p&gt;&#xA;&lt;p&gt;Fin de año es buen momento para preguntarse qué significa eso exactamente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Estrategia RISE para crear MVPs sin saber programar</title>
+      <link>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</link>
+      <pubDate>Fri, 20 Nov 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/11/20/estrategia-rise-crear-mvp-sin-programar/</guid>
+      <description>&lt;p&gt;Un auxiliar de despacho en un juzgado con carga alta me preguntó en agosto si existía alguna herramienta para llevar el seguimiento de las tutelas que llegaban cada semana. Su problema era concreto. Cada lunes radicaban entre ocho y doce tutelas. Tenía un Excel manual que actualizaba cuando podía, pero el formato no era consistente, no había filtros útiles, y los campos que necesitaba cambiar el criterio según quién lo llenaba. Le pregunté si tenía acceso a un LLM con capacidad de generar código. Dijo que sí. En veinte minutos tenía un formulario de seguimiento funcional sin haber escrito una sola línea de código.&lt;/p&gt;&#xA;&lt;p&gt;Lo que usamos para construirlo se llama RISE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lo que los abogados no entienden de sus clientes</title>
+      <link>http://localhost:58305/2026/11/06/lo-que-abogados-no-entienden-clientes-tecnologia/</link>
+      <pubDate>Fri, 06 Nov 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/11/06/lo-que-abogados-no-entienden-clientes-tecnologia/</guid>
+      <description>&lt;p&gt;La secretaria de un juzgado civil me contó una vez que el cliente más difícil de la semana no era el que tenía el proceso más complicado. Era el señor que llevaba cuatro meses llamando al consultorio de su abogado para preguntar si había alguna novedad, y cada vez le decían que no había. El proceso avanzaba, había autos de trámite, oficios despachados, constancias de notificación. Pero para ese señor, no había nada. Nadie le había explicado qué significaba ninguna de esas cosas.&lt;/p&gt;&#xA;&lt;p&gt;El problema no era el proceso. Era la traducción.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De un juzgado de Bello a la Rama Judicial nacional</title>
+      <link>http://localhost:58305/2026/10/09/agilex-de-bello-a-la-rama-nacional/</link>
+      <pubDate>Fri, 09 Oct 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/10/09/agilex-de-bello-a-la-rama-nacional/</guid>
+      <description>&lt;p&gt;El mensaje llegó de un juzgado que nunca había visitado. Una secretaria preguntaba si el ejecutable que le había pasado &amp;ldquo;una compañera de otro juzgado&amp;rdquo; era el mismo que yo distribuía, porque tenía una duda sobre cómo procesar los cuadernos de un expediente con estructura inusual. No conocía a esa secretaria. No conocía a la compañera que le había pasado el archivo. AgilEx había llegado a ese despacho por una cadena de tres personas y yo era la primera.&lt;/p&gt;&#xA;&lt;p&gt;Ese fue el momento en que entendí que AgilEx había dejado de ser mi proyecto personal.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo un servidor decide quién trabaja primero</title>
+      <link>http://localhost:58305/2026/10/02/procesos-prioridades-turnos-juzgado/</link>
+      <pubDate>Fri, 02 Oct 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/10/02/procesos-prioridades-turnos-juzgado/</guid>
+      <description>&lt;p&gt;La secretaria de un juzgado llega un lunes con cuarenta expedientes esperando actuación. Hay tutelas con término de diez días hábiles que ya llevan ocho. Hay escritos de pruebas que se radicaron hace tres semanas. Hay oficios a entidades que nadie ha respondido todavía. Todo está esperando. Todo tiene término. No todo puede atenderse a la vez. La decisión de qué atender primero no es obvia ni neutral.&lt;/p&gt;&#xA;&lt;p&gt;Un procesador de computador tiene el mismo problema todos los microsegundos de su existencia.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>¿Por qué el código de AgilEx es público?</title>
+      <link>http://localhost:58305/2026/09/25/agilex-por-que-codigo-es-publico/</link>
+      <pubDate>Fri, 25 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/25/agilex-por-que-codigo-es-publico/</guid>
+      <description>&lt;p&gt;Un funcionario judicial que usa AgilEx no tiene forma de saber qué hace el ejecutable que descargó, a menos que pueda leer el código fuente. El archivo &lt;code&gt;AgilEx_by_Marduk.exe&lt;/code&gt; que llega a su despacho es un binario opaco. PyInstaller empaqueta Python, dependencias y recursos en un solo archivo que no se puede abrir y leer como se abriría un documento Word. La firma digital Authenticode SHA256 garantiza que el binario no fue modificado después de que lo firmé, pero no dice nada sobre qué hace el código que está adentro.&lt;/p&gt;&#xA;&lt;p&gt;Publicar el código en GitHub no resuelve ese problema del todo, porque pocos funcionarios van a leer Python. Pero sí hace algo distinto, que es dejar el código auditable para quien pueda leerlo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De script de Python a herramienta nacional: la arquitectura de AgilEx</title>
+      <link>http://localhost:58305/2026/09/11/agilex-arquitectura-script-herramienta-nacional/</link>
+      <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/11/agilex-arquitectura-script-herramienta-nacional/</guid>
+      <description>&lt;p&gt;El primer script de AgilEx tenía un if/else por cada tipo de procesamiento. Si el usuario seleccionaba cuaderno único, una rama. Si seleccionaba expediente único, otra. Si seleccionaba múltiples expedientes, una tercera. Ese if/else estaba en la vista, en el controlador y en partes del modelo porque nadie había decidido todavía a quién le correspondía saber qué modo estaba activo. Funcionaba. Era difícil de mantener desde el primer día.&lt;/p&gt;&#xA;&lt;p&gt;La decisión de reescribir esa lógica fue la que convirtió AgilEx de un script que yo podía operar a una herramienta que otra persona podía sostener.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo unifico todos mis proyectos judiciales en un solo sistema</title>
+      <link>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</link>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</guid>
+      <description>&lt;p&gt;El día que sherlock-docs dejó de leer el índice que AgilEx había generado fue el día que entendí que tenía un problema de arquitectura, no solo de código. AgilEx había cambiado la estructura de sus columnas en el Excel de salida, y el adaptador que conecta ambos proyectos no sabía qué hacer con eso. Cuarenta y cinco minutos de diagnóstico para un cambio que había tomado tres líneas en el otro repositorio.&lt;/p&gt;&#xA;&lt;p&gt;Eso pasa cuando tienes cinco proyectos que se hablan entre sí y ningún contrato formal entre ellos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lo que aprendí modelando una tutela en PDDL</title>
+      <link>http://localhost:58305/2026/08/28/planificadores-pddl-legaltech/</link>
+      <pubDate>Fri, 28 Aug 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/08/28/planificadores-pddl-legaltech/</guid>
+      <description>&lt;p&gt;El planificador generó un plan de seis pasos en 0,59 milisegundos. Eligió correctamente la vía de legitimación por nombre propio. Nadie le dijo cuál escoger; lo calculó solo porque los hechos del problema lo indicaban.&lt;/p&gt;&#xA;&lt;p&gt;Eso fue lo que me dejó sin palabras la primera vez que vi correr el dominio PDDL que escribí para el proceso de admisión de la acción de tutela colombiana.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El problema que nadie quería resolver y por qué empecé a contar folios a mano</title>
+      <link>http://localhost:58305/2026/07/31/agilex-el-origen-contar-folios-a-mano/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/07/31/agilex-el-origen-contar-folios-a-mano/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planificadores digitales en el despacho y las herramientas que usan los mejores estudios</title>
+      <link>http://localhost:58305/2026/07/17/planificadores-digitales-despacho/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/07/17/planificadores-digitales-despacho/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title>
+      <link>http://localhost:58305/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title>
+      <link>http://localhost:58305/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qué es un VPS y por qué tu firma jurídica debería entenderlo</title>
+      <link>http://localhost:58305/2026/03/12/que-es-un-vps-para-abogados/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/03/12/que-es-un-vps-para-abogados/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Los prompts que uso todos los días trabajando en automatización judicial</title>
+      <link>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lo que los sistemas judiciales ocultan y cómo la transparencia algorítmica cambia el derecho</title>
+      <link>http://localhost:58305/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2025/10/09/transparencia-algoritmica-sistemas-judiciales/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>El modelo SECI y la memoria institucional en los juzgados: por qué el conocimiento se pierde cuando un juez se va</title>
+      <link>http://localhost:58305/2025/06/05/modelo-seci-memoria-institucional-juzgados/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2025/06/05/modelo-seci-memoria-institucional-juzgados/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hablé en FliSol 2025 sobre software libre y justicia digital</title>
+      <link>http://localhost:58305/2025/04/05/flisol-2025-software-libre-justicia-digital/</link>
+      <pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Una revisión del sistema experto Docassemble</title>
+      <link>http://localhost:58305/2023/07/11/docassemble-review/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2023/07/11/docassemble-review/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

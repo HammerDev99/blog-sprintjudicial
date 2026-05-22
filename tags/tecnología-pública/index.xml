@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tecnología Pública on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/tecnolog%C3%ADa-p%C3%BAblica/</link>
+    <description>Recent content in Tecnología Pública on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 04 Dec 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/tecnolog%C3%ADa-p%C3%BAblica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Altruismo en el sistema judicial</title>
+      <link>http://localhost:58305/2026/12/04/altruismo-sistema-judicial-tecnologia-publica/</link>
+      <pubDate>Fri, 04 Dec 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/12/04/altruismo-sistema-judicial-tecnologia-publica/</guid>
+      <description>&lt;p&gt;AgilEx no tiene cliente. Sherlock-docs no tiene cliente. HabeasSafe no tiene cliente. VIGÍA alimenta modelos que tampoco tienen contrato con nadie. Son cuatro proyectos activos que resuelven problemas reales del sector judicial colombiano, usados por funcionarios reales en despachos reales, y ninguno de ellos surgió de una licitación, un convenio, o una solicitud institucional. Los construí porque el problema existía y tenía las herramientas para atacarlo.&lt;/p&gt;&#xA;&lt;p&gt;Fin de año es buen momento para preguntarse qué significa eso exactamente.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

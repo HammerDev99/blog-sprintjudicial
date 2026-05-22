@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Building in Public on Sprint Judicial</title><link>https://blog.sprintjudicial.com/tags/building-in-public/</link><description>Recent content in Building in Public on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/tags/building-in-public/index.xml" rel="self" type="application/rss+xml"/><item><title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title><link>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid><description>El volumen de acciones de tutela en Colombia es una presión concreta que llega a los despachos judiciales en forma de pilas de papel, carpetas escaneadas y correos que acumulan términos. En un juzgado donde trabajé, las tutelas llegaban sin parar los lunes, miércoles y viernes, sin importar qué otro proceso estuviera en curso. El plazo de diez días para fallar no negocia. Cuando vi lo que Alexander Oviedo Fadul publicó en Ollama, lo primero que pensé fue que eso necesitaba existir hace años.</description></item><item><title>Los prompts que uso todos los días trabajando en automatización judicial</title><link>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</guid><description>El año pasado tuve que analizar cerca de 200 expedientes judiciales para identificar patrones de distribución de carga entre despachos. Hacerlo manualmente tomaba semanas. Con la combinación correcta de código y los prompts adecuados, lo resolví en dos días.
-La diferencia estaba en saber exactamente cómo pedirle al modelo lo que necesitaba.
-Llevo tiempo usando modelos de lenguaje como herramienta de trabajo diario en proyectos como Marduk y Sherlock-docs. En ese proceso fui descubriendo que la diferencia entre un resultado útil y uno genérico casi siempre está en cómo formulas la instrucción.</description></item><item><title>Por qué transformé este espacio</title><link>https://blog.sprintjudicial.com/2026/01/08/por-que-transforme-este-espacio/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/01/08/por-que-transforme-este-espacio/</guid><description>Hace cuatro años publiqué mi primer post en este blog. Era un &amp;ldquo;Hello World&amp;rdquo; sincero, escrito desde la emoción de alguien que acababa de decidir que el medio más adecuado para generar un cambio en el mundo legaltech era compartir lo que aprendía. En ese momento no tenía claro quién era mi audiencia ni qué historia quería contar. Solo sabía que tenía cosas que decir sobre tecnología y justicia. Cuatro años después, ese blog tiene más publicaciones.</description></item><item><title>Hablé en FliSol 2025 sobre software libre y justicia digital</title><link>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</link><pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid><description>Antes de mostrar una sola diapositiva, le hice una pregunta a la sala: &amp;ldquo;En una escala del 1 al 5, ¿cuánto confían en que una inteligencia artificial pueda ayudar en procesos judiciales?&amp;rdquo; La mayoría levantó la mano entre el 2 y el 3. Ingenieros, activistas de software libre, estudiantes de tecnología, personas que entienden perfectamente cómo funcionan estos sistemas. Y aun así, escepticismo. Eso me pareció lo más honesto que pasó el sábado 5 de abril en el FliSol Medellín 2025.</description></item><item><title>El programador flanker: De la cancha de rugby a la arquitectura de software</title><link>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</link><pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2025/02/28/design-pattern-in-public/</guid><description>En el mundo del desarrollo de software, nos encontramos frecuentemente con situaciones que requieren soluciones elegantes y mantenibles. Recientemente, me enfrenté a un caso interesante, que trataba sobre la implementación de un sistema de procesamiento de carpetas manteniendo un equilibrio entre flexibilidad y desacoplamiento.
-El reto: Automatización flexible en expedientes judiciales El escenario planteaba un desafío particular. Se necesitaba desarrollar una funcionalidad que permitiera procesar carpetas de diferentes maneras, donde cada método de procesamiento compartía una estructura común pero requería su propia implementación específica.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building in Public on Sprint Judicial</title>
+    <link>http://localhost:58305/tags/building-in-public/</link>
+    <description>Recent content in Building in Public on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 15 Jan 2027 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/tags/building-in-public/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code y agentes especializados en el flujo de trabajo técnico</title>
+      <link>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</link>
+      <pubDate>Fri, 15 Jan 2027 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</guid>
+      <description>&lt;p&gt;El post que estás leyendo lo escribió un agente llamado &lt;code&gt;blog-writer&lt;/code&gt;. La imagen del encabezado la descargó otro proceso automático. El frontmatter fue generado siguiendo un SPEC definido en un archivo de planning. El commit que publicó el archivo tiene un mensaje en formato convencional que ningún humano escribió. No porque el humano no pudiera — sino porque el sistema está configurado para hacerlo de esa forma, y el humano puede concentrarse en qué decir en lugar de en cómo decirlo.&lt;/p&gt;&#xA;&lt;p&gt;Eso es lo que cambia cuando Claude Code tiene contexto del dominio y agentes especializados.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De un juzgado de Bello a la Rama Judicial nacional</title>
+      <link>http://localhost:58305/2026/10/09/agilex-de-bello-a-la-rama-nacional/</link>
+      <pubDate>Fri, 09 Oct 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/10/09/agilex-de-bello-a-la-rama-nacional/</guid>
+      <description>&lt;p&gt;El mensaje llegó de un juzgado que nunca había visitado. Una secretaria preguntaba si el ejecutable que le había pasado &amp;ldquo;una compañera de otro juzgado&amp;rdquo; era el mismo que yo distribuía, porque tenía una duda sobre cómo procesar los cuadernos de un expediente con estructura inusual. No conocía a esa secretaria. No conocía a la compañera que le había pasado el archivo. AgilEx había llegado a ese despacho por una cadena de tres personas y yo era la primera.&lt;/p&gt;&#xA;&lt;p&gt;Ese fue el momento en que entendí que AgilEx había dejado de ser mi proyecto personal.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>¿Por qué el código de AgilEx es público?</title>
+      <link>http://localhost:58305/2026/09/25/agilex-por-que-codigo-es-publico/</link>
+      <pubDate>Fri, 25 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/25/agilex-por-que-codigo-es-publico/</guid>
+      <description>&lt;p&gt;Un funcionario judicial que usa AgilEx no tiene forma de saber qué hace el ejecutable que descargó, a menos que pueda leer el código fuente. El archivo &lt;code&gt;AgilEx_by_Marduk.exe&lt;/code&gt; que llega a su despacho es un binario opaco. PyInstaller empaqueta Python, dependencias y recursos en un solo archivo que no se puede abrir y leer como se abriría un documento Word. La firma digital Authenticode SHA256 garantiza que el binario no fue modificado después de que lo firmé, pero no dice nada sobre qué hace el código que está adentro.&lt;/p&gt;&#xA;&lt;p&gt;Publicar el código en GitHub no resuelve ese problema del todo, porque pocos funcionarios van a leer Python. Pero sí hace algo distinto, que es dejar el código auditable para quien pueda leerlo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De script de Python a herramienta nacional: la arquitectura de AgilEx</title>
+      <link>http://localhost:58305/2026/09/11/agilex-arquitectura-script-herramienta-nacional/</link>
+      <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/11/agilex-arquitectura-script-herramienta-nacional/</guid>
+      <description>&lt;p&gt;El primer script de AgilEx tenía un if/else por cada tipo de procesamiento. Si el usuario seleccionaba cuaderno único, una rama. Si seleccionaba expediente único, otra. Si seleccionaba múltiples expedientes, una tercera. Ese if/else estaba en la vista, en el controlador y en partes del modelo porque nadie había decidido todavía a quién le correspondía saber qué modo estaba activo. Funcionaba. Era difícil de mantener desde el primer día.&lt;/p&gt;&#xA;&lt;p&gt;La decisión de reescribir esa lógica fue la que convirtió AgilEx de un script que yo podía operar a una herramienta que otra persona podía sostener.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo unifico todos mis proyectos judiciales en un solo sistema</title>
+      <link>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</link>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</guid>
+      <description>&lt;p&gt;El día que sherlock-docs dejó de leer el índice que AgilEx había generado fue el día que entendí que tenía un problema de arquitectura, no solo de código. AgilEx había cambiado la estructura de sus columnas en el Excel de salida, y el adaptador que conecta ambos proyectos no sabía qué hacer con eso. Cuarenta y cinco minutos de diagnóstico para un cambio que había tomado tres líneas en el otro repositorio.&lt;/p&gt;&#xA;&lt;p&gt;Eso pasa cuando tienes cinco proyectos que se hablan entre sí y ningún contrato formal entre ellos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title>
+      <link>http://localhost:58305/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Los prompts que uso todos los días trabajando en automatización judicial</title>
+      <link>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Por qué transformé este espacio</title>
+      <link>http://localhost:58305/2026/01/08/por-que-transforme-este-espacio/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/01/08/por-que-transforme-este-espacio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hablé en FliSol 2025 sobre software libre y justicia digital</title>
+      <link>http://localhost:58305/2025/04/05/flisol-2025-software-libre-justicia-digital/</link>
+      <pubDate>Sat, 05 Apr 2025 15:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2025/04/05/flisol-2025-software-libre-justicia-digital/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>El programador flanker: De la cancha de rugby a la arquitectura de software</title>
+      <link>http://localhost:58305/2025/02/28/design-pattern-in-public/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2025/02/28/design-pattern-in-public/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

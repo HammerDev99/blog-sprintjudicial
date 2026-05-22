@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58305&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Sprint Judicial">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/2026-09-11-agilex-arquitectura-script-herramienta-nacional/header.jpg">
+    <meta property="twitter:image" content="img/2026-09-11-agilex-arquitectura-script-herramienta-nacional/header.jpg" />
+    
+
+    
+    <meta name="title" content="De script de Python a herramienta nacional: la arquitectura de AgilEx" />
+    <meta property="og:title" content="De script de Python a herramienta nacional: la arquitectura de AgilEx" />
+    <meta property="twitter:title" content="De script de Python a herramienta nacional: la arquitectura de AgilEx" />
+    
+
+    
+    <meta name="description" content="LegalTech | Código | Justicia Digital">
+    <meta property="og:description" content="LegalTech | Código | Justicia Digital" />
+    <meta property="twitter:description" content="LegalTech | Código | Justicia Digital" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="LegalTech, Justicia Digital, Tecnología Judicial, Colombia, Ingeniería de Software">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>De script de Python a herramienta nacional: la arquitectura de AgilEx | Sprint Judicial | Daniel Arbelaez</title>
+
+    <link rel="canonical" href="/2026/09/11/agilex-arquitectura-script-herramienta-nacional/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    <link rel="stylesheet" href="http://localhost:58305/css/sprint-judicial.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script defer src="https://analytics.sprintjudicial.com/script.js" data-website-id="94c14f95-5e78-4070-a4f5-679329f7c8c8"></script>
+
+</head>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MEASUREMENT_ID');
+        }
+      </script>
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sprint Judicial</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/categories/construyendo/">CONSTRUYENDO</a></li>
+                    
+                        <li><a href="/categories/pensando/">PENSANDO</a></li>
+                    
+                        <li><a href="/categories/conectando/">CONECTANDO</a></li>
+                    
+                        <li><a href="/categories/aprendiendo/">APRENDIENDO</a></li>
+                    
+                        <li><a href="/archive/">ARCHIVO</a></li>
+                    
+                        <li><a href="/about/">ACERCA DE</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/2026-09-11-agilex-arquitectura-script-herramienta-nacional/header.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/agilex" title="agilex">
+                            agilex
+                        </a>
+                        
+                        <a class="tag" href="/tags/arquitectura-de-software" title="arquitectura de software">
+                            arquitectura de software
+                        </a>
+                        
+                        <a class="tag" href="/tags/building-in-public" title="building in public">
+                            building in public
+                        </a>
+                        
+                        <a class="tag" href="/tags/python" title="python">
+                            python
+                        </a>
+                        
+                        <a class="tag" href="/tags/legaltech" title="legaltech">
+                            legaltech
+                        </a>
+                        
+                    </div>
+                    <h1>De script de Python a herramienta nacional: la arquitectura de AgilEx</h1>
+                    <h2 class="subheading">Las decisiones de diseño que parecían pequeñas y resultaron importantes</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Daniel Arbelaez
+                             
+                            on 
+                            Friday, September 11, 2026
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>El primer script de AgilEx tenía un if/else por cada tipo de procesamiento. Si el usuario seleccionaba cuaderno único, una rama. Si seleccionaba expediente único, otra. Si seleccionaba múltiples expedientes, una tercera. Ese if/else estaba en la vista, en el controlador y en partes del modelo porque nadie había decidido todavía a quién le correspondía saber qué modo estaba activo. Funcionaba. Era difícil de mantener desde el primer día.</p>
+<p>La decisión de reescribir esa lógica fue la que convirtió AgilEx de un script que yo podía operar a una herramienta que otra persona podía sostener.</p>
+<h2 id="el-problema-que-forzó-la-arquitectura">El problema que forzó la arquitectura</h2>
+<p>AgilEx procesa expedientes judiciales en tres modos distintos. El modo cuaderno único toma una carpeta plana con archivos y genera el índice directamente. El modo expediente único trabaja con una estructura jerárquica de cuatro niveles (expediente, instancia, cuaderno, archivos) y valida el Código Único de Identificación de cada nivel. El modo múltiples expedientes extiende eso a cinco niveles, agrega un año como raíz y procesa en batch.</p>
+<p>Tres modos con estructuras de carpeta distintas, validaciones distintas, confirmaciones de usuario distintas y formas distintas de reportar errores. Al principio los tres vivían en la misma función de procesamiento, separados por ese if/else. Cuando el modo cuaderno único necesitó manejar anexos masivos de forma diferente, tocar esa función rompía los otros dos modos. La única solución real era separar cada modo en algo completamente autónomo.</p>
+<h2 id="strategy-pattern-porque-el-problema-lo-pedía">Strategy Pattern porque el problema lo pedía</h2>
+<p>El Strategy Pattern resuelve exactamente ese problema. Cuando tienes varias formas de hacer lo mismo y necesitas poder cambiar entre ellas sin que quien las llama sepa cuál está usando, cada variante se convierte en una estrategia independiente. En AgilEx, el &ldquo;mismo&rdquo; es &ldquo;procesar un conjunto de archivos y generar un índice Excel&rdquo;. El &ldquo;cómo&rdquo; depende del modo.</p>
+<p>Hoy AgilEx tiene tres estrategias completamente autónomas, <code>SingleCuadernoStrategy</code>, <code>SingleExpedienteStrategy</code> y <code>MultiExpedienteStrategy</code>. Cada una maneja su propia selección de carpeta con un <code>filedialog.askdirectory()</code> propio, su propia validación de CUIs, sus propias confirmaciones de usuario y su propio manejo de errores. El coordinador <code>processing_context.py</code> simplemente recibe cuál estrategia usar y la ejecuta. No sabe qué hace cada una ni cómo lo hace.</p>
+<p>El resultado práctico fue una reducción del 20% de líneas en la vista, que pasó de tener lógica de procesamiento dispersa a tener responsabilidades estrictamente de GUI. Alrededor de 730 líneas de código limpio donde antes había más y con más acoplamiento.</p>
+<h2 id="mvc-porque-la-vista-no-puede-saber-cómo-procesar-un-expediente">MVC porque la vista no puede saber cómo procesar un expediente</h2>
+<p>La separación en capas Model-View-Controller llegó antes que el Strategy Pattern, pero por la misma razón. La vista estaba tomando decisiones que no le correspondían. Había lógica de validación de estructura de carpetas en el código de la interfaz gráfica. Había llamadas directas a la lectura de metadatos de archivos desde los event handlers de los botones.</p>
+<p>La arquitectura actual tiene las responsabilidades repartidas con más claridad. El modelo en <code>src/model/</code> contiene la lógica de negocio pura. <code>file_processor.py</code> es el motor de procesamiento con la integración Excel; <code>metadata_extractor.py</code> usa el Factory Pattern para extraer metadatos de PDFs, Word y Excel según el tipo de archivo; <code>folder_analyzer.py</code> analiza la estructura de carpetas y valida los CUIs de 23 dígitos. La vista en <code>src/view/</code> solo crea widgets, maneja eventos de usuario y actualiza el estado visual. El controlador en <code>src/controller/</code> coordina.</p>
+<p>El Factory en <code>metadata_extractor.py</code> fue una consecuencia de la separación del modelo. Cuando el modelo dejó de recibir órdenes de la vista, necesitaba poder decidir solo cómo extraer metadatos de un archivo según su extensión. Un if/else en el modelo habría repetido el error original en otro lugar.</p>
+<h2 id="xlwings-porque-openpyxl-no-hace-lo-que-la-norma-exige">xlwings porque openpyxl no hace lo que la norma exige</h2>
+<p>La restricción más comentada de AgilEx es que requiere Microsoft Excel instalado. Eso no es un descuido de diseño; es una consecuencia directa de lo que la norma exige. El índice electrónico tiene que ser un archivo que la Rama Judicial pueda abrir, revisar y auditar en Excel nativo, con fórmulas y formatos condicionales intactos. Eso implica fórmulas, formatos condicionales y estructura de hoja que los usuarios institucionales esperan ver funcionando en Excel nativo.</p>
+<p>openpyxl puede leer y escribir archivos <code>.xlsx</code> sin Excel, pero no puede hacer automatización COM. xlwings sí, porque habla directamente con la instancia de Excel en ejecución. El precio es la dependencia, y es que Excel tiene que estar instalado en la máquina donde corre AgilEx. Para el contexto de uso real, un despacho judicial con licencia de Microsoft Office, eso no es un problema. Para alguien que quiera correr AgilEx en Linux o en un servidor sin GUI, sí lo es.</p>
+<p>La documentación de AgilEx lo dice explícitamente. La restricción no es un bug pendiente de resolver; es el resultado de priorizar compatibilidad institucional sobre portabilidad.</p>
+<h2 id="observer-para-las-notificaciones-en-tiempo-real">Observer para las notificaciones en tiempo real</h2>
+<p>Cuando el procesamiento de un expediente tarda varios segundos, la vista necesita saber qué está pasando sin bloquear la interfaz. La solución obvia es un callback; la solución escalable es un Observer.</p>
+<p><code>gui_notifier.py</code> implementa ese patrón unificado. Todas las estrategias usan los mismos cuatro tipos de mensaje. <code>PROGRESS</code> actualiza la barra de progreso; <code>STATUS</code> actualiza la barra de estado inferior; <code>TEXT</code> escribe en el log de actividad; <code>DIALOG</code> dispara los diálogos modales de confirmación. Antes de la refactorización, cada modo tenía su propia forma de notificar a la interfaz. La unificación no fue difícil, pero requirió decidir quién emite y quién escucha, y esa decisión no es obvia hasta que ya se tiene el problema.</p>
+<h2 id="lo-que-todavía-no-está-resuelto">Lo que todavía no está resuelto</h2>
+<p>PyInstaller empaqueta AgilEx en un ejecutable único (<code>dist/AgilEx_by_Marduk.exe</code>) que los funcionarios pueden descargar y ejecutar sin instalar Python. Eso fue un requisito desde el principio, porque la Rama Judicial no tiene una cultura de entornos virtuales ni de <code>pip install</code>. El ejecutable funciona bien para distribución, pero hace que el ciclo de build sea lento cuando hay cambios pequeños y que la firma digital Authenticode sea obligatoria para cada release (el hash del binario cambia con cualquier modificación).</p>
+<p>La arquitectura que describe este post es la de la versión 1.5.1. Lo que no está resuelto es la interfaz de contrato entre AgilEx y los sistemas que consumen su output, como sherlock-docs. El Excel que AgilEx genera no tiene un schema formal publicado. Cuando cambian las columnas, quien consuma ese output lo descubre cuando algo falla, no antes. Esa es la deuda técnica más visible del ecosistema, y no está en AgilEx sino en el espacio entre AgilEx y sus consumidores.</p>
+
+                
+                
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/09/04/como-unifico-proyectos-judiciales/" data-toggle="tooltip" data-placement="top" title="Cómo unifico todos mis proyectos judiciales en un solo sistema">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2026/09/25/agilex-por-que-codigo-es-publico/" data-toggle="tooltip" data-placement="top" title="¿Por qué el código de AgilEx es público?">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.alexanderoviedofadul.dev/">Alexander Oviedo Fadul</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:arbe.94@hotmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/HammerDev99">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-arbelaez-/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Sprint Judicial" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Sprint Judicial 2026
+                    
+                    <br>
+                    <a href="https://github.com/HammerDev99"> Daniel Arbelaez Alvarez </a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="180px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=HammerDev99&type=follow&count=true" >
+                    </iframe>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

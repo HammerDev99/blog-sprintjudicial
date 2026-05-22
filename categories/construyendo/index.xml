@@ -1,5 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Construyendo on Sprint Judicial</title><link>https://blog.sprintjudicial.com/categories/construyendo/</link><description>Recent content in Construyendo on Sprint Judicial</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor><webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster><lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sprintjudicial.com/categories/construyendo/index.xml" rel="self" type="application/rss+xml"/><item><title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title><link>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link><pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid><description>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales Hace una semana escribí sobre TutelaBot, el modelo de IA que Alexander Oviedo Fadul publicó en Ollama para analizar acciones de tutela. Ese post se quedó en la versión base: la de 2 GB que corre en cualquier máquina con 16 de RAM.
-Pero la familia son tres modelos. Base (3.2B parámetros), Air (10B) y Pro v3 (16B).</description></item><item><title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title><link>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid><description>El volumen de acciones de tutela en Colombia es una presión concreta que llega a los despachos judiciales en forma de pilas de papel, carpetas escaneadas y correos que acumulan términos. En un juzgado donde trabajé, las tutelas llegaban sin parar los lunes, miércoles y viernes, sin importar qué otro proceso estuviera en curso. El plazo de diez días para fallar no negocia. Cuando vi lo que Alexander Oviedo Fadul publicó en Ollama, lo primero que pensé fue que eso necesitaba existir hace años.</description></item><item><title>Los prompts que uso todos los días trabajando en automatización judicial</title><link>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</link><pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2026/02/13/prompts-automatizacion-judicial/</guid><description>El año pasado tuve que analizar cerca de 200 expedientes judiciales para identificar patrones de distribución de carga entre despachos. Hacerlo manualmente tomaba semanas. Con la combinación correcta de código y los prompts adecuados, lo resolví en dos días.
-La diferencia estaba en saber exactamente cómo pedirle al modelo lo que necesitaba.
-Llevo tiempo usando modelos de lenguaje como herramienta de trabajo diario en proyectos como Marduk y Sherlock-docs. En ese proceso fui descubriendo que la diferencia entre un resultado útil y uno genérico casi siempre está en cómo formulas la instrucción.</description></item><item><title>Marduk: Un Viaje hacia la Innovación Judicial Digital</title><link>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2024/10/12/transformando-la-justicia/</guid><description>En mi trayectoria profesional dentro del sector judicial, siempre he creído firmemente en el poder transformador de la tecnología. Hace aproximadamente tres años, me encontré en una encrucijada profesional: ¿cómo podría combinar mi experiencia en el ámbito legal con mi pasión por la tecnología? Esta búsqueda me llevó a un fascinante viaje que culminó en el proyecto Marduk, una iniciativa que está revolucionando la forma en que concebimos la justicia digital en Colombia.</description></item><item><title>Una revisión del sistema experto Docassemble</title><link>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2023/07/11/docassemble-review/</guid><description>¿Alguna vez has sentido esa sensación de vértigo al enfrentarte a miles de páginas de jurisprudencia, normas, leyes entre otros, buscando encontrar la joya entre el desorden?
-Imagínate tener un superpoder que te permite filtrar rápidamente el ruido y descubrir exactamente lo que necesitas saber, sin perder tiempo en lo irrelevante. Este poder existe, y su nombre es Docassemble, un sistema experto de ensamblaje de documentos que transforma la forma en que interactuamos con la información judicial.</description></item><item><title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title><link>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</link><pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author><guid>https://blog.sprintjudicial.com/2022/12/01/gestion-expediente-electronico/</guid><description>¿Alguna vez te has sentido atrapado en tareas repetitivas y tediosas durante tu jornada laboral? A principios de 2022, me encontré en una situación similar. Las demandas de digitalización en mi institución habían convertido varias actividades en procesos aburridos y monótonos. La chispa de inspiración vino cuando leí el fascinante libro &amp;ldquo;Sálvese quien pueda&amp;rdquo; de Andrés Oppenheimer, que me mostró cómo la automatización está revolucionando la industria y transformando el mercado laboral.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Construyendo on Sprint Judicial</title>
+    <link>http://localhost:58305/categories/construyendo/</link>
+    <description>Recent content in Construyendo on Sprint Judicial</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</managingEditor>
+    <webMaster>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</webMaster>
+    <lastBuildDate>Fri, 15 Jan 2027 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:58305/categories/construyendo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code y agentes especializados en el flujo de trabajo técnico</title>
+      <link>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</link>
+      <pubDate>Fri, 15 Jan 2027 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2027/01/15/claude-code-agentes-trabajo-tecnico-judicial/</guid>
+      <description>&lt;p&gt;El post que estás leyendo lo escribió un agente llamado &lt;code&gt;blog-writer&lt;/code&gt;. La imagen del encabezado la descargó otro proceso automático. El frontmatter fue generado siguiendo un SPEC definido en un archivo de planning. El commit que publicó el archivo tiene un mensaje en formato convencional que ningún humano escribió. No porque el humano no pudiera — sino porque el sistema está configurado para hacerlo de esa forma, y el humano puede concentrarse en qué decir en lugar de en cómo decirlo.&lt;/p&gt;&#xA;&lt;p&gt;Eso es lo que cambia cuando Claude Code tiene contexto del dominio y agentes especializados.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De script de Python a herramienta nacional: la arquitectura de AgilEx</title>
+      <link>http://localhost:58305/2026/09/11/agilex-arquitectura-script-herramienta-nacional/</link>
+      <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/11/agilex-arquitectura-script-herramienta-nacional/</guid>
+      <description>&lt;p&gt;El primer script de AgilEx tenía un if/else por cada tipo de procesamiento. Si el usuario seleccionaba cuaderno único, una rama. Si seleccionaba expediente único, otra. Si seleccionaba múltiples expedientes, una tercera. Ese if/else estaba en la vista, en el controlador y en partes del modelo porque nadie había decidido todavía a quién le correspondía saber qué modo estaba activo. Funcionaba. Era difícil de mantener desde el primer día.&lt;/p&gt;&#xA;&lt;p&gt;La decisión de reescribir esa lógica fue la que convirtió AgilEx de un script que yo podía operar a una herramienta que otra persona podía sostener.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo unifico todos mis proyectos judiciales en un solo sistema</title>
+      <link>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</link>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/09/04/como-unifico-proyectos-judiciales/</guid>
+      <description>&lt;p&gt;El día que sherlock-docs dejó de leer el índice que AgilEx había generado fue el día que entendí que tenía un problema de arquitectura, no solo de código. AgilEx había cambiado la estructura de sus columnas en el Excel de salida, y el adaptador que conecta ambos proyectos no sabía qué hacer con eso. Cuarenta y cinco minutos de diagnóstico para un cambio que había tomado tres líneas en el otro repositorio.&lt;/p&gt;&#xA;&lt;p&gt;Eso pasa cuando tienes cinco proyectos que se hablan entre sí y ningún contrato formal entre ellos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El problema que nadie quería resolver y por qué empecé a contar folios a mano</title>
+      <link>http://localhost:58305/2026/07/31/agilex-el-origen-contar-folios-a-mano/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/07/31/agilex-el-origen-contar-folios-a-mano/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planificadores digitales en el despacho y las herramientas que usan los mejores estudios</title>
+      <link>http://localhost:58305/2026/07/17/planificadores-digitales-despacho/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/07/17/planificadores-digitales-despacho/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TutelaBot a fondo: benchmark de base, Air y Pro v3 sobre tutelas reales</title>
+      <link>http://localhost:58305/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/04/16/tutelabot-benchmark-base-air-pro-v3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TutelaBot: un amigo construyó el modelo de IA que el sistema judicial colombiano necesitaba</title>
+      <link>http://localhost:58305/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/04/08/tutelabot-ia-analisis-tutelas-colombia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Los prompts que uso todos los días trabajando en automatización judicial</title>
+      <link>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2026/02/13/prompts-automatizacion-judicial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marduk: Un Viaje hacia la Innovación Judicial Digital</title>
+      <link>http://localhost:58305/2024/10/12/transformando-la-justicia/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2024/10/12/transformando-la-justicia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Una revisión del sistema experto Docassemble</title>
+      <link>http://localhost:58305/2023/07/11/docassemble-review/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2023/07/11/docassemble-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimiza la Gestión de tus Expedientes Electrónicos con GestiónExpedienteElectronico</title>
+      <link>http://localhost:58305/2022/12/01/gestion-expediente-electronico/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><author>arbe.94@hotmail.com (Daniel Arbelaez Alvarez)</author>
+      <guid>http://localhost:58305/2022/12/01/gestion-expediente-electronico/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
