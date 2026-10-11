@@ -3,4 +3,4 @@ Pero la familia son tres modelos. Base (3.2B parámetros), Air (10B) y Pro v3 (1
 Pasé tres semanas corriéndolos contra tutelas reales del Juzgado Civil Municipal de Bello. 24 PDFs al principio. 460 después. 358 en la última iteración. Once notebooks, cinco consolidaciones, una tabla de Excel con resultados que cabía en mi cabeza hasta el benchmark número seis.
 Este es el resumen de lo que encontré. Qué hace bien cada versión, qué hace mal, y qué aprendí reiterando sobre la misma pregunta: ¿puede un LLM abierto de 3.2B parámetros extraer información estructurada de una tutela colombiana sin inventar datos?
 La respuesta corta es sí. Si el prompt está bien hecho y si aceptas que la medida provisional la va a alucinar un 26% de las veces.
-La respuesta larga requiere …</description></item></channel></rss>
+La respuesta larga requiere …</description><enclosure url="https://blog.sprintjudicial.com/img/2026-04-16-tutelabot-benchmark-base-air-pro-v3/header.jpg" length="36421" type="image/jpeg"/></item></channel></rss>
